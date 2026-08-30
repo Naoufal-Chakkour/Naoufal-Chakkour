@@ -82,25 +82,19 @@
 
 ## ◈ DEVELOPMENT
 
-<pre>
-C# ────────────────► .NET
- │
- ├─────────────────► Git
- │
- └─────────────────► GitHub
-</pre>
+<div align="center">
 
----
+<img src="./assets/development.svg" width="100%" alt="Naoufal Development Pipeline">
+
+</div>
 
 ## ◈ CONNECT
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-Naoufal--Chakkour-181717?style=for-the-badge&logo=github)](https://github.com/Naoufal-Chakkour)
+<img src="./assets/connect.svg" width="100%" alt="Naoufal Connect">
 
 </div>
-
----
 
 <div align="center">
 
