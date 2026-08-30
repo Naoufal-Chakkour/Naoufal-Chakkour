@@ -89,11 +89,39 @@
 
 <div align="center">
 
+<table>
+<tr>
+
+<td width="35%" align="center">
+
+<img
+src="./assets/avatar-ascii.svg"
+width="100%"
+alt="Naoufal ASCII Avatar">
+
+</td>
+
+<td width="65%" align="center">
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/naoufal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/naoufal-light.svg">
-  <img src="./assets/naoufal-dark.svg" width="100%" alt="Naoufal GitHub Analytics">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="./assets/naoufal-dark.svg">
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="./assets/naoufal-light.svg">
+
+  <img
+    src="./assets/naoufal-dark.svg"
+    width="100%"
+    alt="Naoufal GitHub Analytics">
 </picture>
+
+</td>
+
+</tr>
+</table>
 
 </div>
 
