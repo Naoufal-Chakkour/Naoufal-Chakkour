@@ -1,0 +1,250 @@
+<svg width="1000" height="430" viewBox="0 0 1000 430" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="3" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+<linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+<stop offset="50%" stop-color="#58a6ff" stop-opacity="1"/>
+<stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+</linearGradient>
+
+</defs>
+
+<!-- BACKGROUND -->
+
+<rect width="1000" height="430" fill="#0d1117"/>
+
+<!-- GRID -->
+
+<g stroke="#58a6ff" stroke-width="1" opacity="0.06">
+
+<path d="M0 80H1000"/>
+<path d="M0 160H1000"/>
+<path d="M0 240H1000"/>
+<path d="M0 320H1000"/>
+<path d="M0 400H1000"/>
+
+<path d="M100 0V430"/>
+<path d="M200 0V430"/>
+<path d="M300 0V430"/>
+<path d="M400 0V430"/>
+<path d="M500 0V430"/>
+<path d="M600 0V430"/>
+<path d="M700 0V430"/>
+<path d="M800 0V430"/>
+<path d="M900 0V430"/>
+
+</g>
+
+<!-- TITLE -->
+
+<text x="500" y="42"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="20"
+font-weight="bold">
+
+GITHUB ANALYTICS
+
+</text>
+
+<!-- REPOSITORIES -->
+
+<rect x="70" y="80"
+width="250" height="115"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="95" y="112"
+fill="#58a6ff"
+font-family="monospace"
+font-size="12">
+
+REPOSITORIES
+
+</text>
+
+<text x="195" y="160"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="28"
+font-weight="bold">
+
+04+
+
+</text>
+
+<!-- LANGUAGES -->
+
+<rect x="375" y="80"
+width="250" height="115"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="400" y="112"
+fill="#58a6ff"
+font-family="monospace"
+font-size="12">
+
+PRIMARY STACK
+
+</text>
+
+<text x="500" y="155"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="21"
+font-weight="bold">
+
+C# • HTML • CSS
+
+</text>
+
+<text x="500" y="177"
+text-anchor="middle"
+fill="#8b949e"
+font-family="monospace"
+font-size="10">
+
+DEVELOPMENT
+
+</text>
+
+<!-- FOCUS -->
+
+<rect x="680" y="80"
+width="250" height="115"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="705" y="112"
+fill="#58a6ff"
+font-family="monospace"
+font-size="12">
+
+CURRENT FOCUS
+
+</text>
+
+<text x="805" y="155"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="18"
+font-weight="bold">
+
+SECURITY
+
+</text>
+
+<text x="805" y="177"
+text-anchor="middle"
+fill="#8b949e"
+font-family="monospace"
+font-size="10">
+
+NETWORK • LINUX • IoT
+
+</text>
+
+<!-- ACTIVITY PANEL -->
+
+<rect x="70" y="225"
+width="860" height="125"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="95" y="255"
+fill="#58a6ff"
+font-family="monospace"
+font-size="12">
+
+ACTIVITY MONITOR
+
+</text>
+
+<!-- ACTIVITY BARS -->
+
+<g fill="#58a6ff">
+
+<rect x="100" y="290" width="70" height="25" rx="3"/>
+<rect x="185" y="275" width="70" height="40" rx="3"/>
+<rect x="270" y="300" width="70" height="15" rx="3"/>
+<rect x="355" y="260" width="70" height="55" rx="3"/>
+<rect x="440" y="285" width="70" height="30" rx="3"/>
+<rect x="525" y="270" width="70" height="45" rx="3"/>
+<rect x="610" y="295" width="70" height="20" rx="3"/>
+<rect x="695" y="250" width="70" height="65" rx="3"/>
+<rect x="780" y="280" width="70" height="35" rx="3"/>
+
+</g>
+
+<!-- SCANNER -->
+
+<rect x="70"
+y="80"
+width="860"
+height="2"
+fill="url(#scan)"
+opacity="0.8">
+
+<animate
+attributeName="y"
+values="80;350;80"
+dur="5s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- STATUS -->
+
+<circle cx="420"
+cy="390"
+r="6"
+fill="#58a6ff"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="6;11;6"
+dur="1.5s"
+repeatCount="indefinite"/>
+
+<animate
+attributeName="opacity"
+values="1;0.2;1"
+dur="1.5s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<text x="445"
+y="395"
+fill="#8b949e"
+font-family="monospace"
+font-size="11">
+
+ANALYTICS ENGINE : ONLINE
+
+</text>
+
+</svg>
