@@ -14,23 +14,11 @@
 
 ## ◈ SYSTEM PROFILE
 
-<pre>
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│                     NAOUFAL SECURITY LAB                     │
-│                                                              │
-│   NETWORK SECURITY     ████████████████░░░░                 │
-│   LINUX / KALI         ████████████████░░░░                 │
-│   C# / .NET            ████████████░░░░░░░                 │
-│   IoT / ONVIF          █████████████░░░░░░                 │
-│   WEB SECURITY         ████████████░░░░░░░                 │
-│                                                              │
-│                     [ SYSTEM ONLINE ]                        │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-</pre>
+<div align="center">
 
----
+<img src="./assets/profile.svg" width="100%" alt="Naoufal System Profile">
+
+</div>
 
 ## ◈ TECHNOLOGY NODES
 
