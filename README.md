@@ -101,23 +101,11 @@ IoT / CAMERA
 
 ## ◈ PROJECTS
 
-### `Csharp-learning`
+<div align="center">
 
-C# learning repository containing practical exercises and development experiments.
+<img src="./assets/projects.svg" width="100%" alt="Naoufal Projects">
 
-### `MyWebsite`
-
-Web development project focused on HTML/CSS and frontend experimentation.
-
-### `Security Lab`
-
-Controlled cybersecurity laboratory for studying networking, Linux and security concepts.
-
-### `IoT Research`
-
-Exploration of networked devices, protocols and technologies such as ONVIF and RTSP in controlled environments.
-
----
+</div>
 
 ## ◈ SECURITY LAB
 
