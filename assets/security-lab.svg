@@ -1,0 +1,293 @@
+<svg width="1000" height="620" viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="3" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+<linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+<stop offset="50%" stop-color="#58a6ff" stop-opacity="1"/>
+<stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+</linearGradient>
+
+</defs>
+
+<!-- BACKGROUND -->
+
+<rect width="1000" height="620" fill="#0d1117"/>
+
+<!-- GRID -->
+
+<g stroke="#58a6ff" stroke-width="1" opacity="0.06">
+
+<path d="M0 80H1000"/>
+<path d="M0 160H1000"/>
+<path d="M0 240H1000"/>
+<path d="M0 320H1000"/>
+<path d="M0 400H1000"/>
+<path d="M0 480H1000"/>
+<path d="M0 560H1000"/>
+
+<path d="M100 0V620"/>
+<path d="M200 0V620"/>
+<path d="M300 0V620"/>
+<path d="M400 0V620"/>
+<path d="M500 0V620"/>
+<path d="M600 0V620"/>
+<path d="M700 0V620"/>
+<path d="M800 0V620"/>
+<path d="M900 0V620"/>
+
+</g>
+
+<!-- TITLE -->
+
+<text x="500" y="42"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="20"
+font-weight="bold">
+
+SECURITY LAB
+
+</text>
+
+<!-- CONNECTIONS -->
+
+<g stroke="#58a6ff"
+stroke-width="2"
+fill="none"
+opacity="0.35">
+
+<path d="M500 155V195"/>
+<path d="M500 275V315"/>
+<path d="M500 395V435"/>
+<path d="M500 515V545"/>
+
+</g>
+
+<!-- TARGET -->
+
+<rect x="350" y="75"
+width="300" height="80"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"
+filter="url(#glow)"/>
+
+<text x="500" y="108"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+[ TARGET ]
+
+</text>
+
+<text x="500" y="135"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="18"
+font-weight="bold">
+
+LAB ENVIRONMENT
+
+</text>
+
+<!-- DISCOVERY -->
+
+<rect x="350" y="195"
+width="300" height="80"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="500" y="228"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+[ 01 ] DISCOVERY
+
+</text>
+
+<text x="500" y="255"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="17">
+
+NMAP
+
+</text>
+
+<!-- ANALYSIS -->
+
+<rect x="350" y="315"
+width="300" height="80"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="500" y="348"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+[ 02 ] ANALYSIS
+
+</text>
+
+<text x="500" y="375"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="17">
+
+WIRESHARK
+
+</text>
+
+<!-- ASSESSMENT -->
+
+<rect x="350" y="435"
+width="300"
+height="80"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="500" y="468"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+[ 03 ] ASSESSMENT
+
+</text>
+
+<text x="500" y="495"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="17">
+
+GVM
+
+</text>
+
+<!-- REPORTING -->
+
+<rect x="350" y="545"
+width="300"
+height="50"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="500" y="577"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="15"
+font-weight="bold">
+
+[ 04 ] REPORTING
+
+</text>
+
+<!-- SIGNAL -->
+
+<circle cx="500" cy="155"
+r="5"
+fill="#58a6ff"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="5;12;5"
+dur="2s"
+repeatCount="indefinite"/>
+
+<animate
+attributeName="opacity"
+values="1;0.2;1"
+dur="2s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle cx="500" cy="275"
+r="5"
+fill="#58a6ff"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="5;12;5"
+dur="2.3s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle cx="500" cy="395"
+r="5"
+fill="#58a6ff"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="5;12;5"
+dur="2.6s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- MOVING DATA -->
+
+<circle r="5"
+fill="#58a6ff"
+filter="url(#glow)">
+
+<animateMotion
+dur="4s"
+repeatCount="indefinite"
+path="M500 155V195V275V315V395V435V515V545"/>
+
+</circle>
+
+<!-- SCANNER -->
+
+<rect x="350"
+y="75"
+width="300"
+height="2"
+fill="url(#scan)"
+opacity="0.8">
+
+<animate
+attributeName="y"
+values="75;595;75"
+dur="6s"
+repeatCount="indefinite"/>
+
+</rect>
+
+</svg>
