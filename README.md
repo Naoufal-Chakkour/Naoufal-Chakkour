@@ -74,39 +74,11 @@
 
 ## ◈ SECURITY LAB
 
-<pre>
-                         ┌─────────────────┐
-                         │     TARGET      │
-                         │  LAB ENVIRONMENT│
-                         └────────┬────────┘
-                                  │
-                                  ▼
-                         ┌─────────────────┐
-                         │   DISCOVERY     │
-                         │      NMAP       │
-                         └────────┬────────┘
-                                  │
-                                  ▼
-                         ┌─────────────────┐
-                         │    ANALYSIS     │
-                         │    WIRESHARK    │
-                         └────────┬────────┘
-                                  │
-                                  ▼
-                         ┌─────────────────┐
-                         │   ASSESSMENT    │
-                         │      GVM        │
-                         └────────┬────────┘
-                                  │
-                                  ▼
-                         ┌─────────────────┐
-                         │    REPORTING    │
-                         └─────────────────┘
-</pre>
+<div align="center">
 
-> All security testing is performed in controlled environments or on systems for which authorization is available.
+<img src="./assets/security-lab.svg" width="100%" alt="Naoufal Security Lab">
 
----
+</div>
 
 ## ◈ DEVELOPMENT
 
