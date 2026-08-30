@@ -87,6 +87,16 @@
 
 ---
 
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/naoufal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/naoufal-light.svg">
+  <img src="./assets/naoufal-dark.svg" width="100%" alt="Naoufal GitHub Analytics">
+</picture>
+
+</div>
+
 <h2>The constraint everything else follows from</h2>
 
 <blockquote>
