@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 500" width="1240" height="500" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <style>
+    .h1  { fill:#fbbf24; font-size:12px; font-weight:700; letter-spacing:2.4px; }
+    .h2  { fill:#e6edf3; font-size:9px; font-weight:700; letter-spacing:1.6px; }
+    .sub { fill:#6e7681; font-size:7.5px; letter-spacing:1.2px; }
+    .msg { fill:#c9d1d9; font-size:7.8px; }
+    .mnt { fill:#7d8590; font-size:7px; }
+    .box { fill:#0d1117; stroke:#21262d; stroke-width:1; }
+    .amb { fill:#150f04; stroke:#78350f; stroke-width:1; }
+  </style>
+  <defs>
+    <linearGradient id="ebg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090c12"/><stop offset="100%" stop-color="#0a0d13"/>
+    </linearGradient>
+    <marker id="ar" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 z" fill="#8b949e"/>
+    </marker>
+    <marker id="arA" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L6 3 L0 6 z" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <rect width="1240" height="500" rx="10" fill="url(#ebg)" stroke="#1c2430" stroke-width="1.5"/>
+  <text x="34" y="34" class="h1">ENERGY &amp; EV CHARGING</text>
+  <text x="34" y="50" class="sub">IEC 61851 PILOT &#183; ISO 15118 PLUG &amp; CHARGE &#183; OCPP 1.6J / 2.0.1 &#183; OCPI ROAMING &#183; MID METERING &#183; SMART CHARGING</text>
+  <line x1="34" y1="62" x2="1206" y2="62" stroke="#1c2430"/>
+
+  <!-- ============ physical chain ============ -->
+  <text x="34" y="84" class="h2">PHYSICAL CHAIN</text>
+
+  <!-- vehicle -->
+  <rect x="34" y="94" width="150" height="66" rx="5" class="box"/>
+  <g transform="translate(46,108)">
+    <path d="M4 26 L10 14 L40 14 L48 26 L48 34 L4 34 Z" fill="none" stroke="#7dd3fc" stroke-width="1.2"/>
+    <circle cx="14" cy="34" r="3.5" fill="none" stroke="#7dd3fc" stroke-width="1.2"/>
+    <circle cx="38" cy="34" r="3.5" fill="none" stroke="#7dd3fc" stroke-width="1.2"/>
+  </g>
+  <text x="108" y="122" class="msg">VEHICLE</text>
+  <text x="108" y="134" class="mnt">EVCC &#183; contract cert</text>
+  <text x="108" y="145" class="mnt">ISO 15118-2 / -20</text>
+
+  <!-- pilot link -->
+  <line x1="184" y1="127" x2="266" y2="127" stroke="#30363d" stroke-width="1" marker-end="url(#ar)"/>
+  <text x="190" y="118" class="mnt">CP / PP pilot</text>
+  <text x="190" y="142" class="mnt">HomePlug GP</text>
+  <circle cx="184" cy="127" r="2.4" fill="#fbbf24"><animate attributeName="cx" values="184;262" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"/></circle>
+
+  <!-- EVSE -->
+  <rect x="270" y="94" width="176" height="66" rx="5" class="amb"/>
+  <text x="282" y="112" class="msg">CHARGE POINT / EVSE</text>
+  <text x="282" y="126" class="mnt">contactor &#183; RCD type B &#183; PE monitor</text>
+  <text x="282" y="137" class="mnt">MID meter &#183; AC 22 kW / DC 150 kW</text>
+  <text x="282" y="148" class="mnt">charge-controller state machine</text>
+  <rect x="418" y="102" width="18" height="50" rx="2" fill="#0b0e14" stroke="#78350f"/>
+  <rect x="421" y="148" width="12" height="0" fill="#fbbf24" opacity="0.8">
+    <animate attributeName="height" values="0;44;44;0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="148;104;104;148" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- grid -->
+  <line x1="446" y1="127" x2="520" y2="127" stroke="#30363d" stroke-width="1" marker-end="url(#ar)"/>
+  <text x="452" y="118" class="mnt">3~ 400 V</text>
+  <rect x="524" y="94" width="150" height="66" rx="5" class="box"/>
+  <text x="536" y="112" class="msg">SITE &amp; GRID</text>
+  <text x="536" y="126" class="mnt">main fuse limit</text>
+  <text x="536" y="137" class="mnt">PV &#183; BESS &#183; building load</text>
+  <text x="536" y="148" class="mnt">Modbus TCP energy meter</text>
+
+  <!-- measured readouts -->
+  <rect x="694" y="94" width="512" height="66" rx="5" class="box"/>
+  <g>
+    <text x="712" y="112" class="mnt">SESSION ENERGY</text>
+    <text x="712" y="132" fill="#fbbf24" font-size="15" font-weight="700">18.42<tspan font-size="8" fill="#a16207"> kWh</tspan></text>
+    <text x="712" y="148" class="mnt">MID register, not estimated</text>
+
+    <text x="852" y="112" class="mnt">ACTIVE POWER</text>
+    <text x="852" y="132" fill="#5eead4" font-size="15" font-weight="700">21.9<tspan font-size="8" fill="#0f766e"> kW</tspan></text>
+    <text x="852" y="148" class="mnt">limited by charging profile</text>
+
+    <text x="982" y="112" class="mnt">METER SAMPLE</text>
+    <text x="982" y="132" fill="#7dd3fc" font-size="15" font-weight="700">60<tspan font-size="8" fill="#0369a1"> s</tspan></text>
+    <text x="982" y="148" class="mnt">signed values where required</text>
+
+    <text x="1102" y="112" class="mnt">SESSION STATE</text>
+    <text x="1102" y="132" fill="#34d399" font-size="12" font-weight="700">CHARGING</text>
+    <text x="1102" y="148" class="mnt">B2 &#8594; C2 pilot transition</text>
+  </g>
+
+  <!-- ============ OCPP sequence ============ -->
+  <line x1="34" y1="178" x2="1206" y2="178" stroke="#1c2430"/>
+  <text x="34" y="198" class="h2">OCPP SESSION &#8212; WHAT ACTUALLY CROSSES THE WIRE</text>
+
+  <g class="sub" text-anchor="middle">
+    <text x="180" y="220" fill="#fbbf24">CHARGE POINT</text>
+    <text x="620" y="220" fill="#5eead4">CSMS / BACKEND</text>
+    <text x="1060" y="220" fill="#7dd3fc">ROAMING &amp; SETTLEMENT</text>
+  </g>
+  <g stroke="#21262d" stroke-width="1" stroke-dasharray="3 4">
+    <line x1="180" y1="228" x2="180" y2="404"/>
+    <line x1="620" y1="228" x2="620" y2="404"/>
+    <line x1="1060" y1="228" x2="1060" y2="404"/>
+  </g>
+
+  <!-- messages CP -> CSMS -->
+  <g>
+    <line x1="180" y1="248" x2="614" y2="248" stroke="#30363d" marker-end="url(#ar)"/>
+    <text x="196" y="243" class="msg">BootNotification</text>
+    <text x="470" y="243" class="mnt">model &#183; firmware &#183; interval</text>
+
+    <line x1="620" y1="268" x2="186" y2="268" stroke="#30363d" marker-end="url(#ar)"/>
+    <text x="196" y="263" class="msg" fill="#34d399">Accepted</text>
+    <text x="470" y="263" class="mnt">heartbeat interval assigned</text>
+
+    <line x1="180" y1="288" x2="614" y2="288" stroke="#30363d" marker-end="url(#ar)"/>
+    <text x="196" y="283" class="msg">StatusNotification</text>
+    <text x="470" y="283" class="mnt">connector Available</text>
+
+    <line x1="180" y1="308" x2="614" y2="308" stroke="#30363d" marker-end="url(#ar)"/>
+    <text x="196" y="303" class="msg">Authorize</text>
+    <text x="470" y="303" class="mnt">idToken &#183; RFID or contract cert</text>
+
+    <line x1="180" y1="328" x2="614" y2="328" stroke="#fbbf24" marker-end="url(#arA)" opacity="0.9"/>
+    <text x="196" y="323" class="msg" fill="#fbbf24">TransactionEvent(Started)</text>
+    <text x="470" y="323" class="mnt">meterStart &#183; timestamp &#183; reason</text>
+
+    <line x1="620" y1="348" x2="186" y2="348" stroke="#30363d" marker-end="url(#ar)"/>
+    <text x="196" y="343" class="msg">SetChargingProfile</text>
+    <text x="470" y="343" class="mnt">limit 21.9 kW &#183; TxProfile</text>
+
+    <line x1="180" y1="368" x2="614" y2="368" stroke="#30363d" marker-end="url(#ar)"/>
+    <text x="196" y="363" class="msg">MeterValues &#215; n</text>
+    <text x="470" y="363" class="mnt">every 60 s while charging</text>
+    <circle cx="180" cy="368" r="2.6" fill="#fbbf24"><animate attributeName="cx" values="180;614" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite"/></circle>
+
+    <line x1="180" y1="392" x2="614" y2="392" stroke="#30363d" marker-end="url(#ar)"/>
+    <text x="196" y="387" class="msg">TransactionEvent(Ended)</text>
+    <text x="470" y="387" class="mnt">meterStop &#183; stoppedReason</text>
+  </g>
+
+  <!-- CSMS -> roaming -->
+  <g>
+    <line x1="620" y1="308" x2="1054" y2="308" stroke="#30363d" marker-end="url(#ar)"/>
+    <text x="636" y="303" class="msg">OCPI &#8594; eMSP token check</text>
+
+    <line x1="620" y1="392" x2="1054" y2="392" stroke="#30363d" marker-end="url(#ar)"/>
+    <text x="636" y="387" class="msg">OCPI CDR &#183; tariff &#183; settlement</text>
+    <circle cx="620" cy="392" r="2.6" fill="#7dd3fc"><animate attributeName="cx" values="620;1054" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- ============ smart charging ============ -->
+  <line x1="34" y1="416" x2="1206" y2="416" stroke="#1c2430"/>
+  <text x="34" y="436" class="h2">LOAD MANAGEMENT &#8212; FOUR CONNECTORS UNDER ONE SITE LIMIT</text>
+
+  <g>
+    <rect x="34" y="446" width="880" height="14" rx="3" fill="#0b0e14" stroke="#30363d"/>
+    <rect x="35" y="447" width="0" height="12" rx="2" fill="#fbbf24" opacity="0.35">
+      <animate attributeName="width" values="300;780;520;878;300" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    <line x1="878" y1="442" x2="878" y2="464" stroke="#f87171" stroke-width="1.5"/>
+    <text x="884" y="457" class="mnt" fill="#f87171">SITE LIMIT 63 A</text>
+
+    <g class="mnt">
+      <text x="34" y="478">CP-01 &#183; 22.0 kW</text>
+      <text x="150" y="478">CP-02 &#183; 11.0 kW</text>
+      <text x="266" y="478">CP-03 &#183; 7.4 kW throttled</text>
+      <text x="420" y="478">CP-04 &#183; queued, waiting headroom</text>
+    </g>
+    <text x="946" y="452" class="mnt">allocation recomputed on every meter sample &#8212;</text>
+    <text x="946" y="463" class="mnt">the fuse is a hard constraint, not a target</text>
+    <text x="946" y="478" class="mnt" fill="#6e7681">unmetered assumptions are how sites trip</text>
+  </g>
+</svg>
