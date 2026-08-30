@@ -1,6 +1,7 @@
 <div align="center">
 
 <img src="./assets/header.svg" width="100%" alt="Naoufal Chakkour">
+</div>
 
 # NAOUFAL CHAKKOUR
 
@@ -8,7 +9,6 @@
 
 `KALI LINUX` · `NETWORK SECURITY` · `C# / .NET` · `LINUX` · `IoT`
 
-</div>
 
 ---
 
