@@ -40,18 +40,13 @@
 
 </div>
 
-### NODE MATRIX
+## ◈ NODE MATRIX
 
-| NODE | DOMAIN | STACK |
-|:---:|:---|:---|
-| `A` | Network Security | TCP/IP · Nmap · Wireshark |
-| `B` | Linux | Kali Linux · Bash |
-| `C` | Web Security | HTTP · Web Technologies |
-| `D` | Development | C# · .NET · Git |
-| `E` | IoT Security | ONVIF · RTSP · CCTV |
-| `F` | Wireless | Wi-Fi · Network Analysis |
+<div align="center">
 
----
+<img src="./assets/matrix.svg" width="100%" alt="Naoufal Node Matrix">
+
+</div>
 
 ## ◈ CURRENTLY LEARNING
 
