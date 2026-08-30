@@ -1,0 +1,364 @@
+<svg width="1000" height="570" viewBox="0 0 1000 570" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<filter id="glow">
+<feGaussianBlur stdDeviation="3" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+<linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+<stop offset="50%" stop-color="#58a6ff" stop-opacity="1"/>
+<stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+</linearGradient>
+
+</defs>
+
+<!-- BACKGROUND -->
+
+<rect width="1000" height="570" fill="#0d1117"/>
+
+<!-- GRID -->
+
+<g stroke="#58a6ff" stroke-width="1" opacity="0.06">
+
+<path d="M0 70H1000"/>
+<path d="M0 140H1000"/>
+<path d="M0 210H1000"/>
+<path d="M0 280H1000"/>
+<path d="M0 350H1000"/>
+<path d="M0 420H1000"/>
+<path d="M0 490H1000"/>
+
+<path d="M100 0V570"/>
+<path d="M200 0V570"/>
+<path d="M300 0V570"/>
+<path d="M400 0V570"/>
+<path d="M500 0V570"/>
+<path d="M600 0V570"/>
+<path d="M700 0V570"/>
+<path d="M800 0V570"/>
+<path d="M900 0V570"/>
+
+</g>
+
+<!-- TITLE -->
+
+<text x="500" y="42"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="20"
+font-weight="bold">
+
+NODE MATRIX
+
+</text>
+
+<!-- TABLE HEADER -->
+
+<rect x="60" y="70"
+width="880"
+height="55"
+rx="6"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="110" y="105"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13"
+font-weight="bold">
+
+NODE
+
+</text>
+
+<text x="245" y="105"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13"
+font-weight="bold">
+
+DOMAIN
+
+</text>
+
+<text x="600" y="105"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13"
+font-weight="bold">
+
+STACK
+
+</text>
+
+<!-- ROW A -->
+
+<rect x="60" y="135"
+width="880"
+height="55"
+fill="#161b22"
+stroke="#21262d"/>
+
+<text x="110" y="170"
+fill="#58a6ff"
+font-family="monospace"
+font-size="15"
+font-weight="bold">
+
+A
+
+</text>
+
+<text x="180" y="170"
+fill="#ffffff"
+font-family="monospace"
+font-size="14">
+
+NETWORK SECURITY
+
+</text>
+
+<text x="560" y="170"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+TCP/IP • NMAP • WIRESHARK
+
+</text>
+
+<!-- ROW B -->
+
+<rect x="60" y="195"
+width="880"
+height="55"
+fill="#0d1117"
+stroke="#21262d"/>
+
+<text x="110" y="230"
+fill="#58a6ff"
+font-family="monospace"
+font-size="15"
+font-weight="bold">
+
+B
+
+</text>
+
+<text x="180" y="230"
+fill="#ffffff"
+font-family="monospace"
+font-size="14">
+
+LINUX
+
+</text>
+
+<text x="560" y="230"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+KALI LINUX • BASH • SYSTEMS
+
+</text>
+
+<!-- ROW C -->
+
+<rect x="60" y="255"
+width="880"
+height="55"
+fill="#161b22"
+stroke="#21262d"/>
+
+<text x="110" y="290"
+fill="#58a6ff"
+font-family="monospace"
+font-size="15"
+font-weight="bold">
+
+C
+
+</text>
+
+<text x="180" y="290"
+fill="#ffffff"
+font-family="monospace"
+font-size="14">
+
+WEB SECURITY
+
+</text>
+
+<text x="560" y="290"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+HTTP • WEB TECHNOLOGIES • ANALYSIS
+
+</text>
+
+<!-- ROW D -->
+
+<rect x="60" y="315"
+width="880"
+height="55"
+fill="#0d1117"
+stroke="#21262d"/>
+
+<text x="110" y="350"
+fill="#58a6ff"
+font-family="monospace"
+font-size="15"
+font-weight="bold">
+
+D
+
+</text>
+
+<text x="180" y="350"
+fill="#ffffff"
+font-family="monospace"
+font-size="14">
+
+DEVELOPMENT
+
+</text>
+
+<text x="560" y="350"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+C# • .NET • GIT • GITHUB
+
+</text>
+
+<!-- ROW E -->
+
+<rect x="60" y="375"
+width="880"
+height="55"
+fill="#161b22"
+stroke="#21262d"/>
+
+<text x="110" y="410"
+fill="#58a6ff"
+font-family="monospace"
+font-size="15"
+font-weight="bold">
+
+E
+
+</text>
+
+<text x="180" y="410"
+fill="#ffffff"
+font-family="monospace"
+font-size="14">
+
+IoT SECURITY
+
+</text>
+
+<text x="560" y="410"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+ONVIF • RTSP • CCTV • HTTP
+
+</text>
+
+<!-- ROW F -->
+
+<rect x="60" y="435"
+width="880"
+height="55"
+fill="#0d1117"
+stroke="#21262d"/>
+
+<text x="110" y="470"
+fill="#58a6ff"
+font-family="monospace"
+font-size="15"
+font-weight="bold">
+
+F
+
+</text>
+
+<text x="180" y="470"
+fill="#ffffff"
+font-family="monospace"
+font-size="14">
+
+WIRELESS
+
+</text>
+
+<text x="560" y="470"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+WI-FI • NETWORK ANALYSIS
+
+</text>
+
+<!-- SCANNER -->
+
+<rect x="60" y="135"
+width="880"
+height="2"
+fill="url(#scan)"
+opacity="0.8">
+
+<animate
+attributeName="y"
+values="135;490;135"
+dur="5s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- STATUS -->
+
+<circle cx="440" cy="525"
+r="6"
+fill="#58a6ff"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="6;11;6"
+dur="1.5s"
+repeatCount="indefinite"/>
+
+<animate
+attributeName="opacity"
+values="1;0.2;1"
+dur="1.5s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<text x="460" y="530"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+MATRIX STATUS: ONLINE
+
+</text>
+
+</svg>
