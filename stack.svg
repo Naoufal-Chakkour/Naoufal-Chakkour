@@ -1,0 +1,274 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 820" width="1240" height="820" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080b11"/><stop offset="50%" stop-color="#0c1219"/><stop offset="100%" stop-color="#070a0f"/>
+    </linearGradient>
+    <linearGradient id="aiFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a1547"/><stop offset="50%" stop-color="#2e1065"/><stop offset="100%" stop-color="#1a1547"/>
+    </linearGradient>
+    <linearGradient id="busGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0"/><stop offset="50%" stop-color="#60a5fa" stop-opacity="0.9"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="evSpine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0"/><stop offset="50%" stop-color="#5eead4" stop-opacity="0.75"/><stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="aiGlow"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.6"/><stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
+    <clipPath id="wRf"><rect x="44" y="352" width="116" height="26"/></clipPath>
+    <clipPath id="wCan"><rect x="336" y="352" width="116" height="26"/></clipPath>
+    <clipPath id="wAuto"><rect x="343" y="556" width="258" height="36"/></clipPath>
+  </defs>
+
+  <rect width="1240" height="820" fill="url(#bg)"/>
+  <g stroke="#141a24" stroke-width="0.5" opacity="0.55" fill="none">
+    <path d="M0 110h1240M0 220h1240M0 330h1240M0 440h1240M0 550h1240M0 660h1240M0 770h1240"/>
+    <path d="M120 0v820M280 0v820M440 0v820M600 0v820M760 0v820M920 0v820M1080 0v820"/>
+  </g>
+
+  <text x="32" y="54" fill="#e6edf3" font-size="28" font-weight="700" letter-spacing="8">BOUCHMAL</text>
+  <text x="32" y="80" fill="#7d8590" font-size="10.5" letter-spacing="2.2">INSTRUMENT PLATFORMS &#183; EV CHARGING &#183; INDUSTRIAL AUTOMATION &#183; LIFE-SCIENCE DATA &#183; CONNECTED PRODUCT</text>
+  <line x1="32" y1="94" x2="640" y2="94" stroke="#2d5a8e" stroke-width="1.5">
+    <animate attributeName="x2" values="32;640" dur="1.4s" fill="freeze"/>
+  </line>
+
+  <!-- ================= AI / expert layer ================= -->
+  <ellipse cx="620" cy="146" rx="330" ry="56" fill="url(#aiGlow)" filter="url(#blur)" opacity="0.45">
+    <animate attributeName="opacity" values="0.45;0.18;0.45" dur="4.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <rect x="322" y="116" width="596" height="60" rx="9" fill="url(#aiFill)" stroke="#a78bfa" stroke-width="1.6"/>
+  <text x="620" y="140" fill="#c4b5fd" font-size="12.5" font-weight="700" text-anchor="middle" letter-spacing="2.6">AI / LLM EXPERT LAYER</text>
+  <text x="620" y="160" fill="#8b8ba7" font-size="9" text-anchor="middle">discover capabilities &#183; plan diagnostics &#183; request captures &#183; correlate across domains &#183; evidence-linked reporting</text>
+  <g fill="#a78bfa">
+    <circle cx="352" cy="146" r="2.6"><animate attributeName="opacity" values="1;0.1;1" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="362" cy="146" r="2.6"><animate attributeName="opacity" values="1;0.1;1" dur="1.5s" begin="0.25s" repeatCount="indefinite"/></circle>
+    <circle cx="372" cy="146" r="2.6"><animate attributeName="opacity" values="1;0.1;1" dur="1.5s" begin="0.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- ================= capability contract ================= -->
+  <rect x="140" y="200" width="960" height="2.5" fill="url(#busGrad)"/>
+  <text x="620" y="224" fill="#60a5fa" font-size="9" text-anchor="middle" letter-spacing="3">UNIFORM CAPABILITY CONTRACT &#183; EVERY NODE AND EVERY DOMAIN SPEAKS IT</text>
+  <g font-size="8.5" fill="#79c0ff" text-anchor="middle" opacity="0.9">
+    <text x="380" y="242">/capability</text><text x="500" y="242">/health</text><text x="620" y="242">/mode</text><text x="740" y="242">/capture</text><text x="860" y="242">/evidence</text>
+  </g>
+  <circle r="2.6" fill="#60a5fa" opacity="0.9"><animateMotion path="M140 201 H1100" dur="3.4s" repeatCount="indefinite"/></circle>
+
+  <!-- ================= instrument nodes ================= -->
+  <text x="32" y="278" fill="#8b949e" font-size="8.5" letter-spacing="2.6">INSTRUMENT NODES &#183; EACH ONE COMPLETE ON ITS OWN &#183; ROSTER OPEN</text>
+
+  <rect x="32" y="288" width="140" height="106" rx="7" fill="#111927" stroke="#f59e0b" stroke-width="1.3"/>
+  <rect x="32" y="288" width="140" height="3" fill="#f59e0b"><animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/></rect>
+  <text x="44" y="310" fill="#f59e0b" font-size="10" font-weight="700">A &#183; RADIO</text>
+  <text x="44" y="326" fill="#8b949e" font-size="7.5">Wi-Fi &#183; BLE &#183; SDR</text>
+  <text x="44" y="338" fill="#6e7681" font-size="7">802.15.4 &#183; LoRaWAN</text>
+  <rect x="44" y="352" width="116" height="26" fill="#0a0f16" stroke="#1f2937" stroke-width="0.7"/>
+  <g clip-path="url(#wRf)" fill="#f59e0b" opacity="0.85">
+    <rect x="50" y="368" width="5" height="10"><animate attributeName="height" values="10;22;6;16;10" dur="1.7s" repeatCount="indefinite"/><animate attributeName="y" values="368;356;372;362;368" dur="1.7s" repeatCount="indefinite"/></rect>
+    <rect x="60" y="362" width="5" height="16"><animate attributeName="height" values="16;7;21;11;16" dur="1.9s" repeatCount="indefinite"/><animate attributeName="y" values="362;371;357;367;362" dur="1.9s" repeatCount="indefinite"/></rect>
+    <rect x="70" y="370" width="5" height="8"><animate attributeName="height" values="8;19;13;23;8" dur="1.5s" repeatCount="indefinite"/><animate attributeName="y" values="370;359;365;355;370" dur="1.5s" repeatCount="indefinite"/></rect>
+    <rect x="80" y="364" width="5" height="14"><animate attributeName="height" values="14;22;7;18;14" dur="2.1s" repeatCount="indefinite"/><animate attributeName="y" values="364;356;371;360;364" dur="2.1s" repeatCount="indefinite"/></rect>
+    <rect x="90" y="366" width="5" height="12"><animate attributeName="height" values="12;6;20;10;12" dur="1.6s" repeatCount="indefinite"/><animate attributeName="y" values="366;372;358;368;366" dur="1.6s" repeatCount="indefinite"/></rect>
+    <rect x="100" y="372" width="5" height="6"><animate attributeName="height" values="6;17;9;21;6" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="372;361;369;357;372" dur="1.8s" repeatCount="indefinite"/></rect>
+    <rect x="110" y="360" width="5" height="18"><animate attributeName="height" values="18;9;23;12;18" dur="2.3s" repeatCount="indefinite"/><animate attributeName="y" values="360;369;355;366;360" dur="2.3s" repeatCount="indefinite"/></rect>
+    <rect x="120" y="368" width="5" height="10"><animate attributeName="height" values="10;20;6;15;10" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y" values="368;358;372;363;368" dur="1.4s" repeatCount="indefinite"/></rect>
+    <rect x="130" y="364" width="5" height="14"><animate attributeName="height" values="14;8;19;11;14" dur="2s" repeatCount="indefinite"/><animate attributeName="y" values="364;370;359;367;364" dur="2s" repeatCount="indefinite"/></rect>
+    <rect x="140" y="370" width="5" height="8"><animate attributeName="height" values="8;18;12;20;8" dur="1.75s" repeatCount="indefinite"/><animate attributeName="y" values="370;360;366;358;370" dur="1.75s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <rect x="180" y="288" width="140" height="106" rx="7" fill="#111927" stroke="#34d399" stroke-width="1.3"/>
+  <rect x="180" y="288" width="140" height="3" fill="#34d399"><animate attributeName="opacity" values="1;0.25;1" dur="2.9s" repeatCount="indefinite"/></rect>
+  <text x="192" y="310" fill="#34d399" font-size="10" font-weight="700">B &#183; IDENTITY</text>
+  <text x="192" y="326" fill="#8b949e" font-size="7.5">NFC &#183; RFID &#183; POS</text>
+  <text x="192" y="338" fill="#6e7681" font-size="7">ISO 7816 &#183; secure boot</text>
+  <g fill="none" stroke="#34d399" stroke-width="1.1" opacity="0.8">
+    <circle cx="214" cy="366" r="4"/>
+    <circle cx="214" cy="366" r="9"><animate attributeName="r" values="6;16" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2s" repeatCount="indefinite"/></circle>
+    <rect x="250" y="357" width="14" height="11" rx="2"/><path d="M253 357 v-3 a4 4 0 0 1 8 0 v3"/>
+  </g>
+  <text x="272" y="380" fill="#245c43" font-size="6.5">NO SECRET STORED</text>
+
+  <rect x="328" y="288" width="140" height="106" rx="7" fill="#111927" stroke="#7dd3fc" stroke-width="1.3"/>
+  <rect x="328" y="288" width="140" height="3" fill="#7dd3fc"><animate attributeName="opacity" values="1;0.25;1" dur="2.1s" repeatCount="indefinite"/></rect>
+  <text x="340" y="310" fill="#7dd3fc" font-size="10" font-weight="700">C &#183; VEHICLE</text>
+  <text x="340" y="326" fill="#8b949e" font-size="7.5">CAN-FD &#215;8&#8211;16 &#183; LIN</text>
+  <text x="340" y="338" fill="#6e7681" font-size="7">Auto-Eth &#183; UDS &#183; PTP</text>
+  <rect x="336" y="352" width="116" height="26" fill="#0a0f16" stroke="#1f2937" stroke-width="0.7"/>
+  <g clip-path="url(#wCan)">
+    <path d="M336 372 L346 372 L346 358 L356 358 L356 372 L366 372 L366 358 L372 358 L372 372 L384 372 L384 358 L392 358 L392 372 L404 372 L404 358 L412 358 L412 372 L424 372 L424 358 L432 358 L432 372 L444 372 L444 358 L452 358 L452 372 L464 372"
+          fill="none" stroke="#7dd3fc" stroke-width="1.2">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-56 0" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <rect x="476" y="288" width="140" height="106" rx="7" fill="#0d1420" stroke="#38bdf8" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <text x="488" y="310" fill="#38bdf8" font-size="10" font-weight="700">D &#183; PLANE</text>
+  <text x="488" y="326" fill="#8b949e" font-size="7.5">registry &#183; time authority</text>
+  <text x="488" y="338" fill="#6e7681" font-size="7">authz &#183; segmentation</text>
+  <text x="488" y="362" fill="#38bdf8" font-size="8" font-weight="700">OPTIONAL</text>
+  <text x="488" y="376" fill="#6e7681" font-size="7">remove it, nothing stops</text>
+
+  <rect x="624" y="288" width="140" height="106" rx="7" fill="#111927" stroke="#f472b6" stroke-width="1.3"/>
+  <rect x="624" y="288" width="140" height="3" fill="#f472b6"><animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/></rect>
+  <text x="636" y="310" fill="#f472b6" font-size="10" font-weight="700">E &#183; VISION</text>
+  <text x="636" y="326" fill="#8b949e" font-size="7.5">MIPI &#183; GMSL &#183; PoE</text>
+  <text x="636" y="338" fill="#6e7681" font-size="7">ONVIF &#183; RTSP &#183; edge</text>
+  <g fill="none" stroke="#f472b6" stroke-width="1" opacity="0.75">
+    <rect x="636" y="352" width="40" height="26" rx="2"/>
+    <path d="M684 358 L698 352 L698 378 L684 372 Z"/>
+  </g>
+  <rect x="637" y="353" width="38" height="2" fill="#f472b6" opacity="0.7"><animate attributeName="y" values="353;376;353" dur="2.4s" repeatCount="indefinite"/></rect>
+
+  <rect x="772" y="288" width="140" height="106" rx="7" fill="#111927" stroke="#a78bfa" stroke-width="1.3"/>
+  <rect x="772" y="288" width="140" height="3" fill="#a78bfa"><animate attributeName="opacity" values="1;0.25;1" dur="1.9s" repeatCount="indefinite"/></rect>
+  <text x="784" y="310" fill="#a78bfa" font-size="10" font-weight="700">F &#183; INDUSTRIAL</text>
+  <text x="784" y="326" fill="#8b949e" font-size="7.5">Modbus &#183; OPC-UA</text>
+  <text x="784" y="338" fill="#6e7681" font-size="7">PROFINET &#183; MQTT</text>
+  <g stroke="#a78bfa" stroke-width="1.1" fill="none" opacity="0.75">
+    <path d="M784 372 L796 372 L796 358 L808 358 L808 372 L820 372 L820 358 L832 358 L832 372 L844 372"/>
+  </g>
+  <circle cx="784" cy="372" r="2.4" fill="#a78bfa">
+    <animateMotion dur="2.6s" repeatCount="indefinite" path="M0 0 L12 0 L12 -14 L24 -14 L24 0 L36 0 L36 -14 L48 -14 L48 0 L60 0"/>
+  </circle>
+
+  <rect x="920" y="288" width="140" height="106" rx="7" fill="#111927" stroke="#5eead4" stroke-width="1.3"/>
+  <rect x="920" y="288" width="140" height="3" fill="#5eead4"><animate attributeName="opacity" values="1;0.25;1" dur="2.7s" repeatCount="indefinite"/></rect>
+  <text x="932" y="310" fill="#5eead4" font-size="10" font-weight="700">G &#183; COHERENT RF</text>
+  <text x="932" y="326" fill="#8b949e" font-size="7.5">array &#183; direction finding</text>
+  <text x="932" y="338" fill="#6e7681" font-size="7">shared clock &amp; phase</text>
+  <g fill="none" stroke="#5eead4" stroke-width="1" opacity="0.75">
+    <circle cx="954" cy="366" r="14"/><circle cx="954" cy="366" r="7" opacity="0.5"/>
+    <path d="M954 366 L968 358"><animateTransform attributeName="transform" type="rotate" from="0 954 366" to="360 954 366" dur="5s" repeatCount="indefinite"/></path>
+  </g>
+  <circle cx="954" cy="366" r="1.8" fill="#5eead4"/>
+  <text x="976" y="370" fill="#1f4f47" font-size="6.5">EU 2021/821</text>
+
+  <rect x="1068" y="288" width="140" height="106" rx="7" fill="#111927" stroke="#e879f9" stroke-width="1.3"/>
+  <rect x="1068" y="288" width="140" height="3" fill="#e879f9"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></rect>
+  <text x="1080" y="310" fill="#e879f9" font-size="10" font-weight="700">H &#183; MIXED-SIGNAL</text>
+  <text x="1080" y="326" fill="#8b949e" font-size="7.5">24-bit sim. ADC</text>
+  <text x="1080" y="338" fill="#6e7681" font-size="7">FPGA timing &#183; side-ch.</text>
+  <g stroke="#e879f9" stroke-width="1.1" fill="none" opacity="0.75">
+    <path d="M1080 372 h20 l6 -16 l5 8 l4 -5 l5 4 h58"/>
+  </g>
+  <text x="1080" y="386" fill="#5c2f66" font-size="6.5">t_rise 41 ns &#183; jitter 2.8 ns</text>
+
+  <!-- ================= delivery domains ================= -->
+  <text x="32" y="424" fill="#8b949e" font-size="8.5" letter-spacing="2.6">DELIVERED DOMAINS &#183; SAME CONTRACT, SAME TIMELINE, DIFFERENT BUYER</text>
+
+  <!-- energy -->
+  <rect x="31" y="434" width="284" height="196" rx="8" fill="#100c04" stroke="#f59e0b" stroke-width="1.4"/>
+  <text x="45" y="458" fill="#fbbf24" font-size="11" font-weight="700">ENERGY &amp; EV CHARGING</text>
+  <text x="45" y="476" fill="#8b949e" font-size="8">OCPP 1.6J / 2.0.1 &#183; OCPI &#183; ISO 15118</text>
+  <text x="45" y="490" fill="#6e7681" font-size="7.5">IEC 61851 pilot &#183; MID metering &#183; CSMS</text>
+  <rect x="45" y="504" width="14" height="18" rx="2" fill="none" stroke="#fbbf24" stroke-width="1.2"/>
+  <rect x="48" y="518" width="8" height="0" fill="#fbbf24"><animate attributeName="height" values="0;14;14;0" dur="3s" repeatCount="indefinite"/><animate attributeName="y" values="518;504;504;518" dur="3s" repeatCount="indefinite"/></rect>
+  <path d="M66 513 H120" stroke="#fbbf24" stroke-width="1" opacity="0.5" fill="none"/>
+  <circle cx="66" cy="513" r="2.2" fill="#fbbf24"><animate attributeName="cx" values="66;120" dur="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/></circle>
+  <text x="128" y="512" fill="#e6c07b" font-size="12" font-weight="700">21.9<tspan font-size="7" fill="#a16207"> kW</tspan></text>
+  <text x="128" y="524" fill="#5c4a24" font-size="7">limited by charging profile</text>
+  <rect x="45" y="538" width="256" height="10" rx="2" fill="#0b0e14" stroke="#3f3418"/>
+  <rect x="46" y="539" width="180" height="8" rx="2" fill="#fbbf24" opacity="0.4"><animate attributeName="width" values="120;250;180;254" dur="9s" repeatCount="indefinite"/></rect>
+  <line x1="301" y1="534" x2="301" y2="552" stroke="#f87171" stroke-width="1.4"/>
+  <text x="45" y="566" fill="#5c4a24" font-size="7">site limit is a hard constraint, not a target</text>
+  <text x="45" y="588" fill="#8b949e" font-size="7.5">the backend link will drop &#8212; what the charge point</text>
+  <text x="45" y="600" fill="#8b949e" font-size="7.5">does in that window separates a product from a demo</text>
+  <text x="45" y="618" fill="#3f3418" font-size="7">signed meter values where regulation requires them</text>
+
+  <!-- automation -->
+  <rect x="329" y="434" width="284" height="196" rx="8" fill="#0d0a18" stroke="#a78bfa" stroke-width="1.4"/>
+  <text x="343" y="458" fill="#c4b5fd" font-size="11" font-weight="700">AUTOMATION &amp; PIPELINES</text>
+  <text x="343" y="476" fill="#8b949e" font-size="8">ERP &#183; documents &#183; machines &#183; APIs</text>
+  <text x="343" y="490" fill="#6e7681" font-size="7.5">ingest &#183; validate &#183; extract &#183; deliver &#183; prove</text>
+  <text x="343" y="514" fill="#c4b5fd" font-size="12" font-weight="700">94.2<tspan font-size="7" fill="#6d28d9"> % auto-accept</tspan></text>
+  <text x="343" y="527" fill="#4c3a7a" font-size="7">the other 5.8 % is routed to a person on purpose</text>
+  <text x="343" y="546" fill="#f87171" font-size="7.5">HTTP 200 with an error body still raises</text>
+  <g clip-path="url(#wAuto)">
+    <line x1="345" y1="572" x2="601" y2="572" stroke="#2c2350" stroke-width="1"/>
+    <g fill="#2c2350">
+      <circle cx="357" cy="572" r="3"/><circle cx="418" cy="572" r="3"/><circle cx="479" cy="572" r="3"/><circle cx="540" cy="572" r="3"/><circle cx="595" cy="572" r="3"/>
+    </g>
+    <circle cy="572" r="2.6" fill="#a78bfa"><animate attributeName="cx" values="345;601" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cy="572" r="2.6" fill="#5eead4"><animate attributeName="cx" values="345;601" dur="4s" begin="1.3s" repeatCount="indefinite"/></circle>
+    <circle cy="572" r="2.6" fill="#fbbf24"><animate attributeName="cx" values="345;601" dur="4s" begin="2.6s" repeatCount="indefinite"/></circle>
+  </g>
+  <g fill="#6e7681" font-size="6.5" text-anchor="middle">
+    <text x="357" y="588">ingest</text><text x="418" y="588">validate</text><text x="479" y="588">extract</text><text x="540" y="588">structure</text><text x="595" y="588">deliver</text>
+  </g>
+  <text x="343" y="608" fill="#8b949e" font-size="7.5">same input, same output, byte-equal, six months later</text>
+  <text x="343" y="622" fill="#372c5c" font-size="7">a dropped record raises &#8212; it never just logs</text>
+
+  <!-- life science -->
+  <rect x="627" y="434" width="284" height="196" rx="8" fill="#04120c" stroke="#34d399" stroke-width="1.4"/>
+  <text x="641" y="458" fill="#6ee7b7" font-size="11" font-weight="700">LIFE-SCIENCE &amp; METABOLIC</text>
+  <text x="641" y="476" fill="#8b949e" font-size="8">multi-omics &#183; pathway &amp; flux &#183; targets</text>
+  <text x="641" y="490" fill="#6e7681" font-size="7.5">versioned data &#183; pinned env &#183; pre-specified</text>
+  <g fill="none" stroke="#1f4a3a" stroke-width="1.2">
+    <path id="mp1" d="M656 530 L705 530"/><path id="mp2" d="M735 530 L785 530"/><path id="mp3" d="M815 530 L858 530"/>
+  </g>
+  <circle r="2.6" fill="#6ee7b7"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#mp1"/></animateMotion></circle>
+  <circle r="2.6" fill="#6ee7b7"><animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite"><mpath href="#mp2"/></animateMotion></circle>
+  <circle r="2.6" fill="#6ee7b7"><animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite"><mpath href="#mp3"/></animateMotion></circle>
+  <g font-size="6.5" text-anchor="middle">
+    <circle cx="641" cy="530" r="13" fill="#061a13" stroke="#34d399" stroke-width="1.2"/><text x="641" y="533" fill="#6ee7b7">subst.</text>
+    <circle cx="720" cy="530" r="13" fill="#061a13" stroke="#34d399" stroke-width="1.2"/><text x="720" y="533" fill="#6ee7b7">interm.</text>
+    <circle cx="800" cy="530" r="13" fill="#061a13" stroke="#34d399" stroke-width="1.2"/><text x="800" y="533" fill="#6ee7b7">acetyl</text>
+    <circle cx="875" cy="530" r="15" fill="#1a0f22" stroke="#f472b6" stroke-width="1.6"/>
+    <circle cx="875" cy="530" r="15" fill="none" stroke="#f472b6" stroke-width="1" opacity="0.6"><animate attributeName="r" values="15;26" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2.4s" repeatCount="indefinite"/></circle>
+    <text x="875" y="533" fill="#f9a8d4" font-size="6.5">TARGET</text>
+  </g>
+  <text x="641" y="566" fill="#245c43" font-size="7">a node is a target only if inhibiting it moves the phenotype</text>
+  <text x="641" y="590" fill="#8b949e" font-size="7.5">15 claims tracked &#183; 4 pass the gate &#183; 11 open, with</text>
+  <text x="641" y="602" fill="#8b949e" font-size="7.5">the reason each one is open written down</text>
+  <text x="641" y="622" fill="#1c4433" font-size="7">negative results stored beside positive ones</text>
+
+  <!-- mobile -->
+  <rect x="925" y="434" width="284" height="196" rx="8" fill="#04101a" stroke="#7dd3fc" stroke-width="1.4"/>
+  <text x="939" y="458" fill="#7dd3fc" font-size="11" font-weight="700">MOBILE &amp; CONNECTED PRODUCT</text>
+  <text x="939" y="476" fill="#8b949e" font-size="8">Flutter &#183; React Native &#183; Kotlin &#183; Swift</text>
+  <text x="939" y="490" fill="#6e7681" font-size="7.5">BLE provisioning &#183; OTA with tested rollback</text>
+  <g fill="none" stroke="#7dd3fc" stroke-width="1.2" opacity="0.85">
+    <rect x="939" y="504" width="34" height="58" rx="5"/>
+    <path d="M950 510 h12" stroke-width="1"/>
+    <circle cx="1000" cy="533" r="5"/>
+    <circle cx="1000" cy="533" r="11" opacity="0.6"><animate attributeName="r" values="7;20" dur="2.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="2.1s" repeatCount="indefinite"/></circle>
+  </g>
+  <rect x="945" y="522" width="22" height="3" rx="1" fill="#7dd3fc" opacity="0.5"/>
+  <rect x="945" y="530" width="16" height="3" rx="1" fill="#7dd3fc" opacity="0.35"/>
+  <rect x="945" y="538" width="20" height="3" rx="1" fill="#7dd3fc" opacity="0.45"/>
+  <text x="1024" y="514" fill="#8b949e" font-size="7.5">slot A &#8594; slot B</text>
+  <rect x="1024" y="520" width="170" height="8" rx="2" fill="#0b0e14" stroke="#123a52"/>
+  <rect x="1025" y="521" width="60" height="6" rx="2" fill="#7dd3fc" opacity="0.6"><animate attributeName="width" values="6;168;168;6" dur="5s" repeatCount="indefinite"/></rect>
+  <text x="1024" y="544" fill="#34d399" font-size="7.5">rollback exercised on real hardware</text>
+  <text x="939" y="582" fill="#8b949e" font-size="7.5">offline for a week is not healthy and not failed &#8212;</text>
+  <text x="939" y="594" fill="#8b949e" font-size="7.5">it is unknown, and the dashboard has to say so</text>
+  <text x="939" y="614" fill="#173c52" font-size="7">provisioning fails in a room with forty devices,</text>
+  <text x="939" y="624" fill="#173c52" font-size="7">never on the developer desk</text>
+
+  <!-- ================= evidence spine ================= -->
+  <rect x="140" y="660" width="960" height="2.5" fill="url(#evSpine)"/>
+  <text x="620" y="684" fill="#5eead4" font-size="9" text-anchor="middle" letter-spacing="3">ONE TIMESTAMP DOMAIN &#183; ONE EVIDENCE MODEL &#183; SHA-256 OVER RAW BYTES</text>
+
+  <rect x="180" y="700" width="196" height="52" rx="7" fill="#0b1a17" stroke="#1f4a44"/>
+  <text x="278" y="722" fill="#5eead4" font-size="9.5" font-weight="700" text-anchor="middle">CAPTURE</text>
+  <text x="278" y="738" fill="#6e7681" font-size="7" text-anchor="middle">ts &#183; source &#183; identity &#183; hash</text>
+
+  <rect x="412" y="700" width="196" height="52" rx="7" fill="#0b1a17" stroke="#1f4a44"/>
+  <text x="510" y="722" fill="#5eead4" font-size="9.5" font-weight="700" text-anchor="middle">SOURCE</text>
+  <text x="510" y="738" fill="#6e7681" font-size="7" text-anchor="middle">provenance &#183; uncertainty</text>
+
+  <rect x="644" y="700" width="196" height="52" rx="7" fill="#0b1a17" stroke="#1f4a44"/>
+  <text x="742" y="722" fill="#5eead4" font-size="9.5" font-weight="700" text-anchor="middle">EVIDENCE LINK</text>
+  <text x="742" y="738" fill="#6e7681" font-size="7" text-anchor="middle">immutable chain</text>
+
+  <rect x="876" y="700" width="196" height="52" rx="7" fill="#0d1f1c" stroke="#5eead4"/>
+  <text x="974" y="722" fill="#5eead4" font-size="9.5" font-weight="700" text-anchor="middle">CORRELATED TIMELINE</text>
+  <text x="974" y="738" fill="#6e7681" font-size="7" text-anchor="middle">RF &#183; bus &#183; energy &#183; vision &#183; records</text>
+
+  <g stroke="#1f4a44" stroke-width="1" fill="none">
+    <path d="M376 726 H412"/><path d="M608 726 H644"/><path d="M840 726 H876"/>
+  </g>
+  <circle cy="726" r="2.4" fill="#5eead4"><animate attributeName="cx" values="180;1072" dur="5.5s" repeatCount="indefinite"/></circle>
+  <circle cy="726" r="2.4" fill="#5eead4"><animate attributeName="cx" values="180;1072" dur="5.5s" begin="2.75s" repeatCount="indefinite"/></circle>
+
+  <text x="32" y="784" fill="#484f58" font-size="8" letter-spacing="1.2">RUST &#183; C / C++ &#183; PYTHON &#183; TYPESCRIPT &#183; VHDL / VERILOG &#183; KOTLIN &#183; SWIFT &#183; DART &#8212; CHOSEN PER LAYER, NOT PER PREFERENCE</text>
+  <text x="32" y="802" fill="#3d444d" font-size="7.5" letter-spacing="1.2">RECEIVE-ONLY BY DEFAULT ON ANY LIVE BUS &#183; PER-CHANNEL TX GATING &#183; MEASURED BEFORE CLAIMED &#183; EVERY RESULT RE-DERIVABLE FROM STORED BYTES</text>
+</svg>
