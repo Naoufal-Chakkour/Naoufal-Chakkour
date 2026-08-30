@@ -1,11 +1,5 @@
 <div align="center">
-
-# NAOUFAL CHAKKOUR
-
-### CYBERSECURITY • NETWORKING • SOFTWARE DEVELOPMENT
-
-`KALI LINUX` · `NETWORK SECURITY` · `C#` · `LINUX` · `IoT`
-
+  <img src="./assets/header.svg" width="100%" alt="Naoufal Chakkour">
 </div>
 
 ---
