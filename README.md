@@ -1,16 +1,25 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**Naoufal-Chakkour/Naoufal-Chakkour** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# NAOUFAL CHAKKOUR
 
-Here are some ideas to get you started:
+### CYBERSECURITY • NETWORKING • SOFTWARE DEVELOPMENT
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+`KALI LINUX` · `NETWORK SECURITY` · `C#` · `LINUX` · `IoT`
+
+</div>
+
+---
+
+## SYSTEM PROFILE
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                         NAOUFAL                              │
+│                                                              │
+│  Cybersecurity        ████████████████░░░░                  │
+│  Networking           ███████████████░░░░░                  │
+│  Linux / Kali         ████████████████░░░░                  │
+│  C# / .NET            ████████████░░░░░░░                  │
+│  IoT / ONVIF          █████████████░░░░░░                  │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
