@@ -92,7 +92,7 @@
 <table>
 <tr>
 
-<td width="35%" align="center">
+<td width="45%" align="center">
 
 <img
 src="./assets/avatar-ascii.svg"
@@ -101,7 +101,7 @@ alt="Naoufal ASCII Avatar">
 
 </td>
 
-<td width="65%" align="center">
+<td width="55%" align="center">
 
 <picture>
   <source
