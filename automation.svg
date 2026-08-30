@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 820" width="1240" height="820" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080b11"/><stop offset="50%" stop-color="#0c1219"/><stop offset="100%" stop-color="#070a0f"/>
+    </linearGradient>
+    <linearGradient id="coreFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#160f2e"/><stop offset="50%" stop-color="#241348"/><stop offset="100%" stop-color="#160f2e"/>
+    </linearGradient>
+    <linearGradient id="ingGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0"/><stop offset="50%" stop-color="#c4b5fd" stop-opacity="0.9"/><stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="coreGlow"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.55"/><stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+    <filter id="ablur"><feGaussianBlur stdDeviation="7"/></filter>
+    <clipPath id="qClip"><rect x="726" y="288" width="290" height="46"/></clipPath>
+    <clipPath id="spkClip"><rect x="62" y="754" width="150" height="34"/></clipPath>
+    <marker id="aa" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#6e7681"/></marker>
+    <marker id="ab" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#fbbf24"/></marker>
+    <marker id="ac" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#f87171"/></marker>
+  </defs>
+
+  <rect width="1240" height="820" fill="url(#abg)"/>
+  <g stroke="#141a24" stroke-width="0.5" opacity="0.55">
+    <path d="M0 110h1240M0 220h1240M0 330h1240M0 440h1240M0 550h1240M0 660h1240M0 770h1240"/>
+    <path d="M120 0v820M280 0v820M440 0v820M600 0v820M760 0v820M920 0v820M1080 0v820"/>
+  </g>
+
+  <text x="48" y="54" fill="#e6edf3" font-size="28" font-weight="700" letter-spacing="8">AUTOMATION</text>
+  <text x="48" y="80" fill="#7d8590" font-size="11.5" letter-spacing="2.4">BUSINESS-PROCESS &amp; PRODUCTION WORKFLOWS &#8212; INGEST &#183; EXTRACT &#183; VALIDATE &#183; DELIVER &#183; PROVE</text>
+  <line x1="48" y1="96" x2="560" y2="96" stroke="#7c3aed" stroke-width="1.5">
+    <animate attributeName="x2" values="48;560" dur="1.4s" fill="freeze"/>
+  </line>
+
+  <!-- ════════ SOURCE SYSTEMS ════════ -->
+  <text x="48" y="128" fill="#8b949e" font-size="9" letter-spacing="3">SOURCE SYSTEMS &#183; NONE OF THEM RELIABLE, ALL OF THEM AUTHORITATIVE</text>
+
+  <!-- ERP -->
+  <rect x="48" y="140" width="152" height="96" rx="8" fill="#111927" stroke="#7dd3fc" stroke-width="1.3"/>
+  <rect x="48" y="140" width="152" height="3" fill="#7dd3fc"><animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/></rect>
+  <text x="62" y="164" fill="#7dd3fc" font-size="11" font-weight="700">ERP / MES</text>
+  <text x="62" y="180" fill="#8b949e" font-size="8">SAP &#183; Odoo &#183; Dynamics</text>
+  <text x="62" y="194" fill="#6e7681" font-size="7.5">REST &#183; OData &#183; SQL views</text>
+  <text x="62" y="208" fill="#6e7681" font-size="7.5">paginated, rate-limited</text>
+  <text x="62" y="226" fill="#475569" font-size="7">schema changes without notice</text>
+
+  <!-- Documents -->
+  <rect x="246" y="140" width="152" height="96" rx="8" fill="#111927" stroke="#fbbf24" stroke-width="1.3"/>
+  <rect x="246" y="140" width="152" height="3" fill="#fbbf24"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></rect>
+  <text x="260" y="164" fill="#fbbf24" font-size="11" font-weight="700">DOCUMENTS</text>
+  <text x="260" y="180" fill="#8b949e" font-size="8">PDF &#183; scan &#183; XLSX &#183; EDI</text>
+  <text x="260" y="194" fill="#6e7681" font-size="7.5">native text or pixels only</text>
+  <text x="260" y="208" fill="#6e7681" font-size="7.5">layout differs per sender</text>
+  <text x="260" y="226" fill="#475569" font-size="7">the same invoice, forty formats</text>
+  <g fill="#fbbf24" opacity="0.6">
+    <rect x="366" y="196" width="18" height="2"><animate attributeName="width" values="4;18;9;18" dur="2s" repeatCount="indefinite"/></rect>
+    <rect x="366" y="202" width="12" height="2"><animate attributeName="width" values="18;7;18;12" dur="2.4s" repeatCount="indefinite"/></rect>
+    <rect x="366" y="208" width="16" height="2"><animate attributeName="width" values="9;18;5;16" dur="1.8s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- Machines -->
+  <rect x="444" y="140" width="152" height="96" rx="8" fill="#111927" stroke="#a78bfa" stroke-width="1.3"/>
+  <rect x="444" y="140" width="152" height="3" fill="#a78bfa"><animate attributeName="opacity" values="1;0.25;1" dur="1.9s" repeatCount="indefinite"/></rect>
+  <text x="458" y="164" fill="#a78bfa" font-size="11" font-weight="700">MACHINES / OT</text>
+  <text x="458" y="180" fill="#8b949e" font-size="8">Modbus &#183; OPC-UA &#183; MQTT</text>
+  <text x="458" y="194" fill="#6e7681" font-size="7.5">PLC registers &#183; Sparkplug B</text>
+  <text x="458" y="208" fill="#6e7681" font-size="7.5">high rate, low semantics</text>
+  <text x="458" y="226" fill="#475569" font-size="7">a register number is not a meaning</text>
+  <g stroke="#a78bfa" stroke-width="1" fill="none" opacity="0.65">
+    <path d="M556 210 L562 210 L562 200 L570 200 L570 210 L578 210 L578 200 L584 200 L584 210"/>
+  </g>
+
+  <!-- APIs -->
+  <rect x="642" y="140" width="152" height="96" rx="8" fill="#111927" stroke="#5eead4" stroke-width="1.3"/>
+  <rect x="642" y="140" width="152" height="3" fill="#5eead4"><animate attributeName="opacity" values="1;0.25;1" dur="2.9s" repeatCount="indefinite"/></rect>
+  <text x="656" y="164" fill="#5eead4" font-size="11" font-weight="700">THIRD-PARTY APIS</text>
+  <text x="656" y="180" fill="#8b949e" font-size="8">webhooks &#183; polling &#183; SFTP</text>
+  <text x="656" y="194" fill="#6e7681" font-size="7.5">retries deliver duplicates</text>
+  <text x="656" y="208" fill="#6e7681" font-size="7.5">HTTP 200 with an error body</text>
+  <text x="656" y="226" fill="#475569" font-size="7">status code is not a contract</text>
+
+  <!-- Mail -->
+  <rect x="840" y="140" width="152" height="96" rx="8" fill="#111927" stroke="#f472b6" stroke-width="1.3"/>
+  <rect x="840" y="140" width="152" height="3" fill="#f472b6"><animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/></rect>
+  <text x="854" y="164" fill="#f472b6" font-size="11" font-weight="700">MAILBOX / INBOX</text>
+  <text x="854" y="180" fill="#8b949e" font-size="8">IMAP &#183; attachments &#183; threads</text>
+  <text x="854" y="194" fill="#6e7681" font-size="7.5">forwarded chains, replies inline</text>
+  <text x="854" y="208" fill="#6e7681" font-size="7.5">the real approval lives here</text>
+  <text x="854" y="226" fill="#475569" font-size="7">unstructured by construction</text>
+
+  <!-- Humans -->
+  <rect x="1038" y="140" width="154" height="96" rx="8" fill="#111927" stroke="#94a3b8" stroke-width="1.3"/>
+  <rect x="1038" y="140" width="154" height="3" fill="#94a3b8"><animate attributeName="opacity" values="1;0.25;1" dur="3.2s" repeatCount="indefinite"/></rect>
+  <text x="1052" y="164" fill="#cbd5e1" font-size="11" font-weight="700">PEOPLE</text>
+  <text x="1052" y="180" fill="#8b949e" font-size="8">spreadsheets &#183; forms &#183; notes</text>
+  <text x="1052" y="194" fill="#6e7681" font-size="7.5">the undocumented rule set</text>
+  <text x="1052" y="208" fill="#6e7681" font-size="7.5">exceptions nobody wrote down</text>
+  <text x="1052" y="226" fill="#475569" font-size="7">interview before you automate</text>
+
+  <!-- feed lines down into ingest -->
+  <g fill="none" stroke="#243044" stroke-width="1">
+    <path d="M124 236 L124 268"/><path d="M322 236 L322 268"/><path d="M520 236 L520 268"/>
+    <path d="M718 236 L718 268"/><path d="M916 236 L916 268"/><path d="M1115 236 L1115 268"/>
+  </g>
+  <g>
+    <circle r="2.6" fill="#7dd3fc"><animate attributeName="cy" values="236;268" dur="1.6s" repeatCount="indefinite"/><animate attributeName="cx" values="124;124" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.6s" repeatCount="indefinite"/></circle>
+    <circle r="2.6" fill="#fbbf24"><animate attributeName="cy" values="236;268" dur="2.1s" repeatCount="indefinite"/><animate attributeName="cx" values="322;322" dur="2.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="2.1s" repeatCount="indefinite"/></circle>
+    <circle r="2.6" fill="#a78bfa"><animate attributeName="cy" values="236;268" dur="1.3s" repeatCount="indefinite"/><animate attributeName="cx" values="520;520" dur="1.3s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.3s" repeatCount="indefinite"/></circle>
+    <circle r="2.6" fill="#5eead4"><animate attributeName="cy" values="236;268" dur="1.9s" repeatCount="indefinite"/><animate attributeName="cx" values="718;718" dur="1.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle r="2.6" fill="#f472b6"><animate attributeName="cy" values="236;268" dur="2.5s" repeatCount="indefinite"/><animate attributeName="cx" values="916;916" dur="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle r="2.6" fill="#cbd5e1"><animate attributeName="cy" values="236;268" dur="2.8s" repeatCount="indefinite"/><animate attributeName="cx" values="1115;1115" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="2.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- ════════ INGEST BUS + QUEUE ════════ -->
+  <rect x="140" y="266" width="960" height="2.5" fill="url(#ingGrad)"/>
+  <circle r="2.6" fill="#c4b5fd" opacity="0.9"><animateMotion path="M140 267 H1100" dur="3.2s" repeatCount="indefinite"/></circle>
+
+  <rect x="48" y="280" width="640" height="62" rx="8" fill="#0f1420" stroke="#30363d" stroke-width="1.2"/>
+  <text x="64" y="302" fill="#c4b5fd" font-size="10.5" font-weight="700" letter-spacing="1.6">INGEST &#183; AT-LEAST-ONCE, DEDUPED ON CONTENT HASH</text>
+  <text x="64" y="320" fill="#8b949e" font-size="8">every payload stored raw before anything reads it &#183; SHA-256 assigned at the door</text>
+  <text x="64" y="334" fill="#6e7681" font-size="7.5">arrival time and event time are recorded separately &#8212; they are never the same thing</text>
+
+  <rect x="704" y="280" width="332" height="62" rx="8" fill="#0f1420" stroke="#30363d" stroke-width="1.2"/>
+  <text x="718" y="298" fill="#8b949e" font-size="8" letter-spacing="1.4">QUEUE DEPTH</text>
+  <g clip-path="url(#qClip)">
+    <g fill="#a78bfa" opacity="0.55">
+      <rect x="730" y="318" width="9" height="16"><animate attributeName="height" values="16;30;8;22;16" dur="2.3s" repeatCount="indefinite"/><animate attributeName="y" values="318;304;326;312;318" dur="2.3s" repeatCount="indefinite"/></rect>
+      <rect x="742" y="310" width="9" height="24"><animate attributeName="height" values="24;10;32;14;24" dur="2.7s" repeatCount="indefinite"/><animate attributeName="y" values="310;324;302;320;310" dur="2.7s" repeatCount="indefinite"/></rect>
+      <rect x="754" y="322" width="9" height="12"><animate attributeName="height" values="12;28;18;34;12" dur="2.1s" repeatCount="indefinite"/><animate attributeName="y" values="322;306;316;300;322" dur="2.1s" repeatCount="indefinite"/></rect>
+      <rect x="766" y="314" width="9" height="20"><animate attributeName="height" values="20;33;9;26;20" dur="3.1s" repeatCount="indefinite"/><animate attributeName="y" values="314;301;325;308;314" dur="3.1s" repeatCount="indefinite"/></rect>
+      <rect x="778" y="326" width="9" height="8"><animate attributeName="height" values="8;22;30;12;8" dur="2.5s" repeatCount="indefinite"/><animate attributeName="y" values="326;312;304;322;326" dur="2.5s" repeatCount="indefinite"/></rect>
+      <rect x="790" y="308" width="9" height="26"><animate attributeName="height" values="26;12;20;32;26" dur="1.9s" repeatCount="indefinite"/><animate attributeName="y" values="308;322;314;302;308" dur="1.9s" repeatCount="indefinite"/></rect>
+      <rect x="802" y="318" width="9" height="16"><animate attributeName="height" values="16;28;10;24;16" dur="2.8s" repeatCount="indefinite"/><animate attributeName="y" values="318;306;324;310;318" dur="2.8s" repeatCount="indefinite"/></rect>
+      <rect x="814" y="312" width="9" height="22"><animate attributeName="height" values="22;8;31;17;22" dur="2.2s" repeatCount="indefinite"/><animate attributeName="y" values="312;326;303;317;312" dur="2.2s" repeatCount="indefinite"/></rect>
+      <rect x="826" y="324" width="9" height="10"><animate attributeName="height" values="10;25;15;30;10" dur="3.3s" repeatCount="indefinite"/><animate attributeName="y" values="324;309;319;304;324" dur="3.3s" repeatCount="indefinite"/></rect>
+      <rect x="838" y="316" width="9" height="18"><animate attributeName="height" values="18;31;11;25;18" dur="2.4s" repeatCount="indefinite"/><animate attributeName="y" values="316;303;323;309;316" dur="2.4s" repeatCount="indefinite"/></rect>
+      <rect x="850" y="320" width="9" height="14"><animate attributeName="height" values="14;27;9;21;14" dur="2.9s" repeatCount="indefinite"/><animate attributeName="y" values="320;307;325;313;320" dur="2.9s" repeatCount="indefinite"/></rect>
+      <rect x="862" y="306" width="9" height="28"><animate attributeName="height" values="28;14;22;33;28" dur="2s" repeatCount="indefinite"/><animate attributeName="y" values="306;320;312;301;306" dur="2s" repeatCount="indefinite"/></rect>
+    </g>
+  </g>
+  <text x="892" y="312" fill="#c4b5fd" font-size="17" font-weight="700">412</text>
+  <text x="892" y="328" fill="#6e7681" font-size="7.5">backlog absorbs bursts</text>
+  <text x="960" y="312" fill="#5eead4" font-size="17" font-weight="700">0</text>
+  <text x="960" y="328" fill="#6e7681" font-size="7.5">records dropped</text>
+
+  <!-- ════════ PROCESSING CORE ════════ -->
+  <ellipse cx="620" cy="470" rx="360" ry="86" fill="url(#coreGlow)" filter="url(#ablur)" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.15;0.4" dur="4.5s" repeatCount="indefinite"/>
+  </ellipse>
+  <text x="48" y="372" fill="#8b949e" font-size="9" letter-spacing="3">PROCESSING CORE</text>
+
+  <!-- worker pool -->
+  <rect x="48" y="384" width="286" height="176" rx="8" fill="url(#coreFill)" stroke="#a78bfa" stroke-width="1.4"/>
+  <text x="64" y="408" fill="#c4b5fd" font-size="11" font-weight="700">WORKER POOL</text>
+  <text x="64" y="423" fill="#8b949e" font-size="8">idempotent &#183; resumable &#183; horizontally scaled</text>
+  <g>
+    <g fill="#0a0f16" stroke="#2a1f4a" stroke-width="0.8">
+      <rect x="64" y="436" width="42" height="20" rx="2"/><rect x="110" y="436" width="42" height="20" rx="2"/><rect x="156" y="436" width="42" height="20" rx="2"/>
+      <rect x="202" y="436" width="42" height="20" rx="2"/><rect x="248" y="436" width="42" height="20" rx="2"/><rect x="276" y="436" width="42" height="20" rx="2"/>
+      <rect x="64" y="460" width="42" height="20" rx="2"/><rect x="110" y="460" width="42" height="20" rx="2"/><rect x="156" y="460" width="42" height="20" rx="2"/>
+      <rect x="202" y="460" width="42" height="20" rx="2"/><rect x="248" y="460" width="42" height="20" rx="2"/><rect x="276" y="460" width="42" height="20" rx="2"/>
+      <rect x="64" y="484" width="42" height="20" rx="2"/><rect x="110" y="484" width="42" height="20" rx="2"/><rect x="156" y="484" width="42" height="20" rx="2"/>
+      <rect x="202" y="484" width="42" height="20" rx="2"/><rect x="248" y="484" width="42" height="20" rx="2"/><rect x="276" y="484" width="42" height="20" rx="2"/>
+    </g>
+    <g fill="#a78bfa">
+      <rect x="65" y="437" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="2.1s" repeatCount="indefinite"/></rect>
+      <rect x="111" y="437" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.7;0.15;0.7" dur="2.8s" repeatCount="indefinite"/></rect>
+      <rect x="157" y="437" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="1.7s" repeatCount="indefinite"/></rect>
+      <rect x="203" y="437" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.6;0.15;0.6" dur="3.2s" repeatCount="indefinite"/></rect>
+      <rect x="249" y="437" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.15;0.65;0.15" dur="2.4s" repeatCount="indefinite"/></rect>
+      <rect x="277" y="437" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.75;0.2;0.75" dur="1.9s" repeatCount="indefinite"/></rect>
+      <rect x="65" y="461" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.6s" repeatCount="indefinite"/></rect>
+      <rect x="111" y="461" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.2s" repeatCount="indefinite"/></rect>
+      <rect x="157" y="461" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.15;0.6;0.15" dur="3s" repeatCount="indefinite"/></rect>
+      <rect x="203" y="461" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.8;0.15;0.8" dur="1.8s" repeatCount="indefinite"/></rect>
+      <rect x="249" y="461" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.9s" repeatCount="indefinite"/></rect>
+      <rect x="277" y="461" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.65;0.2;0.65" dur="2.3s" repeatCount="indefinite"/></rect>
+      <rect x="65" y="485" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.5s" repeatCount="indefinite"/></rect>
+      <rect x="111" y="485" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.75;0.15;0.75" dur="2s" repeatCount="indefinite"/></rect>
+      <rect x="157" y="485" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.15;0.8;0.15" dur="3.4s" repeatCount="indefinite"/></rect>
+      <rect x="203" y="485" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.7s" repeatCount="indefinite"/></rect>
+      <rect x="249" y="485" width="40" height="18" rx="1.5" opacity="0.2"><animate attributeName="opacity" values="0.2;0.75;0.2" dur="1.6s" repeatCount="indefinite"/></rect>
+    </g>
+    <rect x="277" y="485" width="40" height="18" rx="1.5" fill="#fbbf24" opacity="0.25"><animate attributeName="opacity" values="0.25;0.85;0.25" dur="1.1s" repeatCount="indefinite"/></rect>
+  </g>
+  <text x="64" y="522" fill="#fbbf24" font-size="7.5">amber = worker in backoff, replaying a transient failure</text>
+  <text x="64" y="538" fill="#6e7681" font-size="7.5">a crashed worker loses no work &#8212; the record returns to the queue</text>
+  <text x="64" y="552" fill="#475569" font-size="7">reprocessing is safe by construction, not by convention</text>
+
+  <!-- extraction -->
+  <rect x="350" y="384" width="286" height="176" rx="8" fill="url(#coreFill)" stroke="#5eead4" stroke-width="1.4"/>
+  <text x="366" y="408" fill="#5eead4" font-size="11" font-weight="700">EXTRACTION</text>
+  <text x="366" y="423" fill="#8b949e" font-size="8">deterministic rules first &#183; model only where rules cannot reach</text>
+  <g>
+    <rect x="366" y="436" width="254" height="22" rx="3" fill="#0a0f16" stroke="#1f2937"/>
+    <text x="376" y="451" fill="#c9d1d9" font-size="8">1 &#183; layout &amp; template match</text>
+    <circle cx="602" cy="447" r="4" fill="#5eead4"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/></circle>
+
+    <rect x="366" y="462" width="254" height="22" rx="3" fill="#0a0f16" stroke="#1f2937"/>
+    <text x="376" y="477" fill="#c9d1d9" font-size="8">2 &#183; regex &amp; grammar for known fields</text>
+    <circle cx="602" cy="473" r="4" fill="#5eead4"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" begin="0.4s" repeatCount="indefinite"/></circle>
+
+    <rect x="366" y="488" width="254" height="22" rx="3" fill="#0a0f16" stroke="#1f2937"/>
+    <text x="376" y="503" fill="#c9d1d9" font-size="8">3 &#183; model pass for the residue</text>
+    <circle cx="602" cy="499" r="4" fill="#a78bfa"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" begin="0.8s" repeatCount="indefinite"/></circle>
+
+    <rect x="366" y="514" width="254" height="22" rx="3" fill="#0a0f16" stroke="#1f2937"/>
+    <text x="376" y="529" fill="#c9d1d9" font-size="8">4 &#183; confidence scored per field</text>
+    <circle cx="602" cy="525" r="4" fill="#fbbf24"><animate attributeName="opacity" values="1;0.2;1" dur="1.6s" begin="1.2s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="366" y="552" fill="#475569" font-size="7">every value keeps a pointer to the exact source span it came from</text>
+
+  <!-- validation gates -->
+  <rect x="652" y="384" width="286" height="176" rx="8" fill="url(#coreFill)" stroke="#7dd3fc" stroke-width="1.4"/>
+  <text x="668" y="408" fill="#7dd3fc" font-size="11" font-weight="700">VALIDATION GATES</text>
+  <text x="668" y="423" fill="#8b949e" font-size="8">a record that fails here never reaches an output</text>
+  <g font-size="8" fill="#c9d1d9">
+    <rect x="668" y="434" width="254" height="1" fill="#1f2937"/>
+    <text x="668" y="452">schema &amp; type</text>
+    <rect x="880" y="444" width="42" height="10" rx="2" fill="#0d1f1c" stroke="#5eead4"/><text x="886" y="452" fill="#5eead4" font-size="7">PASS</text>
+    <text x="668" y="472">unit &amp; encoding</text>
+    <rect x="880" y="464" width="42" height="10" rx="2" fill="#0d1f1c" stroke="#5eead4"/><text x="886" y="472" fill="#5eead4" font-size="7">PASS</text>
+    <text x="668" y="492">range &amp; sanity</text>
+    <rect x="880" y="484" width="42" height="10" rx="2" fill="#0d1f1c" stroke="#5eead4"/><text x="886" y="492" fill="#5eead4" font-size="7">PASS</text>
+    <text x="668" y="512">duplicate on hash</text>
+    <rect x="880" y="504" width="42" height="10" rx="2" fill="#1c1508" stroke="#fbbf24"><animate attributeName="opacity" values="1;0.35;1" dur="1.3s" repeatCount="indefinite"/></rect>
+    <text x="884" y="512" fill="#fbbf24" font-size="7">HELD</text>
+    <text x="668" y="532">referential integrity</text>
+    <rect x="880" y="524" width="42" height="10" rx="2" fill="#1a0d0d" stroke="#f87171"/><text x="886" y="532" fill="#f87171" font-size="7">FAIL</text>
+  </g>
+  <text x="668" y="552" fill="#475569" font-size="7">validation runs before persistence &#8212; never after</text>
+
+  <!-- output store -->
+  <rect x="954" y="384" width="238" height="176" rx="8" fill="url(#coreFill)" stroke="#34d399" stroke-width="1.4"/>
+  <text x="970" y="408" fill="#34d399" font-size="11" font-weight="700">RECORD STORE</text>
+  <text x="970" y="423" fill="#8b949e" font-size="8">typed &#183; versioned &#183; append-only</text>
+  <g font-size="8" fill="#c9d1d9">
+    <text x="970" y="446">PostgreSQL &#183; TimescaleDB</text>
+    <text x="970" y="464">SHA-256 over raw bytes</text>
+    <text x="970" y="482">arrival + event time kept apart</text>
+    <text x="970" y="500">correction = new version</text>
+    <text x="970" y="518">raw payload never overwritten</text>
+  </g>
+  <text x="970" y="540" fill="#6e7681" font-size="7.5">a rerun re-derives the answer;</text>
+  <text x="970" y="552" fill="#6e7681" font-size="7.5">it does not reconstruct a guess</text>
+
+  <!-- retry / DLQ / human review -->
+  <path d="M795 560 L795 590 L191 590 L191 562" fill="none" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#ab)"/>
+  <text x="330" y="584" fill="#fbbf24" font-size="8">RETRY WITH EXPONENTIAL BACKOFF &#8212; transient failure is the expected case, not the exception</text>
+
+  <path d="M860 560 L860 606 L920 606" fill="none" stroke="#f87171" stroke-width="1.2" marker-end="url(#ac)"/>
+  <rect x="926" y="586" width="266" height="52" rx="6" fill="#160a0a" stroke="#7f1d1d" stroke-width="1.2"/>
+  <text x="940" y="606" fill="#f87171" font-size="10" font-weight="700">HUMAN REVIEW QUEUE</text>
+  <text x="940" y="621" fill="#8b949e" font-size="7.5">low confidence, contradicted, or failing a hard gate</text>
+  <text x="940" y="633" fill="#6e7681" font-size="7.5">these are never auto-accepted &#8212; a person decides, and that decision is recorded</text>
+
+  <!-- ════════ DELIVERY ════════ -->
+  <text x="48" y="666" fill="#8b949e" font-size="9" letter-spacing="3">DELIVERY &#183; THE AUTOMATION IS ONLY DONE WHEN THE RECEIVING SYSTEM AGREES</text>
+
+  <rect x="48" y="676" width="212" height="62" rx="8" fill="#111927" stroke="#7dd3fc" stroke-width="1.2"/>
+  <text x="62" y="696" fill="#7dd3fc" font-size="10" font-weight="700">ERP / MES WRITEBACK</text>
+  <text x="62" y="712" fill="#8b949e" font-size="7.5">idempotent upsert &#183; external ref key</text>
+  <text x="62" y="726" fill="#6e7681" font-size="7.5">rejected writes come back as exceptions</text>
+
+  <rect x="272" y="676" width="212" height="62" rx="8" fill="#111927" stroke="#5eead4" stroke-width="1.2"/>
+  <text x="286" y="696" fill="#5eead4" font-size="10" font-weight="700">API &#183; NestJS</text>
+  <text x="286" y="712" fill="#8b949e" font-size="7.5">REST / GraphQL &#183; typed contracts</text>
+  <text x="286" y="726" fill="#6e7681" font-size="7.5">versioned, with a deprecation path</text>
+
+  <rect x="496" y="676" width="212" height="62" rx="8" fill="#111927" stroke="#fbbf24" stroke-width="1.2"/>
+  <text x="510" y="696" fill="#fbbf24" font-size="10" font-weight="700">REPORTS &amp; DASHBOARDS</text>
+  <text x="510" y="712" fill="#8b949e" font-size="7.5">Grafana &#183; scheduled exports</text>
+  <text x="510" y="726" fill="#6e7681" font-size="7.5">every figure drills back to its source</text>
+
+  <rect x="720" y="676" width="212" height="62" rx="8" fill="#111927" stroke="#f472b6" stroke-width="1.2"/>
+  <text x="734" y="696" fill="#f472b6" font-size="10" font-weight="700">NOTIFICATIONS</text>
+  <text x="734" y="712" fill="#8b949e" font-size="7.5">webhook &#183; mail &#183; chat &#183; mobile push</text>
+  <text x="734" y="726" fill="#6e7681" font-size="7.5">alert on exception, silence on success</text>
+
+  <rect x="944" y="676" width="248" height="62" rx="8" fill="#111927" stroke="#94a3b8" stroke-width="1.2"/>
+  <text x="958" y="696" fill="#cbd5e1" font-size="10" font-weight="700">AUDIT TRAIL</text>
+  <text x="958" y="712" fill="#8b949e" font-size="7.5">who, what, when, from which bytes</text>
+  <text x="958" y="726" fill="#6e7681" font-size="7.5">answers the question asked six months later</text>
+
+  <!-- ════════ METRICS ════════ -->
+  <line x1="48" y1="752" x2="1192" y2="752" stroke="#1c2430"/>
+  <g>
+    <text x="62" y="770" fill="#6e7681" font-size="7.5" letter-spacing="1.2">THROUGHPUT</text>
+    <g clip-path="url(#spkClip)">
+      <polyline points="62,786 78,780 94,784 110,772 126,778 142,766 158,774 174,762 190,770 206,760" fill="none" stroke="#a78bfa" stroke-width="1.4" opacity="0.85">
+        <animate attributeName="points"
+          values="62,786 78,780 94,784 110,772 126,778 142,766 158,774 174,762 190,770 206,760;
+                  62,778 78,786 94,772 110,782 126,766 142,776 158,764 174,772 190,760 206,768;
+                  62,786 78,780 94,784 110,772 126,778 142,766 158,774 174,762 190,770 206,760"
+          dur="5s" repeatCount="indefinite"/>
+      </polyline>
+    </g>
+    <text x="222" y="782" fill="#c4b5fd" font-size="15" font-weight="700">1 480<tspan font-size="8" fill="#6d28d9"> rec/min</tspan></text>
+
+    <text x="382" y="770" fill="#6e7681" font-size="7.5" letter-spacing="1.2">AUTO-ACCEPT RATE</text>
+    <rect x="382" y="778" width="150" height="9" rx="2" fill="#0a0f16" stroke="#1f2937"/>
+    <rect x="383" y="779" width="141" height="7" rx="1.5" fill="#5eead4" opacity="0.65"><animate attributeName="width" values="120;141;131;141" dur="6s" repeatCount="indefinite"/></rect>
+    <text x="542" y="787" fill="#5eead4" font-size="15" font-weight="700">94.2<tspan font-size="8" fill="#0f766e"> %</tspan></text>
+    <text x="382" y="800" fill="#475569" font-size="7">the other 5.8 % is routed to a person on purpose</text>
+
+    <text x="654" y="770" fill="#6e7681" font-size="7.5" letter-spacing="1.2">RERUN DETERMINISM</text>
+    <text x="654" y="788" fill="#34d399" font-size="15" font-weight="700">BYTE-EQUAL</text>
+    <text x="654" y="800" fill="#475569" font-size="7">same input, same output, six months later</text>
+
+    <text x="854" y="770" fill="#6e7681" font-size="7.5" letter-spacing="1.2">FAILED RUN RECOVERY</text>
+    <text x="854" y="788" fill="#fbbf24" font-size="15" font-weight="700">RESUMABLE</text>
+    <text x="854" y="800" fill="#475569" font-size="7">no full replay to repair one record</text>
+
+    <text x="1030" y="770" fill="#6e7681" font-size="7.5" letter-spacing="1.2">SILENT DATA LOSS</text>
+    <text x="1030" y="788" fill="#f87171" font-size="15" font-weight="700">0<tspan font-size="8" fill="#991b1b"> tolerated</tspan></text>
+    <text x="1030" y="800" fill="#475569" font-size="7">a dropped record raises &#8212; it never just logs</text>
+  </g>
+</svg>
