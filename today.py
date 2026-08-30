@@ -60,7 +60,7 @@ with urllib.request.urlopen(avatar_request) as response:
 ASCII_CHARS = "@#8&o:*. "
 
 
-def image_to_ascii(path, width=42):
+def image_to_ascii(path, width=60):
 
     image = Image.open(path).convert("L")
 
