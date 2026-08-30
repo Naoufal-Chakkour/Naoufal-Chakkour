@@ -1,5 +1,44 @@
 <div align="center">
 
+<table>
+<tr>
+
+<td width="45%" align="center">
+
+<img
+src="./assets/avatar-ascii.svg"
+width="100%"
+alt="Naoufal ASCII Avatar">
+
+</td>
+
+<td width="55%" align="center">
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="./assets/naoufal-dark.svg">
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="./assets/naoufal-light.svg">
+
+  <img
+    src="./assets/naoufal-dark.svg"
+    width="100%"
+    alt="Naoufal GitHub Analytics">
+</picture>
+
+</td>
+
+</tr>
+</table>
+
+</div>
+
+
+<div align="center">
+
 <img src="./stack.svg" alt="Multi-domain instrument platform architecture" width="100%">
 
 </div>
@@ -86,44 +125,6 @@
 </div>
 
 ---
-
-<div align="center">
-
-<table>
-<tr>
-
-<td width="45%" align="center">
-
-<img
-src="./assets/avatar-ascii.svg"
-width="100%"
-alt="Naoufal ASCII Avatar">
-
-</td>
-
-<td width="55%" align="center">
-
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="./assets/naoufal-dark.svg">
-
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="./assets/naoufal-light.svg">
-
-  <img
-    src="./assets/naoufal-dark.svg"
-    width="100%"
-    alt="Naoufal GitHub Analytics">
-</picture>
-
-</td>
-
-</tr>
-</table>
-
-</div>
 
 <h2>The constraint everything else follows from</h2>
 
