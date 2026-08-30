@@ -93,4 +93,11 @@
 </div>
 
 <div align="center">
+<div align="center">
+
+<a href="https://github.com/Naoufal-Chakkour">
+  <img src="https://img.shields.io/badge/GitHub-Naoufal--Chakkour-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+
+</div>
 
