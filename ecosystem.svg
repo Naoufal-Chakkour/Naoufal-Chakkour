@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 726" width="1240" height="726" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <style>
+    .bg      { fill:#0a0d13; }
+    .grid    { stroke:#141a24; stroke-width:0.5; opacity:0.55; }
+    .title   { fill:#e6edf3; font-size:26px; font-weight:700; letter-spacing:7px; }
+    .sub     { fill:#7d8590; font-size:9.5px; letter-spacing:2.4px; }
+    .card    { fill:#0e1420; stroke:#1e2836; stroke-width:1.2; }
+    .letter  { font-size:22px; font-weight:700; opacity:0.28; }
+    .dom     { fill:#e6edf3; font-size:11px; font-weight:700; letter-spacing:0.8px; }
+    .spec    { fill:#8b949e; font-size:8px; }
+    .deep    { fill:#6e7681; font-size:7.4px; }
+    .foot    { fill:#484f58; font-size:8px; letter-spacing:1.4px; }
+
+    /* Each panel brightens in turn: an 8-phase, 24s cycle, 3s per node.
+       This is the hover reveal a README cannot have, driven by the clock instead. */
+    @keyframes spot {
+       0%   { opacity:0.30; }
+       1%   { opacity:1;    }
+      11%   { opacity:1;    }
+      13%   { opacity:0.30; }
+     100%   { opacity:0.30; }
+    }
+    @keyframes lift {
+       0%   { stroke-opacity:0.25; }
+       1%   { stroke-opacity:1;    }
+      11%   { stroke-opacity:1;    }
+      13%   { stroke-opacity:0.25; }
+     100%   { stroke-opacity:0.25; }
+    }
+    @keyframes glow {
+       0%   { opacity:0; }
+       1%   { opacity:0.30; }
+      11%   { opacity:0.30; }
+      13%   { opacity:0; }
+     100%   { opacity:0; }
+    }
+    .reveal { animation: spot 24s linear infinite; }
+    .edge   { animation: lift 24s linear infinite; }
+    .halo   { animation: glow 24s linear infinite; }
+
+    .n0 { animation-delay:0s;  } .n1 { animation-delay:3s;  }
+    .n2 { animation-delay:6s;  } .n3 { animation-delay:9s;  }
+    .n4 { animation-delay:12s; } .n5 { animation-delay:15s; }
+    .n6 { animation-delay:18s; } .n7 { animation-delay:21s; }
+
+    /* The viewer's own theme drives the palette. */
+    @media (prefers-color-scheme: light) {
+      .bg    { fill:#f6f8fa; }
+      .grid  { stroke:#d8dee4; }
+      .card  { fill:#ffffff; stroke:#d0d7de; }
+      .title { fill:#1f2328; }
+      .dom   { fill:#1f2328; }
+      .spec  { fill:#57606a; }
+      .deep  { fill:#6e7781; }
+      .sub   { fill:#57606a; }
+      .foot  { fill:#8c959f; }
+    }
+    /* Anyone who asked their OS for less motion gets a static, fully lit board. */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { animation:none; opacity:1; }
+      .edge   { animation:none; stroke-opacity:1; }
+      .halo   { animation:none; opacity:0.12; }
+    }
+  </style>
+
+  <rect width="1240" height="726" class="bg"/>
+  <g class="grid" fill="none">
+    <path d="M0 120h1240M0 250h1240M0 380h1240M0 510h1240M0 640h1240"/>
+    <path d="M155 0v726M465 0v726M775 0v726M1085 0v726"/>
+  </g>
+
+  <text x="30" y="48" class="title">THE ECOSYSTEM</text>
+  <text x="30" y="70" class="sub">EIGHT INSTRUMENT DOMAINS &#183; ONE CAPABILITY CONTRACT &#183; ONE TIMESTAMP DOMAIN &#183; ROSTER OPEN</text>
+  <text x="30" y="92" class="deep">Each panel lights in turn. Every one of them runs standalone; the control plane only correlates them.</text>
+
+  <!-- ============ A ============ -->
+  <g>
+    <rect x="30" y="118" width="280" height="238" rx="9" class="card"/>
+    <rect x="30" y="118" width="280" height="238" rx="9" fill="#f59e0b" class="halo n0"/>
+    <rect x="30" y="118" width="280" height="238" rx="9" fill="none" stroke="#f59e0b" stroke-width="1.6" class="edge n0"/>
+    <g class="reveal n0">
+      <text x="278" y="150" class="letter" fill="#f59e0b" text-anchor="end">A</text>
+      <text x="48" y="146" class="dom">RADIO &amp; WIRELESS</text>
+      <text x="48" y="168" class="spec">Wi-Fi &#183; BLE &#183; 802.15.4 &#183; Thread</text>
+      <text x="48" y="182" class="spec">sub-GHz &#183; LoRaWAN &#183; wideband SDR</text>
+      <text x="48" y="196" class="spec">synchronised RF capture</text>
+      <g stroke="#f59e0b" stroke-width="1.2" fill="none" opacity="0.7">
+        <path d="M48 232 q14 -22 28 0 q14 22 28 0 q14 -22 28 0 q14 22 28 0 q14 -22 28 0"/>
+      </g>
+      <text x="48" y="268" class="deep">The bench and the building disagree. A link that</text>
+      <text x="48" y="281" class="deep">passes on a desk meets forty competing radios,</text>
+      <text x="48" y="294" class="deep">a metal rack and a moving human in the field.</text>
+      <text x="48" y="313" class="deep">Receive paths are the default. Any transmit is</text>
+      <text x="48" y="326" class="deep">gated and regulator-bounded before it exists.</text>
+      <text x="48" y="344" class="foot">STANDALONE &#183; NO PLANE REQUIRED</text>
+    </g>
+  </g>
+
+  <!-- ============ B ============ -->
+  <g>
+    <rect x="330" y="118" width="280" height="238" rx="9" class="card"/>
+    <rect x="330" y="118" width="280" height="238" rx="9" fill="#34d399" class="halo n1"/>
+    <rect x="330" y="118" width="280" height="238" rx="9" fill="none" stroke="#34d399" stroke-width="1.6" class="edge n1"/>
+    <g class="reveal n1">
+      <text x="578" y="150" class="letter" fill="#34d399" text-anchor="end">B</text>
+      <text x="348" y="146" class="dom">IDENTITY &amp; SECURE ELEMENT</text>
+      <text x="348" y="168" class="spec">NFC &#183; LF/HF RFID &#183; ISO 14443</text>
+      <text x="348" y="182" class="spec">ISO 7816 contact cards &#183; POS</text>
+      <text x="348" y="196" class="spec">secure element &#183; debug interfaces</text>
+      <g fill="none" stroke="#34d399" stroke-width="1.2" opacity="0.75">
+        <circle cx="366" cy="230" r="4"/><circle cx="366" cy="230" r="10" opacity="0.6"/><circle cx="366" cy="230" r="16" opacity="0.3"/>
+        <rect x="404" y="220" width="16" height="12" rx="2"/><path d="M408 220 v-4 a4 4 0 0 1 8 0 v4"/>
+      </g>
+      <text x="348" y="268" class="deep">Credentials never enter a repository, a log or a</text>
+      <text x="348" y="281" class="deep">capture. What gets recorded is the protocol</text>
+      <text x="348" y="294" class="deep">exchange and its timing, never the secret.</text>
+      <text x="348" y="313" class="deep">Secure boot, signed updates and a locked debug</text>
+      <text x="348" y="326" class="deep">port are provisioned at manufacture, not later.</text>
+      <text x="348" y="344" class="foot">STANDALONE &#183; NO PLANE REQUIRED</text>
+    </g>
+  </g>
+
+  <!-- ============ C ============ -->
+  <g>
+    <rect x="630" y="118" width="280" height="238" rx="9" class="card"/>
+    <rect x="630" y="118" width="280" height="238" rx="9" fill="#7dd3fc" class="halo n2"/>
+    <rect x="630" y="118" width="280" height="238" rx="9" fill="none" stroke="#7dd3fc" stroke-width="1.6" class="edge n2"/>
+    <g class="reveal n2">
+      <text x="878" y="150" class="letter" fill="#7dd3fc" text-anchor="end">C</text>
+      <text x="648" y="146" class="dom">VEHICLE NETWORKS &#183; FLAGSHIP</text>
+      <text x="648" y="168" class="spec">isolated CAN-FD &#215; 8&#8211;16 &#183; LIN &#183; K-Line</text>
+      <text x="648" y="182" class="spec">Automotive Ethernet &#183; FlexRay &#183; UDS</text>
+      <text x="648" y="196" class="spec">FPGA/SoC &#183; DDR &#183; PCIe/NVMe &#183; PPS/PTP</text>
+      <g stroke="#7dd3fc" stroke-width="1.2" fill="none" opacity="0.75">
+        <path d="M648 236 L662 236 L662 222 L676 222 L676 236 L690 236 L690 222 L700 222 L700 236 L716 236 L716 222 L726 222 L726 236 L742 236"/>
+      </g>
+      <text x="648" y="268" class="deep">The electrically hardest node, and the reason the</text>
+      <text x="648" y="281" class="deep">transmit-permission chain exists at all.</text>
+      <text x="648" y="294" class="deep">Sixteen channels, sixteen independent gates.</text>
+      <text x="648" y="313" class="deep">Continuous capture to NVMe with hardware</text>
+      <text x="648" y="326" class="deep">timestamps &#8212; not host clocks, not estimates.</text>
+      <text x="648" y="344" class="foot">STANDALONE &#183; NO PLANE REQUIRED</text>
+    </g>
+  </g>
+
+  <!-- ============ D ============ -->
+  <g>
+    <rect x="930" y="118" width="280" height="238" rx="9" class="card"/>
+    <rect x="930" y="118" width="280" height="238" rx="9" fill="#38bdf8" class="halo n3"/>
+    <rect x="930" y="118" width="280" height="238" rx="9" fill="none" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="6 4" class="edge n3"/>
+    <g class="reveal n3">
+      <text x="1178" y="150" class="letter" fill="#38bdf8" text-anchor="end">D</text>
+      <text x="948" y="146" class="dom">CONTROL &amp; EVIDENCE PLANE</text>
+      <text x="948" y="168" class="spec">registry &#183; time authority &#183; authz</text>
+      <text x="948" y="182" class="spec">segmentation &#183; health &#183; correlation</text>
+      <text x="948" y="196" class="spec">the only optional node on the board</text>
+      <g stroke="#38bdf8" stroke-width="1.1" fill="none" opacity="0.7">
+        <circle cx="966" cy="230" r="7"/>
+        <path d="M973 230 H1010 M966 223 V206 M966 237 V254 M959 230 H930"/>
+      </g>
+      <text x="948" y="268" class="deep">Every other panel on this board works with this</text>
+      <text x="948" y="281" class="deep">one switched off. That is the whole design.</text>
+      <text x="948" y="294" class="deep">It earns its place by correlating, never by</text>
+      <text x="948" y="307" class="deep">being required.</text>
+      <text x="948" y="326" class="deep">Drawn dashed because it is deliberately absent.</text>
+      <text x="948" y="344" class="foot">OPTIONAL BY CONSTRUCTION</text>
+    </g>
+  </g>
+
+  <!-- ============ E ============ -->
+  <g>
+    <rect x="30" y="380" width="280" height="238" rx="9" class="card"/>
+    <rect x="30" y="380" width="280" height="238" rx="9" fill="#f472b6" class="halo n4"/>
+    <rect x="30" y="380" width="280" height="238" rx="9" fill="none" stroke="#f472b6" stroke-width="1.6" class="edge n4"/>
+    <g class="reveal n4">
+      <text x="278" y="412" class="letter" fill="#f472b6" text-anchor="end">E</text>
+      <text x="48" y="408" class="dom">VISION &amp; PHYSICAL</text>
+      <text x="48" y="430" class="spec">IP &#183; PoE &#183; ONVIF &#183; RTSP</text>
+      <text x="48" y="444" class="spec">MIPI CSI-2 &#183; GMSL &#183; edge inference</text>
+      <text x="48" y="458" class="spec">hardware-synced trigger</text>
+      <g fill="none" stroke="#f472b6" stroke-width="1.1" opacity="0.7">
+        <rect x="48" y="482" width="40" height="26" rx="2"/>
+        <path d="M88 490 L104 482 L104 508 L88 500 Z"/>
+      </g>
+      <text x="48" y="532" class="deep">A camera event is only useful if it lands on the</text>
+      <text x="48" y="545" class="deep">same timeline as the bus frame and the RF</text>
+      <text x="48" y="558" class="deep">observation &#8212; otherwise it is just footage.</text>
+      <text x="48" y="577" class="deep">Frame pacing and drop policy are specified, not</text>
+      <text x="48" y="590" class="deep">left to whatever the pipeline happens to do.</text>
+      <text x="48" y="606" class="foot">STANDALONE &#183; NO PLANE REQUIRED</text>
+    </g>
+  </g>
+
+  <!-- ============ F ============ -->
+  <g>
+    <rect x="330" y="380" width="280" height="238" rx="9" class="card"/>
+    <rect x="330" y="380" width="280" height="238" rx="9" fill="#a78bfa" class="halo n5"/>
+    <rect x="330" y="380" width="280" height="238" rx="9" fill="none" stroke="#a78bfa" stroke-width="1.6" class="edge n5"/>
+    <g class="reveal n5">
+      <text x="578" y="412" class="letter" fill="#a78bfa" text-anchor="end">F</text>
+      <text x="348" y="408" class="dom">INDUSTRIAL &amp; OT</text>
+      <text x="348" y="430" class="spec">RS-485 &#183; Modbus RTU/TCP &#183; OPC-UA</text>
+      <text x="348" y="444" class="spec">PROFINET &#183; MQTT &#183; Sparkplug B</text>
+      <text x="348" y="458" class="spec">4&#8211;20 mA &#183; 24 V I/O &#183; sensor lines</text>
+      <g stroke="#a78bfa" stroke-width="1.1" fill="none" opacity="0.7">
+        <path d="M348 500 L362 500 L362 486 L376 486 L376 500 L390 500 L390 486 L400 486 L400 500 L416 500"/>
+      </g>
+      <text x="348" y="532" class="deep">A register number is not a meaning. Half the work</text>
+      <text x="348" y="545" class="deep">is recovering what a PLC tag actually represents</text>
+      <text x="348" y="558" class="deep">on the floor, from people rather than documents.</text>
+      <text x="348" y="577" class="deep">Store-and-forward, watchdog, safe restart: the</text>
+      <text x="348" y="590" class="deep">line does not stop because the uplink did.</text>
+      <text x="348" y="606" class="foot">STANDALONE &#183; NO PLANE REQUIRED</text>
+    </g>
+  </g>
+
+  <!-- ============ G ============ -->
+  <g>
+    <rect x="630" y="380" width="280" height="238" rx="9" class="card"/>
+    <rect x="630" y="380" width="280" height="238" rx="9" fill="#5eead4" class="halo n6"/>
+    <rect x="630" y="380" width="280" height="238" rx="9" fill="none" stroke="#5eead4" stroke-width="1.6" class="edge n6"/>
+    <g class="reveal n6">
+      <text x="878" y="412" class="letter" fill="#5eead4" text-anchor="end">G</text>
+      <text x="648" y="408" class="dom">COHERENT RF &amp; DIRECTION FINDING</text>
+      <text x="648" y="430" class="spec">multi-channel coherent SDR</text>
+      <text x="648" y="444" class="spec">array sensing &#183; phase alignment</text>
+      <text x="648" y="458" class="spec">bearing estimation</text>
+      <g fill="none" stroke="#5eead4" stroke-width="1.1" opacity="0.7">
+        <circle cx="668" cy="496" r="16"/>
+        <path d="M668 496 L684 486"/>
+        <circle cx="668" cy="496" r="2" fill="#5eead4"/>
+      </g>
+      <text x="648" y="532" class="deep">Coherence is a hardware property, not a software</text>
+      <text x="648" y="545" class="deep">claim. Channels share a clock and a calibrated</text>
+      <text x="648" y="558" class="deep">phase reference or the bearing is decoration.</text>
+      <text x="648" y="577" class="deep">This panel carries an export-control classification</text>
+      <text x="648" y="590" class="deep">question before it carries a schematic.</text>
+      <text x="648" y="606" class="foot">EU 2021/821 &#183; BAFA &#183; CLASSIFY FIRST</text>
+    </g>
+  </g>
+
+  <!-- ============ H ============ -->
+  <g>
+    <rect x="930" y="380" width="280" height="238" rx="9" class="card"/>
+    <rect x="930" y="380" width="280" height="238" rx="9" fill="#e879f9" class="halo n7"/>
+    <rect x="930" y="380" width="280" height="238" rx="9" fill="none" stroke="#e879f9" stroke-width="1.6" class="edge n7"/>
+    <g class="reveal n7">
+      <text x="1178" y="412" class="letter" fill="#e879f9" text-anchor="end">H</text>
+      <text x="948" y="408" class="dom">HARDWARE &amp; MIXED-SIGNAL</text>
+      <text x="948" y="430" class="spec">synchronised precision acquisition</text>
+      <text x="948" y="444" class="spec">24-bit simultaneous ADC &#183; FPGA timing</text>
+      <text x="948" y="458" class="spec">side-channel &#183; power characterisation</text>
+      <g stroke="#e879f9" stroke-width="1.1" fill="none" opacity="0.7">
+        <path d="M948 500 q8 -18 16 0 t16 0 t16 0 t16 0 t16 0"/>
+      </g>
+      <text x="948" y="532" class="deep">Slow precision analog and nanosecond edge capture</text>
+      <text x="948" y="545" class="deep">are different subsystems. A 24-bit ADC is right</text>
+      <text x="948" y="558" class="deep">for rails and wrong for ringing.</text>
+      <text x="948" y="577" class="deep">Conflating the two is how a specification sheet</text>
+      <text x="948" y="590" class="deep">quietly becomes fiction.</text>
+      <text x="948" y="606" class="foot">STANDALONE &#183; NO PLANE REQUIRED</text>
+    </g>
+  </g>
+
+  <text x="30" y="662" class="sub">/capability &#8226; /health &#8226; /mode &#8226; /capture &#8226; /evidence &#8212; EVERY PANEL ANSWERS ALL FIVE</text>
+  <text x="30" y="684" class="deep">That uniformity is what makes the ecosystem addressable by something that was never taught any individual node.</text>
+  <text x="30" y="706" class="foot">RECEIVE-ONLY BY DEFAULT &#183; PER-CHANNEL TX GATING &#183; SHA-256 ON RAW BYTES &#183; ONE TIMESTAMP DOMAIN</text>
+</svg>
