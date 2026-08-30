@@ -60,6 +60,14 @@
 
 </div>
 
+## ◈ GITHUB ANALYTICS
+
+<div align="center">
+
+<img src="./assets/analytics.svg" width="100%" alt="Naoufal GitHub Analytics">
+
+</div>
+
 ## ◈ SECURITY LAB
 
 <div align="center">
