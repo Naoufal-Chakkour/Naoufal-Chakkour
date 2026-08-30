@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 470" width="1240" height="470" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#04101a"/><stop offset="100%" stop-color="#020810"/></linearGradient>
+    <linearGradient id="dscr" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#05131f"/><stop offset="100%" stop-color="#020911"/></linearGradient>
+    <filter id="dgl"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="dclip"><rect x="176" y="66" width="880" height="300"/></clipPath>
+  </defs>
+
+  <rect width="1240" height="470" rx="10" fill="url(#dbg)" stroke="#1c2430" stroke-width="1.5"/>
+  <text x="34" y="40" fill="#38bdf8" font-size="12.5" font-weight="700" letter-spacing="2.5">CORRELATION PLANE &#183; OPTIONAL</text>
+  <text x="34" y="58" fill="#1e4a66" font-size="8.5" letter-spacing="1.6">NODE D &#183; EVERY OTHER NODE WORKS WITHOUT THIS ONE</text>
+  <circle cx="1150" cy="34" r="5" fill="#38bdf8"><animate attributeName="opacity" values="1;0.2;1" dur="1.7s" repeatCount="indefinite"/></circle>
+  <text x="1163" y="38" fill="#38bdf8" font-size="9" letter-spacing="1.2">PTP</text>
+
+  <rect x="34" y="66" width="128" height="300" rx="5" fill="#051220" stroke="#123a52" stroke-dasharray="5 4"/>
+  <g font-size="7.5" fill="#1e4a66">
+    <text x="46" y="86">ROLE</text><text x="46" y="128">TIME SOURCE</text><text x="46" y="170">PTP CLASS</text>
+    <text x="46" y="212">REGISTERED</text><text x="46" y="254">SEGMENTATION</text><text x="46" y="296">AUTHZ</text><text x="46" y="338">IF REMOVED</text>
+  </g>
+  <g font-size="10.5" fill="#7dd3fc">
+    <text x="46" y="102">grandmaster</text><text x="46" y="144">GNSS + OCXO</text><text x="46" y="186">IEEE 1588 v2</text>
+    <text x="46" y="228">7 of 7 nodes</text><text x="46" y="270">per-domain VLAN</text><text x="46" y="312">capability-scoped</text>
+  </g>
+  <text x="46" y="354" font-size="10.5" fill="#34d399" font-weight="700">NOTHING STOPS</text>
+
+  <rect x="176" y="66" width="880" height="300" rx="4" fill="url(#dscr)" stroke="#123a52"/>
+  <g clip-path="url(#dclip)">
+    <text x="192" y="88" fill="#1e4a66" font-size="7.5">NODE REGISTRY &#183; DISCOVERED VIA /capability, NEVER CONFIGURED BY HAND</text>
+    <g font-size="8.5">
+      <text x="192" y="110" fill="#1e4a66">NODE</text><text x="290" y="110" fill="#1e4a66">DOMAIN</text><text x="470" y="110" fill="#1e4a66">OFFSET</text><text x="560" y="110" fill="#1e4a66">/health</text><text x="650" y="110" fill="#1e4a66">MODE</text>
+      <line x1="192" y1="118" x2="740" y2="118" stroke="#123a52"/>
+      <text x="192" y="136" fill="#7dd3fc">A</text><text x="290" y="136" fill="#5b9fc4">radio &amp; wireless</text><text x="470" y="136" fill="#7dd3fc">+18 ns</text><text x="560" y="136" fill="#34d399">ok</text><text x="650" y="136" fill="#5b9fc4">platform</text>
+      <text x="192" y="156" fill="#7dd3fc">B</text><text x="290" y="156" fill="#5b9fc4">identity</text><text x="470" y="156" fill="#7dd3fc">-6 ns</text><text x="560" y="156" fill="#34d399">ok</text><text x="650" y="156" fill="#5b9fc4">platform</text>
+      <text x="192" y="176" fill="#7dd3fc">C</text><text x="290" y="176" fill="#5b9fc4">vehicle networks</text><text x="470" y="176" fill="#7dd3fc">+3 ns</text><text x="560" y="176" fill="#34d399">ok</text><text x="650" y="176" fill="#5b9fc4">platform</text>
+      <text x="192" y="196" fill="#7dd3fc">E</text><text x="290" y="196" fill="#5b9fc4">vision</text><text x="470" y="196" fill="#7dd3fc">+41 ns</text><text x="560" y="196" fill="#34d399">ok</text><text x="650" y="196" fill="#5b9fc4">platform</text>
+      <text x="192" y="216" fill="#7dd3fc">F</text><text x="290" y="216" fill="#5b9fc4">industrial &amp; OT</text><text x="470" y="216" fill="#7dd3fc">+112 ns</text><text x="560" y="216" fill="#34d399">ok</text><text x="650" y="216" fill="#5b9fc4">platform</text>
+      <text x="192" y="236" fill="#7dd3fc">G</text><text x="290" y="236" fill="#5b9fc4">coherent RF / DF</text><text x="470" y="236" fill="#7dd3fc">+9 ns</text><text x="560" y="236" fill="#34d399">ok</text><text x="650" y="236" fill="#5b9fc4">platform</text>
+      <text x="192" y="256" fill="#fbbf24">H</text><text x="290" y="256" fill="#5b9fc4">mixed-signal</text><text x="470" y="256" fill="#fbbf24">&#8212;</text><text x="560" y="256" fill="#fbbf24">unreachable</text><text x="650" y="256" fill="#34d399">SILO</text>
+    </g>
+    <text x="192" y="280" fill="#34d399" font-size="8.5">H left the rack twenty minutes ago and is still capturing on a bench. Its evidence will merge on return.</text>
+    <text x="192" y="296" fill="#1e4a66" font-size="7.5">&quot;unreachable&quot; is a node state, not a system fault &#8212; the distinction is the entire architecture</text>
+
+    <!-- ptp -->
+    <line x1="192" y1="312" x2="740" y2="312" stroke="#123a52"/>
+    <text x="192" y="330" fill="#1e4a66" font-size="7.5">PTP OFFSET &#183; LAST 60 s</text>
+    <polyline fill="none" stroke="#38bdf8" stroke-width="1.3" filter="url(#dgl)"
+      points="300,344 340,340 380,346 420,341 460,344 500,339 540,345 580,342 620,340 660,345 700,341 740,343">
+      <animate attributeName="points" dur="3.8s" repeatCount="indefinite"
+        values="300,344 340,340 380,346 420,341 460,344 500,339 540,345 580,342 620,340 660,345 700,341 740,343;
+                300,341 340,345 380,340 420,346 460,340 500,344 540,341 580,345 620,343 660,340 700,346 740,341;
+                300,344 340,340 380,346 420,341 460,344 500,339 540,345 580,342 620,340 660,345 700,341 740,343"/>
+    </polyline>
+    <text x="748" y="346" fill="#7dd3fc" font-size="7.5">&#177;60 ns envelope</text>
+
+    <!-- the argument -->
+    <line x1="790" y1="76" x2="790" y2="356" stroke="#123a52"/>
+    <text x="806" y="90" fill="#1e4a66" font-size="7.5">WHY THIS PANEL IS DRAWN DASHED</text>
+    <g font-size="8.5" fill="#7dd3fc">
+      <text x="806" y="116">A central plane that owns time, identity and</text>
+      <text x="806" y="132">storage is easier to build. Thinner nodes, one</text>
+      <text x="806" y="148">schema, one clock, cheaper per unit.</text>
+      <text x="806" y="176">The cost arrives later, and permanently:</text>
+    </g>
+    <g font-size="8.5" fill="#5b9fc4">
+      <text x="806" y="198">&#183; a node alone on a bench becomes useless</text>
+      <text x="806" y="214">&#183; the plane becomes the single point of failure</text>
+      <text x="806" y="230">&#183; every new node negotiates with a central design</text>
+      <text x="806" y="246">&#183; field work needs the rack, not one box</text>
+    </g>
+    <g font-size="8.5" fill="#7dd3fc">
+      <text x="806" y="276">The deciding case is the ordinary one: one</text>
+      <text x="806" y="292">engineer, one box, one customer site.</text>
+    </g>
+    <text x="806" y="322" fill="#34d399" font-size="8.5">It earns its place by correlating.</text>
+    <text x="806" y="338" fill="#34d399" font-size="8.5">It never earns it by being required.</text>
+  </g>
+
+  <rect x="1072" y="66" width="134" height="300" rx="5" fill="#051220" stroke="#123a52" stroke-dasharray="5 4"/>
+  <g font-size="7.5" fill="#1e4a66"><text x="1084" y="86">TIME</text><text x="1084" y="164">SERVICES</text><text x="1084" y="272">DEGRADED MODE</text></g>
+  <g font-size="9" fill="#7dd3fc">
+    <text x="1084" y="104">GNSS locked</text><text x="1084" y="118">holdover 4 h</text><text x="1084" y="132">worst off 112 ns</text><text x="1084" y="146">domain 0</text>
+    <text x="1084" y="182">registry</text><text x="1084" y="196">authorisation</text><text x="1084" y="210">segmentation</text><text x="1084" y="224">health rollup</text><text x="1084" y="238">correlation</text>
+  </g>
+  <text x="1084" y="252" font-size="9" fill="#5b9fc4">none mandatory</text>
+  <g font-size="9" fill="#34d399">
+    <text x="1084" y="290">capture: continues</text><text x="1084" y="304">timestamp: local</text><text x="1084" y="318">hash: continues</text><text x="1084" y="332">evidence: valid</text>
+  </g>
+  <text x="1084" y="352" font-size="9" fill="#5b9fc4">only correlation is lost</text>
+
+  <g font-size="8.5" fill="#1e4a66">
+    <text x="34" y="392">REGISTRY &#183; TIME AUTHORITY</text><text x="280" y="392">AUTHZ &#183; SEGMENTATION</text><text x="500" y="392">HEALTH ROLLUP</text>
+    <text x="680" y="392">IEEE 1588 v2 &#183; PPS</text><text x="900" y="392">CORRELATION ONLY</text>
+  </g>
+  <rect x="34" y="404" width="1172" height="2" fill="#123a52"/>
+  <rect x="34" y="404" width="180" height="2" fill="#38bdf8"><animate attributeName="x" values="34;1026;34" dur="9s" repeatCount="indefinite"/></rect>
+  <text x="34" y="432" fill="#173c52" font-size="8">remove this node and every other one keeps capturing, timestamping and hashing &#183; the only thing lost is cross-domain correlation</text>
+  <text x="34" y="448" fill="#173c52" font-size="8">that property is not an accident of the implementation &#8212; it is the constraint the rest of the platform was designed around</text>
+</svg>
