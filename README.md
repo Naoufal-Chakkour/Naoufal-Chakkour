@@ -72,32 +72,11 @@
 
 ## ◈ TOOLKIT
 
-<pre>
-OPERATING SYSTEMS
-├── Kali Linux
-└── Linux
+<div align="center">
 
-NETWORKING
-├── Nmap
-├── Wireshark
-└── TCP/IP
+<img src="./assets/toolkit.svg" width="100%" alt="Naoufal Toolkit">
 
-DEVELOPMENT
-├── C#
-├── .NET
-└── Git / GitHub
-
-SECURITY RESEARCH
-├── GVM
-└── Shodan
-
-IoT / CAMERA
-├── ONVIF
-├── RTSP
-└── HTTP
-</pre>
-
----
+</div>
 
 ## ◈ PROJECTS
 
