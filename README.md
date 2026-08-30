@@ -98,12 +98,3 @@
 
 <div align="center">
 
-### `BUILD • LEARN • ANALYZE`
-
-<pre>
-[ SYSTEM STATUS : ONLINE ]
-[ SECURITY LAB  : ACTIVE ]
-[ DEVELOPMENT    : ACTIVE ]
-</pre>
-
-</div>
