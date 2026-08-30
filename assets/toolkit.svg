@@ -1,0 +1,332 @@
+<svg width="1000" height="560" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#58a6ff" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+  </linearGradient>
+
+</defs>
+
+<!-- BACKGROUND -->
+
+<rect width="1000" height="560" fill="#0d1117"/>
+
+<!-- GRID -->
+
+<g stroke="#58a6ff" stroke-width="1" opacity="0.06">
+
+<path d="M0 80H1000"/>
+<path d="M0 160H1000"/>
+<path d="M0 240H1000"/>
+<path d="M0 320H1000"/>
+<path d="M0 400H1000"/>
+<path d="M0 480H1000"/>
+
+<path d="M100 0V560"/>
+<path d="M200 0V560"/>
+<path d="M300 0V560"/>
+<path d="M400 0V560"/>
+<path d="M500 0V560"/>
+<path d="M600 0V560"/>
+<path d="M700 0V560"/>
+<path d="M800 0V560"/>
+<path d="M900 0V560"/>
+
+</g>
+
+<!-- TITLE -->
+
+<text x="500" y="42"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="19"
+font-weight="bold">
+
+TOOLKIT DATABASE
+
+</text>
+
+<!-- OPERATING SYSTEMS -->
+
+<rect x="60" y="75"
+width="270" height="170"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="85" y="105"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+[ 01 ] OPERATING SYSTEMS
+
+</text>
+
+<text x="90" y="145"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; Kali Linux
+
+</text>
+
+<text x="90" y="175"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; Linux
+
+</text>
+
+<text x="90" y="215"
+fill="#8b949e"
+font-family="monospace"
+font-size="11">
+
+SYSTEM STATUS: READY
+
+</text>
+
+<!-- NETWORKING -->
+
+<rect x="365" y="75"
+width="270" height="170"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="390" y="105"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+[ 02 ] NETWORKING
+
+</text>
+
+<text x="395" y="145"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; Nmap
+
+</text>
+
+<text x="395" y="175"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; Wireshark
+
+</text>
+
+<text x="395" y="205"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; TCP/IP
+
+</text>
+
+<!-- DEVELOPMENT -->
+
+<rect x="670" y="75"
+width="270" height="170"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="695" y="105"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+[ 03 ] DEVELOPMENT
+
+</text>
+
+<text x="700" y="145"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; C#
+
+</text>
+
+<text x="700" y="175"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; .NET
+
+</text>
+
+<text x="700" y="205"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; Git / GitHub
+
+</text>
+
+<!-- SECURITY -->
+
+<rect x="210" y="290"
+width="270" height="170"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="235" y="320"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+[ 04 ] SECURITY
+
+</text>
+
+<text x="240" y="360"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; GVM
+
+</text>
+
+<text x="240" y="390"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; Shodan
+
+</text>
+
+<text x="240" y="430"
+fill="#8b949e"
+font-family="monospace"
+font-size="11">
+
+RESEARCH MODE: ACTIVE
+
+</text>
+
+<!-- IoT -->
+
+<rect x="520" y="290"
+width="270" height="170"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="545" y="320"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+[ 05 ] IoT / CAMERA
+
+</text>
+
+<text x="550" y="360"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; ONVIF
+
+</text>
+
+<text x="550" y="390"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; RTSP
+
+</text>
+
+<text x="550" y="420"
+fill="#ffffff"
+font-family="monospace"
+font-size="15">
+
+&gt; HTTP
+
+</text>
+
+<!-- SCANNER -->
+
+<rect x="60" y="75"
+width="880"
+height="2"
+fill="url(#scan)"
+opacity="0.8">
+
+<animate
+attributeName="y"
+values="75;460;75"
+dur="5s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- STATUS -->
+
+<circle cx="470" cy="510"
+r="6"
+fill="#58a6ff"
+filter="url(#glow)">
+
+<animate
+attributeName="r"
+values="6;11;6"
+dur="1.5s"
+repeatCount="indefinite"/>
+
+<animate
+attributeName="opacity"
+values="1;0.2;1"
+dur="1.5s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<text x="490" y="515"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+TOOLKIT SYSTEM ONLINE
+
+</text>
+
+</svg>
