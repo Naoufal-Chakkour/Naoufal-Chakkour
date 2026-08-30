@@ -40,75 +40,17 @@
 
 <div align="center">
 
-<table>
-<tr>
-
-<td width="50%" align="center">
-
-### [+] Cybersecurity
-
-Network Security  
-Security Fundamentals  
-Security Research
-
-</td>
-
-<td width="50%" align="center">
-
-### [+] Linux
-
-Kali Linux  
-Bash  
-Linux Systems
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%" align="center">
-
-### [+] Development
-
-C#  
-.NET  
-Git & GitHub
-
-</td>
-
-<td width="50%" align="center">
-
-### [+] IoT
-
-ONVIF  
-RTSP  
-Networked Devices
-
-</td>
-
-</tr>
-</table>
+<img src="./assets/learning.svg" width="100%" alt="Naoufal Learning Matrix">
 
 </div>
-
----
 
 ## ◈ TOOLKIT
 
 <div align="center">
 
-| CATEGORY | TECHNOLOGIES |
-|:---:|:---|
-| `OS` | Kali Linux · Linux |
-| `NETWORK` | Nmap · Wireshark · TCP/IP |
-| `DEVELOPMENT` | C# · .NET · Git · GitHub |
-| `SECURITY` | GVM · Shodan |
-| `IoT` | ONVIF · RTSP · HTTP |
+<img src="./assets/toolkit.svg" width="100%" alt="Naoufal Toolkit">
 
 </div>
-
----
 
 ## ◈ PROJECTS
 
