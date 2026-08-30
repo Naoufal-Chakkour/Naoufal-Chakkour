@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 470" width="1240" height="470" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d0a18"/><stop offset="100%" stop-color="#07050f"/></linearGradient>
+    <linearGradient id="fscr" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#100c1e"/><stop offset="100%" stop-color="#070511"/></linearGradient>
+    <linearGradient id="ffill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a78bfa" stop-opacity="0.35"/><stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/></linearGradient>
+    <filter id="fgl"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="fclip"><rect x="176" y="66" width="880" height="300"/></clipPath>
+  </defs>
+
+  <rect width="1240" height="470" rx="10" fill="url(#fbg)" stroke="#1c2430" stroke-width="1.5"/>
+  <text x="34" y="40" fill="#a78bfa" font-size="12.5" font-weight="700" letter-spacing="2.5">LINE TELEMETRY GATEWAY</text>
+  <text x="34" y="58" fill="#4c3a7a" font-size="8.5" letter-spacing="1.6">NODE F &#183; INDUSTRIAL &amp; OT &#183; STORE-AND-FORWARD</text>
+  <circle cx="1150" cy="34" r="5" fill="#a78bfa"><animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/></circle>
+  <text x="1163" y="38" fill="#a78bfa" font-size="9" letter-spacing="1.2">POLL</text>
+
+  <rect x="34" y="66" width="128" height="300" rx="5" fill="#0b0817" stroke="#2c2350"/>
+  <g font-size="7.5" fill="#4c3a7a">
+    <text x="46" y="86">TRANSPORT</text><text x="46" y="128">POLL CYCLE</text><text x="46" y="170">TAG COUNT</text>
+    <text x="46" y="212">PHYSICAL</text><text x="46" y="254">UPLINK</text><text x="46" y="296">BUFFER</text><text x="46" y="338">WATCHDOG</text>
+  </g>
+  <g font-size="10.5" fill="#c4b5fd">
+    <text x="46" y="102">Modbus TCP</text><text x="46" y="144">250 ms</text><text x="46" y="186">412 tags</text>
+    <text x="46" y="228">RS-485 iso.</text><text x="46" y="270">MQTT / OPC-UA</text><text x="46" y="312">18 h on disk</text>
+  </g>
+  <text x="46" y="354" font-size="10.5" fill="#34d399" font-weight="700">ARMED</text>
+
+  <rect x="176" y="66" width="880" height="300" rx="4" fill="url(#fscr)" stroke="#2c2350"/>
+  <g clip-path="url(#fclip)">
+    <!-- tag table -->
+    <text x="192" y="88" fill="#4c3a7a" font-size="7.5">REGISTER MAP &#183; A NUMBER IS NOT A MEANING</text>
+    <g font-size="8.5">
+      <text x="192" y="110" fill="#4c3a7a">ADDR</text><text x="266" y="110" fill="#4c3a7a">RAW</text><text x="336" y="110" fill="#4c3a7a">SCALED</text><text x="430" y="110" fill="#4c3a7a">MEANING (RECOVERED ON SITE)</text>
+      <line x1="192" y1="118" x2="700" y2="118" stroke="#2c2350"/>
+      <text x="192" y="136" fill="#c4b5fd">40001</text><text x="266" y="136" fill="#8b7fc4">7412</text><text x="336" y="136" fill="#c4b5fd">74.12 &#176;C</text><text x="430" y="136" fill="#8b7fc4">bearing temp, drive end</text>
+      <text x="192" y="156" fill="#c4b5fd">40007</text><text x="266" y="156" fill="#8b7fc4">1180</text><text x="336" y="156" fill="#c4b5fd">1180 rpm</text><text x="430" y="156" fill="#8b7fc4">spindle speed, not setpoint</text>
+      <text x="192" y="176" fill="#c4b5fd">40012</text><text x="266" y="176" fill="#8b7fc4">3</text><text x="336" y="176" fill="#c4b5fd">RUN</text><text x="430" y="176" fill="#8b7fc4">state enum, vendor-specific</text>
+      <text x="192" y="196" fill="#c4b5fd">40019</text><text x="266" y="196" fill="#8b7fc4">0</text><text x="336" y="196" fill="#fbbf24">UNMAPPED</text><text x="430" y="196" fill="#fbbf24">nobody on site could name it</text>
+      <text x="192" y="216" fill="#c4b5fd">40023</text><text x="266" y="216" fill="#8b7fc4">982</text><text x="336" y="216" fill="#c4b5fd">98.2 bar</text><text x="430" y="216" fill="#8b7fc4">hydraulic pressure</text>
+      <text x="192" y="236" fill="#c4b5fd">40031</text><text x="266" y="236" fill="#8b7fc4">45231</text><text x="336" y="236" fill="#c4b5fd">45 231 pcs</text><text x="430" y="236" fill="#8b7fc4">counter, wraps at 65535</text>
+    </g>
+    <text x="192" y="258" fill="#fbbf24" font-size="7.5">an unmapped register is recorded as unmapped, never guessed into a unit</text>
+
+    <!-- trend -->
+    <line x1="720" y1="76" x2="720" y2="356" stroke="#2c2350"/>
+    <text x="736" y="88" fill="#4c3a7a" font-size="7.5">SPINDLE LOAD &#183; 60 min</text>
+    <path fill="url(#ffill)" stroke="none" d="M736 200 L768 186 L800 194 L832 160 L864 176 L896 150 L928 168 L960 140 L992 158 L1024 146 L1040 152 L1040 260 L736 260 Z"/>
+    <polyline fill="none" stroke="#a78bfa" stroke-width="1.4" filter="url(#fgl)"
+      points="736,200 768,186 800,194 832,160 864,176 896,150 928,168 960,140 992,158 1024,146 1040,152">
+      <animate attributeName="points" dur="4.2s" repeatCount="indefinite"
+        values="736,200 768,186 800,194 832,160 864,176 896,150 928,168 960,140 992,158 1024,146 1040,152;
+                736,190 768,196 800,172 832,180 864,152 896,170 928,146 960,164 992,142 1024,158 1040,146;
+                736,200 768,186 800,194 832,160 864,176 896,150 928,168 960,140 992,158 1024,146 1040,152"/>
+    </polyline>
+    <line x1="736" y1="132" x2="1040" y2="132" stroke="#f87171" stroke-dasharray="4 3" stroke-width="1"/>
+    <text x="736" y="126" fill="#f87171" font-size="7">alarm threshold</text>
+
+    <text x="736" y="292" fill="#4c3a7a" font-size="7.5">UPLINK</text>
+    <g font-size="8.5">
+      <text x="736" y="310" fill="#c4b5fd">last publish 0.4 s ago</text>
+      <text x="736" y="326" fill="#c4b5fd">queued while offline 0</text>
+      <text x="736" y="342" fill="#34d399">line kept running through 3 dropouts</text>
+    </g>
+  </g>
+
+  <rect x="1072" y="66" width="134" height="300" rx="5" fill="#0b0817" stroke="#2c2350"/>
+  <g font-size="7.5" fill="#4c3a7a"><text x="1084" y="86">HEALTH</text><text x="1084" y="176">INTEGRATION</text><text x="1084" y="284">EVIDENCE</text></g>
+  <g font-size="9" fill="#c4b5fd">
+    <text x="1084" y="104">poll jitter 6 ms</text><text x="1084" y="118">timeouts 0</text><text x="1084" y="132">CRC errors 0</text>
+    <text x="1084" y="146">restarts 0</text><text x="1084" y="160">uptime 41 d</text>
+    <text x="1084" y="194">OPC-UA server</text><text x="1084" y="208">Sparkplug B</text><text x="1084" y="222">Timescale sink</text>
+    <text x="1084" y="236">Grafana panel</text><text x="1084" y="250">ERP writeback</text>
+    <text x="1084" y="302">sha256 c7e1&#8230;</text><text x="1084" y="316">raw + scaled</text><text x="1084" y="330">both retained</text>
+  </g>
+  <text x="1084" y="266" font-size="9" fill="#34d399">idempotent</text>
+  <text x="1084" y="350" font-size="9" fill="#34d399">re-derivable</text>
+
+  <g font-size="8.5" fill="#4c3a7a">
+    <text x="34" y="392">MODBUS RTU / TCP</text><text x="220" y="392">OPC-UA &#183; PROFINET</text><text x="430" y="392">MQTT &#183; SPARKPLUG B</text>
+    <text x="660" y="392">4-20 mA &#183; 24 V I/O</text><text x="900" y="392">SAME TIMESTAMP DOMAIN</text>
+  </g>
+  <rect x="34" y="404" width="1172" height="2" fill="#2c2350"/>
+  <rect x="34" y="404" width="180" height="2" fill="#a78bfa"><animate attributeName="x" values="34;1026;34" dur="9s" repeatCount="indefinite"/></rect>
+  <text x="34" y="432" fill="#372c5c" font-size="8">store-and-forward with an 18-hour local buffer &#183; the uplink dropping is an expected state, not an incident</text>
+  <text x="34" y="448" fill="#372c5c" font-size="8">half the work is recovering what a tag means on the floor &#8212; that knowledge lives in a person, not in the PLC project file</text>
+</svg>
