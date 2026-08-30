@@ -1,0 +1,363 @@
+<svg width="1000" height="620" viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="1000" height="620" fill="#0d1117"/>
+
+<!-- GRID -->
+<g stroke="#58a6ff" stroke-width="1" opacity="0.08">
+<path d="M0 80H1000"/>
+<path d="M0 160H1000"/>
+<path d="M0 240H1000"/>
+<path d="M0 320H1000"/>
+<path d="M0 400H1000"/>
+<path d="M0 480H1000"/>
+<path d="M0 560H1000"/>
+
+<path d="M100 0V620"/>
+<path d="M200 0V620"/>
+<path d="M300 0V620"/>
+<path d="M400 0V620"/>
+<path d="M500 0V620"/>
+<path d="M600 0V620"/>
+<path d="M700 0V620"/>
+<path d="M800 0V620"/>
+<path d="M900 0V620"/>
+</g>
+
+<!-- TITLE -->
+
+<text x="500" y="45"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="18"
+font-weight="bold">
+
+TECHNOLOGY NODE SYSTEM
+
+</text>
+
+<!-- CONNECTIONS -->
+
+<g stroke="#58a6ff" stroke-width="2" fill="none" opacity="0.8">
+
+<path d="M500 110V150"/>
+
+<path d="M500 190L220 250"/>
+<path d="M500 190L500 250"/>
+<path d="M500 190L780 250"/>
+
+<path d="M220 310V370"/>
+<path d="M500 310V370"/>
+<path d="M780 310V370"/>
+
+<path d="M220 430L500 480"/>
+<path d="M500 430V480"/>
+<path d="M780 430L500 480"/>
+
+</g>
+
+<!-- CORE -->
+
+<rect x="370" y="70"
+width="260" height="120"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="500" y="115"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="22"
+font-weight="bold">
+
+NAOUFAL LAB
+
+</text>
+
+<text x="500" y="145"
+text-anchor="middle"
+fill="#8b949e"
+font-family="monospace"
+font-size="13">
+
+SECURITY • DEVELOPMENT
+
+</text>
+
+<text x="500" y="170"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="11">
+
+[ CORE ONLINE ]
+
+</text>
+
+<!-- NODE A -->
+
+<rect x="90" y="250"
+width="260" height="120"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="115" y="280"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+NODE A
+
+</text>
+
+<text x="220" y="315"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="19"
+font-weight="bold">
+
+NETWORK
+
+</text>
+
+<text x="220" y="342"
+text-anchor="middle"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+NMAP • WIRESHARK • TCP/IP
+
+</text>
+
+<!-- NODE B -->
+
+<rect x="370" y="250"
+width="260" height="120"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="395" y="280"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+NODE B
+
+</text>
+
+<text x="500" y="315"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="19"
+font-weight="bold">
+
+LINUX
+
+</text>
+
+<text x="500" y="342"
+text-anchor="middle"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+KALI • BASH • SYSTEMS
+
+</text>
+
+<!-- NODE C -->
+
+<rect x="650" y="250"
+width="260" height="120"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="675" y="280"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+NODE C
+
+</text>
+
+<text x="780" y="315"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="19"
+font-weight="bold">
+
+WEB SECURITY
+
+</text>
+
+<text x="780" y="342"
+text-anchor="middle"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+HTTP • WEB • ANALYSIS
+
+</text>
+
+<!-- NODE D -->
+
+<rect x="90" y="370"
+width="260" height="120"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="115" y="400"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+NODE D
+
+</text>
+
+<text x="220" y="435"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="19"
+font-weight="bold">
+
+C# / .NET
+
+</text>
+
+<text x="220" y="462"
+text-anchor="middle"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+C# • .NET • GIT
+
+</text>
+
+<!-- NODE E -->
+
+<rect x="370" y="370"
+width="260" height="120"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="395" y="400"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+NODE E
+
+</text>
+
+<text x="500" y="435"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="19"
+font-weight="bold">
+
+IoT / CCTV
+
+</text>
+
+<text x="500" y="462"
+text-anchor="middle"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+ONVIF • RTSP • NETWORK
+
+</text>
+
+<!-- NODE F -->
+
+<rect x="650" y="370"
+width="260" height="120"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="675" y="400"
+fill="#58a6ff"
+font-family="monospace"
+font-size="13">
+
+NODE F
+
+</text>
+
+<text x="780" y="435"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="19"
+font-weight="bold">
+
+WIRELESS
+
+</text>
+
+<text x="780" y="462"
+text-anchor="middle"
+fill="#8b949e"
+font-family="monospace"
+font-size="12">
+
+WI-FI • RADIO • ANALYSIS
+
+</text>
+
+<!-- ANALYSIS CORE -->
+
+<rect x="350" y="480"
+width="300" height="90"
+rx="8"
+fill="#161b22"
+stroke="#58a6ff"
+stroke-width="2"/>
+
+<text x="500" y="515"
+text-anchor="middle"
+fill="#ffffff"
+font-family="monospace"
+font-size="17"
+font-weight="bold">
+
+ANALYSIS CORE
+
+</text>
+
+<text x="500" y="545"
+text-anchor="middle"
+fill="#58a6ff"
+font-family="monospace"
+font-size="12">
+
+DISCOVER • ANALYZE • BUILD
+
+</text>
+
+</svg>
