@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 470" width="1240" height="470" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="gbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#04120f"/><stop offset="100%" stop-color="#020a08"/></linearGradient>
+    <linearGradient id="gscr" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#04150f"/><stop offset="100%" stop-color="#020b07"/></linearGradient>
+    <radialGradient id="gsweepgrad"><stop offset="0%" stop-color="#5eead4" stop-opacity="0.45"/><stop offset="100%" stop-color="#5eead4" stop-opacity="0"/></radialGradient>
+    <filter id="ggl"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="gclip"><rect x="176" y="66" width="880" height="300"/></clipPath>
+  </defs>
+
+  <rect width="1240" height="470" rx="10" fill="url(#gbg)" stroke="#1c2430" stroke-width="1.5"/>
+  <text x="34" y="40" fill="#5eead4" font-size="12.5" font-weight="700" letter-spacing="2.5">COHERENT ARRAY &amp; BEARING</text>
+  <text x="34" y="58" fill="#1f4f47" font-size="8.5" letter-spacing="1.6">NODE G &#183; DIRECTION FINDING &#183; CLASSIFY BEFORE BUILD</text>
+  <circle cx="1150" cy="34" r="5" fill="#5eead4"><animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+  <text x="1163" y="38" fill="#5eead4" font-size="9" letter-spacing="1.2">LOCK</text>
+
+  <rect x="34" y="66" width="128" height="300" rx="5" fill="#05130e" stroke="#12403a"/>
+  <g font-size="7.5" fill="#1f4f47">
+    <text x="46" y="86">ARRAY</text><text x="46" y="128">GEOMETRY</text><text x="46" y="170">REF CLOCK</text>
+    <text x="46" y="212">PHASE CAL</text><text x="46" y="254">ALGORITHM</text><text x="46" y="296">SNR</text><text x="46" y="338">EXPORT CLASS</text>
+  </g>
+  <g font-size="10.5" fill="#7de8d4">
+    <text x="46" y="102">4-ch coherent</text><text x="46" y="144">UCA, &#955;/2</text><text x="46" y="186">shared 10 MHz</text>
+    <text x="46" y="228">&#177;0.8&#176; residual</text><text x="46" y="270">MUSIC</text><text x="46" y="312">18.4 dB</text>
+  </g>
+  <text x="46" y="354" font-size="10.5" fill="#fbbf24" font-weight="700">PENDING</text>
+
+  <rect x="176" y="66" width="880" height="300" rx="4" fill="url(#gscr)" stroke="#12403a"/>
+  <g clip-path="url(#gclip)">
+    <!-- polar display -->
+    <g transform="translate(400,216)">
+      <g fill="none" stroke="#12403a" stroke-width="0.8">
+        <circle r="36"/><circle r="72"/><circle r="108"/><circle r="132"/>
+        <path d="M-132 0 H132 M0 -132 V132 M-93 -93 L93 93 M-93 93 L93 -93"/>
+      </g>
+      <g fill="#1f4f47" font-size="7.5" text-anchor="middle">
+        <text x="0" y="-138">0&#176;</text><text x="140" y="3">90&#176;</text><text x="0" y="148">180&#176;</text><text x="-140" y="3">270&#176;</text>
+      </g>
+      <path d="M0 0 L0 -132 A132 132 0 0 1 34 -128 Z" fill="url(#gsweepgrad)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+      </path>
+      <!-- bearing estimate with uncertainty wedge -->
+      <path d="M0 0 L83 -103 A132 132 0 0 1 100 -86 Z" fill="#5eead4" opacity="0.16"/>
+      <line x1="0" y1="0" x2="92" y2="-95" stroke="#5eead4" stroke-width="2" filter="url(#ggl)"/>
+      <circle cx="92" cy="-95" r="4" fill="#5eead4"/>
+      <text x="102" y="-100" fill="#5eead4" font-size="8">EM-1 &#183; 044&#176; &#177; 3.2&#176;</text>
+      <line x1="0" y1="0" x2="-74" y2="62" stroke="#7dd3fc" stroke-width="1.6" opacity="0.8"/>
+      <circle cx="-74" cy="62" r="3.4" fill="#7dd3fc"/>
+      <text x="-150" y="76" fill="#7dd3fc" font-size="8">EM-2 &#183; 220&#176; &#177; 7.9&#176;</text>
+      <line x1="0" y1="0" x2="20" y2="118" stroke="#f87171" stroke-width="1.4" opacity="0.7" stroke-dasharray="4 3"/>
+      <text x="28" y="126" fill="#f87171" font-size="8">multipath suspect</text>
+    </g>
+
+    <!-- channel phase -->
+    <line x1="620" y1="76" x2="620" y2="356" stroke="#12403a"/>
+    <text x="638" y="90" fill="#1f4f47" font-size="7.5">PER-CHANNEL PHASE RESIDUAL AFTER CALIBRATION</text>
+    <g font-size="8.5">
+      <text x="638" y="120" fill="#7de8d4">CH0</text><rect x="690" y="112" width="300" height="9" rx="2" fill="#07201a" stroke="#12403a"/>
+      <rect x="838" y="113" width="4" height="7" fill="#5eead4"/><text x="1000" y="120" fill="#4b8f83">0.0&#176; ref</text>
+      <text x="638" y="146" fill="#7de8d4">CH1</text><rect x="690" y="138" width="300" height="9" rx="2" fill="#07201a" stroke="#12403a"/>
+      <rect x="832" y="139" width="10" height="7" fill="#5eead4"><animate attributeName="x" values="832;846;832" dur="3.1s" repeatCount="indefinite"/></rect><text x="1000" y="146" fill="#4b8f83">+0.6&#176;</text>
+      <text x="638" y="172" fill="#7de8d4">CH2</text><rect x="690" y="164" width="300" height="9" rx="2" fill="#07201a" stroke="#12403a"/>
+      <rect x="824" y="165" width="12" height="7" fill="#5eead4"><animate attributeName="x" values="824;834;824" dur="2.6s" repeatCount="indefinite"/></rect><text x="1000" y="172" fill="#4b8f83">-0.8&#176;</text>
+      <text x="638" y="198" fill="#7de8d4">CH3</text><rect x="690" y="190" width="300" height="9" rx="2" fill="#07201a" stroke="#12403a"/>
+      <rect x="844" y="191" width="14" height="7" fill="#fbbf24"><animate attributeName="x" values="844;860;844" dur="2.2s" repeatCount="indefinite"/></rect><text x="1000" y="198" fill="#fbbf24">+1.4&#176; drift</text>
+    </g>
+    <text x="638" y="224" fill="#1f4f47" font-size="7.5">CH3 residual is rising with enclosure temperature &#8212; recalibration scheduled, not ignored</text>
+
+    <text x="638" y="256" fill="#1f4f47" font-size="7.5">WHY THIS PANEL IS DIFFERENT</text>
+    <g font-size="8.5" fill="#7de8d4">
+      <text x="638" y="276">Coherence is a hardware property. Channels share a</text>
+      <text x="638" y="292">clock and a calibrated phase reference, or the bearing</text>
+      <text x="638" y="308">is decoration and its error bar is decoration too.</text>
+    </g>
+    <text x="638" y="334" fill="#fbbf24" font-size="8.5">Dual-use classification precedes the schematic, not the shipment.</text>
+    <text x="638" y="350" fill="#1f4f47" font-size="7.5">EU Regulation 2021/821 &#183; administered in Germany by BAFA</text>
+  </g>
+
+  <rect x="1072" y="66" width="134" height="300" rx="5" fill="#05130e" stroke="#12403a"/>
+  <g font-size="7.5" fill="#1f4f47"><text x="1084" y="86">COHERENCE</text><text x="1084" y="176">ESTIMATE</text><text x="1084" y="284">EVIDENCE</text></g>
+  <g font-size="9" fill="#7de8d4">
+    <text x="1084" y="104">clock shared</text><text x="1084" y="118">skew &lt; 40 ps</text><text x="1084" y="132">lock 00:41:12</text>
+    <text x="1084" y="146">cal age 6 h</text><text x="1084" y="160">temp 38.2 &#176;C</text>
+    <text x="1084" y="194">bearing 044&#176;</text><text x="1084" y="208">CRLB &#177;2.1&#176;</text><text x="1084" y="222">achieved &#177;3.2&#176;</text>
+    <text x="1084" y="236">snapshots 512</text>
+    <text x="1084" y="302">sha256 2a58&#8230;</text><text x="1084" y="316">raw IQ, 4 ch</text><text x="1084" y="330">cal table stored</text>
+  </g>
+  <text x="1084" y="250" font-size="9" fill="#fbbf24">gap is honest</text>
+  <text x="1084" y="350" font-size="9" fill="#34d399">re-derivable</text>
+
+  <g font-size="8.5" fill="#1f4f47">
+    <text x="34" y="392">MULTI-CHANNEL COHERENT SDR</text><text x="290" y="392">ARRAY SENSING</text><text x="470" y="392">SHARED CLOCK &amp; PHASE REF</text>
+    <text x="740" y="392">RECEIVE-ONLY</text><text x="900" y="392">SAME TIMESTAMP DOMAIN</text>
+  </g>
+  <rect x="34" y="404" width="1172" height="2" fill="#12403a"/>
+  <rect x="34" y="404" width="180" height="2" fill="#5eead4"><animate attributeName="x" values="34;1026;34" dur="9s" repeatCount="indefinite"/></rect>
+  <text x="34" y="432" fill="#1a3b35" font-size="8">the achieved bound is reported next to the theoretical one &#183; a bearing without an error bar is not a measurement</text>
+  <text x="34" y="448" fill="#1a3b35" font-size="8">export classification is a question about capability, not marketing &#8212; and it shapes the bill of materials, so it is asked first</text>
+</svg>
