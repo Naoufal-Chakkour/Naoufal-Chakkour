@@ -25,7 +25,7 @@
     <path d="M120 0v820M280 0v820M440 0v820M600 0v820M760 0v820M920 0v820M1080 0v820"/>
   </g>
 
-  <text x="32" y="54" fill="#e6edf3" font-size="28" font-weight="700" letter-spacing="8">BOUCHMAL</text>
+  <text x="32" y="54" fill="#e6edf3" font-size="28" font-weight="700" letter-spacing="8">LAROUSSI CHAKKOUR</text>
   <text x="32" y="80" fill="#7d8590" font-size="10.5" letter-spacing="2.2">INSTRUMENT PLATFORMS &#183; EV CHARGING &#183; INDUSTRIAL AUTOMATION &#183; LIFE-SCIENCE DATA &#183; CONNECTED PRODUCT</text>
   <line x1="32" y1="94" x2="640" y2="94" stroke="#2d5a8e" stroke-width="1.5">
     <animate attributeName="x2" values="32;640" dur="1.4s" fill="freeze"/>
