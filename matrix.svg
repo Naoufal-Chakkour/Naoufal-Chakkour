@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 550" width="1240" height="550" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <style>
+    .hdr  { fill:#5eead4; font-size:9px; letter-spacing:1.6px; }
+    .row  { fill:#c9d1d9; font-size:9.5px; }
+    .sub  { fill:#6e7681; font-size:7.5px; }
+    .cell { fill:#0c1218; stroke:#1c2430; stroke-width:1; }
+    .on   { fill:#0d1f1c; stroke:#5eead4; stroke-width:1.2; }
+    .mid  { fill:#161b22; stroke:#30363d; stroke-width:1; }
+    .dot-on  { fill:#5eead4; }
+    .dot-mid { fill:#f59e0b; }
+    .dot-off { fill:#30363d; }
+  </style>
+  <defs>
+    <linearGradient id="mxbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080b11"/><stop offset="100%" stop-color="#070a0f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1240" height="550" rx="10" fill="url(#mxbg)" stroke="#1c2430" stroke-width="1.5"/>
+  <text x="34" y="36" fill="#5eead4" font-size="12" font-weight="700" letter-spacing="2.4">CAPABILITY MATRIX</text>
+  <text x="34" y="53" class="sub">WHERE EACH DOMAIN TOUCHES THE STACK &#183; FILLED = PRIMARY, AMBER = WORKING, OUTLINE = ADJACENT</text>
+
+  <g class="hdr" text-anchor="middle">
+    <text x="470" y="84">SCHEMATIC</text>
+    <text x="590" y="84">PCB</text>
+    <text x="710" y="84">FIRMWARE</text>
+    <text x="830" y="84">PROTOCOL</text>
+    <text x="950" y="84">BACKEND</text>
+    <text x="1080" y="84">APP</text>
+  </g>
+  <line x1="34" y1="94" x2="1206" y2="94" stroke="#1c2430"/>
+
+  <!-- RF & wireless -->
+  <text x="34" y="122" class="row">RF &amp; wireless</text>
+  <text x="34" y="134" class="sub">Wi-Fi, BLE, 802.15.4, LoRaWAN, sub-GHz, SDR</text>
+  <g>
+    <rect x="430" y="106" width="80" height="26" rx="4" class="on"/><circle cx="470" cy="119" r="4" class="dot-on"/>
+    <rect x="550" y="106" width="80" height="26" rx="4" class="on"/><circle cx="590" cy="119" r="4" class="dot-on"/>
+    <rect x="670" y="106" width="80" height="26" rx="4" class="on"/><circle cx="710" cy="119" r="4" class="dot-on"/>
+    <rect x="790" y="106" width="80" height="26" rx="4" class="on"/><circle cx="830" cy="119" r="4" class="dot-on"/>
+    <rect x="910" y="106" width="80" height="26" rx="4" class="mid"/><circle cx="950" cy="119" r="4" class="dot-mid"/>
+    <rect x="1040" y="106" width="80" height="26" rx="4" class="mid"/><circle cx="1080" cy="119" r="4" class="dot-mid"/>
+  </g>
+
+  <!-- Vehicle networks -->
+  <text x="34" y="164" class="row">Vehicle networks</text>
+  <text x="34" y="176" class="sub">CAN / CAN-FD, LIN, K-Line, Automotive Ethernet, UDS</text>
+  <g>
+    <rect x="430" y="148" width="80" height="26" rx="4" class="on"/><circle cx="470" cy="161" r="4" class="dot-on"/>
+    <rect x="550" y="148" width="80" height="26" rx="4" class="on"/><circle cx="590" cy="161" r="4" class="dot-on"/>
+    <rect x="670" y="148" width="80" height="26" rx="4" class="on"/><circle cx="710" cy="161" r="4" class="dot-on"/>
+    <rect x="790" y="148" width="80" height="26" rx="4" class="on"/><circle cx="830" cy="161" r="4" class="dot-on"/>
+    <rect x="910" y="148" width="80" height="26" rx="4" class="on"/><circle cx="950" cy="161" r="4" class="dot-on"/>
+    <rect x="1040" y="148" width="80" height="26" rx="4" class="mid"/><circle cx="1080" cy="161" r="4" class="dot-mid"/>
+  </g>
+
+  <!-- Energy & EV charging -->
+  <text x="34" y="206" class="row">Energy &amp; EV charging</text>
+  <text x="34" y="218" class="sub">OCPP 1.6J / 2.0.1, OCPI, ISO 15118, MID metering</text>
+  <g>
+    <rect x="430" y="190" width="80" height="26" rx="4" class="mid"/><circle cx="470" cy="203" r="4" class="dot-mid"/>
+    <rect x="550" y="190" width="80" height="26" rx="4" class="mid"/><circle cx="590" cy="203" r="4" class="dot-mid"/>
+    <rect x="670" y="190" width="80" height="26" rx="4" class="on"/><circle cx="710" cy="203" r="4" class="dot-on"/>
+    <rect x="790" y="190" width="80" height="26" rx="4" class="on"/><circle cx="830" cy="203" r="4" class="dot-on"/>
+    <rect x="910" y="190" width="80" height="26" rx="4" class="on"/><circle cx="950" cy="203" r="4" class="dot-on"/>
+    <rect x="1040" y="190" width="80" height="26" rx="4" class="on"/><circle cx="1080" cy="203" r="4" class="dot-on"/>
+  </g>
+
+  <!-- Industrial & OT -->
+  <text x="34" y="248" class="row">Industrial &amp; OT</text>
+  <text x="34" y="260" class="sub">Modbus RTU/TCP, OPC-UA, PROFINET, MQTT, RS-485</text>
+  <g>
+    <rect x="430" y="232" width="80" height="26" rx="4" class="mid"/><circle cx="470" cy="245" r="4" class="dot-mid"/>
+    <rect x="550" y="232" width="80" height="26" rx="4" class="mid"/><circle cx="590" cy="245" r="4" class="dot-mid"/>
+    <rect x="670" y="232" width="80" height="26" rx="4" class="on"/><circle cx="710" cy="245" r="4" class="dot-on"/>
+    <rect x="790" y="232" width="80" height="26" rx="4" class="on"/><circle cx="830" cy="245" r="4" class="dot-on"/>
+    <rect x="910" y="232" width="80" height="26" rx="4" class="on"/><circle cx="950" cy="245" r="4" class="dot-on"/>
+    <rect x="1040" y="232" width="80" height="26" rx="4" class="mid"/><circle cx="1080" cy="245" r="4" class="dot-mid"/>
+  </g>
+
+  <!-- Vision & sensing -->
+  <text x="34" y="290" class="row">Vision &amp; sensing</text>
+  <text x="34" y="302" class="sub">MIPI CSI-2, GMSL, PoE, ONVIF, RTSP, edge inference</text>
+  <g>
+    <rect x="430" y="274" width="80" height="26" rx="4" class="cell"/><circle cx="470" cy="287" r="4" class="dot-off"/>
+    <rect x="550" y="274" width="80" height="26" rx="4" class="mid"/><circle cx="590" cy="287" r="4" class="dot-mid"/>
+    <rect x="670" y="274" width="80" height="26" rx="4" class="on"/><circle cx="710" cy="287" r="4" class="dot-on"/>
+    <rect x="790" y="274" width="80" height="26" rx="4" class="on"/><circle cx="830" cy="287" r="4" class="dot-on"/>
+    <rect x="910" y="274" width="80" height="26" rx="4" class="on"/><circle cx="950" cy="287" r="4" class="dot-on"/>
+    <rect x="1040" y="274" width="80" height="26" rx="4" class="on"/><circle cx="1080" cy="287" r="4" class="dot-on"/>
+  </g>
+
+  <!-- Identity & security -->
+  <text x="34" y="332" class="row">Identity &amp; security</text>
+  <text x="34" y="344" class="sub">NFC/RFID, ISO 7816, secure boot, signed OTA, SBOM</text>
+  <g>
+    <rect x="430" y="316" width="80" height="26" rx="4" class="on"/><circle cx="470" cy="329" r="4" class="dot-on"/>
+    <rect x="550" y="316" width="80" height="26" rx="4" class="on"/><circle cx="590" cy="329" r="4" class="dot-on"/>
+    <rect x="670" y="316" width="80" height="26" rx="4" class="on"/><circle cx="710" cy="329" r="4" class="dot-on"/>
+    <rect x="790" y="316" width="80" height="26" rx="4" class="on"/><circle cx="830" cy="329" r="4" class="dot-on"/>
+    <rect x="910" y="316" width="80" height="26" rx="4" class="mid"/><circle cx="950" cy="329" r="4" class="dot-mid"/>
+    <rect x="1040" y="316" width="80" height="26" rx="4" class="mid"/><circle cx="1080" cy="329" r="4" class="dot-mid"/>
+  </g>
+
+  <!-- Automation & data -->
+  <text x="34" y="374" class="row">Automation &amp; data</text>
+  <text x="34" y="386" class="sub">pipelines, extraction, validation, ERP / MES integration</text>
+  <g>
+    <rect x="430" y="358" width="80" height="26" rx="4" class="cell"/><circle cx="470" cy="371" r="4" class="dot-off"/>
+    <rect x="550" y="358" width="80" height="26" rx="4" class="cell"/><circle cx="590" cy="371" r="4" class="dot-off"/>
+    <rect x="670" y="358" width="80" height="26" rx="4" class="mid"/><circle cx="710" cy="371" r="4" class="dot-mid"/>
+    <rect x="790" y="358" width="80" height="26" rx="4" class="on"/><circle cx="830" cy="371" r="4" class="dot-on"/>
+    <rect x="910" y="358" width="80" height="26" rx="4" class="on"/><circle cx="950" cy="371" r="4" class="dot-on"/>
+    <rect x="1040" y="358" width="80" height="26" rx="4" class="on"/><circle cx="1080" cy="371" r="4" class="dot-on"/>
+  </g>
+
+  <!-- Coherent RF & direction finding -->
+  <text x="34" y="416" class="row">Coherent RF &amp; direction finding</text>
+  <text x="34" y="428" class="sub">multi-channel coherent SDR, array sensing, bearing</text>
+  <g>
+    <rect x="430" y="400" width="80" height="26" rx="4" class="mid"/><circle cx="470" cy="413" r="4" class="dot-mid"/>
+    <rect x="550" y="400" width="80" height="26" rx="4" class="mid"/><circle cx="590" cy="413" r="4" class="dot-mid"/>
+    <rect x="670" y="400" width="80" height="26" rx="4" class="on"/><circle cx="710" cy="413" r="4" class="dot-on"/>
+    <rect x="790" y="400" width="80" height="26" rx="4" class="on"/><circle cx="830" cy="413" r="4" class="dot-on"/>
+    <rect x="910" y="400" width="80" height="26" rx="4" class="mid"/><circle cx="950" cy="413" r="4" class="dot-mid"/>
+    <rect x="1040" y="400" width="80" height="26" rx="4" class="cell"/><circle cx="1080" cy="413" r="4" class="dot-off"/>
+  </g>
+
+  <!-- Hardware & mixed-signal -->
+  <text x="34" y="458" class="row">Hardware &amp; mixed-signal</text>
+  <text x="34" y="470" class="sub">24-bit simultaneous ADC, FPGA timing, side-channel</text>
+  <g>
+    <rect x="430" y="442" width="80" height="26" rx="4" class="on"/><circle cx="470" cy="455" r="4" class="dot-on"/>
+    <rect x="550" y="442" width="80" height="26" rx="4" class="on"/><circle cx="590" cy="455" r="4" class="dot-on"/>
+    <rect x="670" y="442" width="80" height="26" rx="4" class="on"/><circle cx="710" cy="455" r="4" class="dot-on"/>
+    <rect x="790" y="442" width="80" height="26" rx="4" class="mid"/><circle cx="830" cy="455" r="4" class="dot-mid"/>
+    <rect x="910" y="442" width="80" height="26" rx="4" class="mid"/><circle cx="950" cy="455" r="4" class="dot-mid"/>
+    <rect x="1040" y="442" width="80" height="26" rx="4" class="cell"/><circle cx="1080" cy="455" r="4" class="dot-off"/>
+  </g>
+
+  <!-- Mobile & connected product -->
+  <text x="34" y="500" class="row">Mobile &amp; connected product</text>
+  <text x="34" y="512" class="sub">Flutter, React Native, Kotlin, Swift, BLE, OTA</text>
+  <g>
+    <rect x="430" y="484" width="80" height="26" rx="4" class="cell"/><circle cx="470" cy="497" r="4" class="dot-off"/>
+    <rect x="550" y="484" width="80" height="26" rx="4" class="cell"/><circle cx="590" cy="497" r="4" class="dot-off"/>
+    <rect x="670" y="484" width="80" height="26" rx="4" class="mid"/><circle cx="710" cy="497" r="4" class="dot-mid"/>
+    <rect x="790" y="484" width="80" height="26" rx="4" class="on"/><circle cx="830" cy="497" r="4" class="dot-on"/>
+    <rect x="910" y="484" width="80" height="26" rx="4" class="on"/><circle cx="950" cy="497" r="4" class="dot-on"/>
+    <rect x="1040" y="484" width="80" height="26" rx="4" class="on"/><circle cx="1080" cy="497" r="4" class="dot-on"/>
+  </g>
+
+  <!-- sweep -->
+  <rect x="430" y="100" width="2" height="418" fill="#5eead4" opacity="0.25">
+    <animate attributeName="x" values="430;1118;430" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</svg>
