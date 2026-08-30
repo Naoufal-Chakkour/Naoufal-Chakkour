@@ -55,20 +55,11 @@
 
 ## ◈ CURRENTLY LEARNING
 
-<pre>
-┌──────────────────────────────────────────────┐
-│                                              │
-│  [+] Cybersecurity                           │
-│  [+] Network Security                        │
-│  [+] Linux / Kali Linux                      │
-│  [+] C# / .NET                               │
-│  [+] Git & GitHub                            │
-│  [+] IoT / Networked Devices                 │
-│                                              │
-└──────────────────────────────────────────────┘
-</pre>
+<div align="center">
 
----
+<img src="./assets/learning.svg" width="100%" alt="Naoufal Learning Matrix">
+
+</div>
 
 ## ◈ TOOLKIT
 
