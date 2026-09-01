@@ -1,7 +1,7 @@
 <svg
 xmlns="http://www.w3.org/2000/svg"
 width="584"
-height="520"
+height="620"
 viewBox="0 0 584 520">
 
 <defs>
@@ -10,8 +10,8 @@ viewBox="0 0 584 520">
 id="glow"
 x="-50%"
 y="-50%"
-width="200%"
-height="200%">
+width="300%"
+height="300%">
 
 <feGaussianBlur
 stdDeviation="2.5"
@@ -333,7 +333,7 @@ y="490"
 font-family="monospace"
 font-size="12"
 font-weight="bold"
-fill="#00ff66"
+fill="#11ff66"
 filter="url(#glow)"
 xml:space="preserve">@@@@#o8@@@@@@@@@#@#8oo@@@@@@#8&amp;o&amp;&amp;&amp;@@@@@@@@@#o#::&amp;o*o&amp;#@@@@@</text>
 
