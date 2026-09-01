@@ -1,0 +1,1219 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1240 470"
+     width="1240"
+     height="470"
+     font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07120f"/>
+      <stop offset="100%" stop-color="#020806"/>
+    </linearGradient>
+
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#03130e"/>
+      <stop offset="100%" stop-color="#020906"/>
+    </linearGradient>
+
+    <!-- ECG glow -->
+    <filter id="ecgGlow"
+            x="-20%"
+            y="-50%"
+            width="140%"
+            height="200%">
+      <feGaussianBlur stdDeviation="2.2"
+                      result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft screen glow -->
+    <radialGradient id="screenGlow">
+      <stop offset="0%"
+            stop-color="#34d399"
+            stop-opacity="0.12"/>
+      <stop offset="100%"
+            stop-color="#34d399"
+            stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="monitorClip">
+      <rect x="176"
+            y="66"
+            width="880"
+            height="300"
+            rx="4"/>
+    </clipPath>
+
+  </defs>
+
+
+  <!-- ===================================================== -->
+  <!-- MAIN BODY -->
+  <!-- ===================================================== -->
+
+  <rect x="0"
+        y="0"
+        width="1240"
+        height="470"
+        rx="10"
+        fill="url(#bg)"
+        stroke="#16332b"
+        stroke-width="1.5"/>
+
+
+  <!-- ===================================================== -->
+  <!-- HEADER -->
+  <!-- ===================================================== -->
+
+  <text x="34"
+        y="40"
+        fill="#34d399"
+        font-size="12.5"
+        font-weight="700"
+        letter-spacing="2.5">
+    LINUX SECURITY MONITOR
+  </text>
+
+  <text x="34"
+        y="58"
+        fill="#28564a"
+        font-size="8.5"
+        letter-spacing="1.6">
+    KALI LINUX · BASH · NETWORK ANALYSIS · VULNERABILITY ASSESSMENT
+  </text>
+
+
+  <!-- Live indicator -->
+
+  <circle cx="1150"
+          cy="34"
+          r="5"
+          fill="#34d399">
+
+    <animate attributeName="opacity"
+             values="1;0.2;1"
+             dur="1.2s"
+             repeatCount="indefinite"/>
+
+  </circle>
+
+  <text x="1163"
+        y="38"
+        fill="#34d399"
+        font-size="9"
+        letter-spacing="1.2">
+    LIVE
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- LEFT STATUS PANEL -->
+  <!-- ===================================================== -->
+
+  <rect x="34"
+        y="66"
+        width="128"
+        height="300"
+        rx="5"
+        fill="#06100d"
+        stroke="#174438"/>
+
+
+  <g font-size="7.5"
+     fill="#28564a">
+
+    <text x="46" y="86">SYSTEM</text>
+
+    <text x="46" y="128">SHELL</text>
+
+    <text x="46" y="170">PLATFORM</text>
+
+    <text x="46" y="212">SCANNER</text>
+
+    <text x="46" y="254">VULN ASSESS</text>
+
+    <text x="46" y="296">TRAFFIC</text>
+
+    <text x="46" y="338">STATUS</text>
+
+  </g>
+
+
+  <g font-size="10.5"
+     fill="#8af0d1">
+
+    <text x="46" y="102">
+      Linux
+    </text>
+
+    <text x="46" y="144">
+      Bash
+    </text>
+
+    <text x="46" y="186">
+      Kali Linux
+    </text>
+
+    <text x="46" y="228">
+      Nmap
+    </text>
+
+    <text x="46" y="270">
+      GVM / OpenVAS
+    </text>
+
+    <text x="46" y="312">
+      Wireshark
+    </text>
+
+  </g>
+
+
+  <text x="46"
+        y="354"
+        font-size="10.5"
+        fill="#34d399"
+        font-weight="700">
+    MONITORING
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- MAIN MONITOR -->
+  <!-- ===================================================== -->
+
+  <rect x="176"
+        y="66"
+        width="880"
+        height="300"
+        rx="4"
+        fill="url(#screen)"
+        stroke="#174438"/>
+
+
+  <ellipse cx="616"
+           cy="216"
+           rx="430"
+           ry="150"
+           fill="url(#screenGlow)"/>
+
+
+  <g clip-path="url(#monitorClip)">
+
+
+    <!-- ================================================= -->
+    <!-- ECG GRID -->
+    <!-- ================================================= -->
+
+    <g stroke="#0c3329"
+       stroke-width="0.6">
+
+      <!-- vertical minor grid -->
+
+      <path d="
+        M198 66 V366
+        M220 66 V366
+        M242 66 V366
+        M264 66 V366
+        M286 66 V366
+        M308 66 V366
+        M330 66 V366
+        M352 66 V366
+        M374 66 V366
+        M396 66 V366
+        M418 66 V366
+        M440 66 V366
+        M462 66 V366
+        M484 66 V366
+        M506 66 V366
+        M528 66 V366
+        M550 66 V366
+        M572 66 V366
+        M594 66 V366
+        M616 66 V366
+        M638 66 V366
+        M660 66 V366
+        M682 66 V366
+        M704 66 V366
+        M726 66 V366
+        M748 66 V366
+        M770 66 V366
+        M792 66 V366
+        M814 66 V366
+        M836 66 V366
+        M858 66 V366
+        M880 66 V366
+        M902 66 V366
+        M924 66 V366
+        M946 66 V366
+        M968 66 V366
+        M990 66 V366
+        M1012 66 V366
+        M1034 66 V366
+      "/>
+
+
+      <!-- horizontal minor grid -->
+
+      <path d="
+        M176 86 H1056
+        M176 106 H1056
+        M176 126 H1056
+        M176 146 H1056
+        M176 166 H1056
+        M176 186 H1056
+        M176 206 H1056
+        M176 226 H1056
+        M176 246 H1056
+        M176 266 H1056
+        M176 286 H1056
+        M176 306 H1056
+        M176 326 H1056
+        M176 346 H1056
+      "/>
+
+    </g>
+
+
+    <!-- Major ECG grid -->
+
+    <g stroke="#14503f"
+       stroke-width="0.9">
+
+      <path d="
+        M286 66 V366
+        M396 66 V366
+        M506 66 V366
+        M616 66 V366
+        M726 66 V366
+        M836 66 V366
+        M946 66 V366
+      "/>
+
+      <path d="
+        M176 116 H1056
+        M176 166 H1056
+        M176 216 H1056
+        M176 266 H1056
+        M176 316 H1056
+      "/>
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- MONITOR LABEL -->
+    <!-- ================================================= -->
+
+    <text x="194"
+          y="86"
+          fill="#28564a"
+          font-size="7.5">
+      NETWORK / SYSTEM TELEMETRY
+    </text>
+
+
+    <text x="936"
+          y="86"
+          fill="#34d399"
+          font-size="7.5">
+      LIVE
+    </text>
+
+
+    <!-- ================================================= -->
+    <!-- ECG BASELINE -->
+    <!-- ================================================= -->
+
+    <line x1="176"
+          y1="216"
+          x2="1056"
+          y2="216"
+          stroke="#16483a"
+          stroke-width="0.8"/>
+
+
+    <!-- ================================================= -->
+    <!-- ECG GLOW WAVE -->
+    <!-- ================================================= -->
+
+    <g filter="url(#ecgGlow)">
+
+      <!-- First waveform -->
+      <polyline
+        fill="none"
+        stroke="#34d399"
+        stroke-width="3"
+        opacity="0.18"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+
+        points="
+        176,216
+
+        205,216
+        220,216
+        230,216
+
+        236,205
+        242,216
+        248,216
+
+        258,216
+        264,216
+
+        270,216
+        276,216
+        282,216
+
+        288,216
+        294,216
+
+        300,216
+        306,216
+
+        312,216
+        318,216
+
+        324,216
+        330,216
+
+        336,216
+        342,216
+
+        348,216
+        354,216
+
+        360,216
+
+        366,216
+        372,216
+
+        378,216
+
+        384,216
+        390,216
+
+        396,216
+
+        402,216
+        408,216
+
+        414,216
+
+        420,216
+        426,216
+
+        432,216
+
+        438,216
+        444,216
+
+        450,216
+        456,216
+
+        462,216
+        468,216
+
+        474,216
+        480,216
+
+        486,216
+
+        492,216
+        498,216
+
+        504,216
+
+        510,216
+        516,216
+
+        522,216
+
+        528,216
+        534,216
+
+        540,216
+
+        546,216
+        552,216
+
+        558,216
+
+        564,216
+        570,216
+
+        576,216
+
+        582,216
+        588,216
+
+        594,216
+
+        600,216
+        606,216
+
+        612,216
+        618,216
+
+        624,216
+        630,216
+
+        636,216
+        642,216
+
+        648,216
+        654,216
+
+        660,216
+        666,216
+
+        672,216
+        678,216
+
+        684,216
+        690,216
+
+        696,216
+
+        702,216
+        708,216
+
+        714,216
+        720,216
+
+        726,216
+        732,216
+
+        738,216
+        744,216
+
+        750,216
+        756,216
+
+        762,216
+        768,216
+
+        774,216
+        780,216
+
+        786,216
+        792,216
+
+        798,216
+        804,216
+
+        810,216
+        816,216
+
+        822,216
+        828,216
+
+        834,216
+        840,216
+
+        846,216
+        852,216
+
+        858,216
+        864,216
+
+        870,216
+        876,216
+
+        882,216
+        888,216
+
+        894,216
+        900,216
+
+        906,216
+        912,216
+
+        918,216
+        924,216
+
+        930,216
+        936,216
+
+        942,216
+        948,216
+
+        954,216
+        960,216
+
+        966,216
+        972,216
+
+        978,216
+        984,216
+
+        990,216
+        996,216
+
+        1002,216
+        1008,216
+
+        1014,216
+        1020,216
+
+        1026,216
+        1032,216
+
+        1038,216
+        1044,216
+        1056,216
+        ">
+
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          from="0 0"
+          to="-440 0"
+          dur="3.4s"
+          repeatCount="indefinite"/>
+
+      </polyline>
+
+
+      <!-- Actual ECG waveform -->
+
+      <polyline
+        fill="none"
+        stroke="#34d399"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+
+        points="
+        176,216
+        205,216
+        220,216
+        230,216
+
+        236,205
+        242,216
+        248,216
+
+        258,216
+        266,216
+
+        272,216
+        278,216
+
+        284,216
+
+        290,216
+        296,216
+
+        302,216
+
+        308,216
+        314,216
+
+        320,216
+
+        326,216
+        332,216
+
+        338,216
+
+        344,216
+        350,216
+
+        356,216
+
+        362,216
+        368,216
+
+        374,216
+
+        380,216
+        386,216
+
+        392,216
+
+        398,216
+        404,216
+
+        410,216
+
+        416,216
+        422,216
+
+        428,216
+
+        434,216
+        440,216
+
+        446,216
+
+        452,216
+        458,216
+
+        464,216
+        470,216
+
+        476,216
+
+        482,216
+        488,216
+
+        494,216
+
+        500,216
+        506,216
+
+        512,216
+
+        518,216
+        524,216
+
+        530,216
+
+        536,216
+        542,216
+
+        548,216
+
+        554,216
+        560,216
+
+        566,216
+
+        572,216
+        578,216
+
+        584,216
+
+        590,216
+        596,216
+
+        602,216
+
+        608,216
+        614,216
+
+        620,216
+
+        626,216
+        632,216
+
+        638,216
+
+        644,216
+        650,216
+
+        656,216
+
+        662,216
+        668,216
+
+        674,216
+
+        680,216
+        686,216
+
+        692,216
+
+        698,216
+        704,216
+
+        710,216
+
+        716,216
+        722,216
+
+        728,216
+
+        734,216
+        740,216
+
+        746,216
+
+        752,216
+        758,216
+
+        764,216
+        770,216
+
+        776,216
+        782,216
+
+        788,216
+        794,216
+
+        800,216
+        806,216
+
+        812,216
+        818,216
+
+        824,216
+        830,216
+
+        836,216
+        842,216
+
+        848,216
+        854,216
+
+        860,216
+        866,216
+
+        872,216
+        878,216
+
+        884,216
+        890,216
+
+        896,216
+        902,216
+
+        908,216
+        914,216
+
+        920,216
+        926,216
+
+        932,216
+        938,216
+
+        944,216
+        950,216
+
+        956,216
+        962,216
+
+        968,216
+        974,216
+
+        980,216
+        986,216
+
+        992,216
+        998,216
+
+        1004,216
+        1010,216
+
+        1016,216
+        1022,216
+
+        1028,216
+        1034,216
+
+        1040,216
+        1046,216
+        1056,216
+        ">
+
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          from="0 0"
+          to="-440 0"
+          dur="3.4s"
+          repeatCount="indefinite"/>
+
+      </polyline>
+
+    </g>
+
+
+    <!-- ================================================= -->
+    <!-- SECOND / ACTUAL SPIKE PATTERN -->
+    <!-- ================================================= -->
+
+    <polyline
+      fill="none"
+      stroke="#34d399"
+      stroke-width="1.7"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+
+      points="
+      176,216
+      220,216
+      235,216
+      242,190
+      249,236
+      256,216
+      280,216
+      320,216
+      350,216
+      380,216
+      410,216
+      440,216
+      455,216
+      462,178
+      470,252
+      478,216
+      510,216
+      550,216
+      590,216
+      620,216
+      650,216
+      680,216
+      695,216
+      702,190
+      709,236
+      716,216
+      750,216
+      790,216
+      830,216
+      860,216
+      890,216
+      905,216
+      912,178
+      920,252
+      928,216
+      960,216
+      1000,216
+      1040,216
+      1056,216
+      ">
+
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0 0"
+        to="-440 0"
+        dur="3.4s"
+        repeatCount="indefinite"/>
+
+    </polyline>
+
+
+    <!-- ================================================= -->
+    <!-- MOVING SCAN LINE -->
+    <!-- ================================================= -->
+
+    <rect x="176"
+          y="66"
+          width="2"
+          height="300"
+          fill="#34d399"
+          opacity="0.28">
+
+      <animate attributeName="x"
+               values="176;1054;176"
+               dur="5s"
+               repeatCount="indefinite"/>
+
+    </rect>
+
+
+    <!-- ================================================= -->
+    <!-- TRIGGER LINE -->
+    <!-- ================================================= -->
+
+    <line x1="616"
+          y1="66"
+          x2="616"
+          y2="366"
+          stroke="#f87171"
+          stroke-width="0.8"
+          stroke-dasharray="4 5"
+          opacity="0.65"/>
+
+    <text x="625"
+          y="82"
+          fill="#f87171"
+          font-size="7">
+      TRIGGER
+    </text>
+
+
+    <!-- ================================================= -->
+    <!-- COMMAND OVERLAY -->
+    <!-- ================================================= -->
+
+    <rect x="194"
+          y="286"
+          width="430"
+          height="58"
+          rx="3"
+          fill="#020806"
+          fill-opacity="0.82"
+          stroke="#174438"/>
+
+
+    <text x="208"
+          y="302"
+          fill="#28564a"
+          font-size="7.5">
+      LIVE TERMINAL
+    </text>
+
+
+    <text x="208"
+          y="318"
+          fill="#34d399"
+          font-size="9">
+      $ nmap -sV 192.168.1.0/24
+    </text>
+
+
+    <text x="208"
+          y="334"
+          fill="#8af0d1"
+          font-size="8">
+      scanning → hosts discovered → services identified
+    </text>
+
+
+    <!-- ================================================= -->
+    <!-- GVM STATUS -->
+    <!-- ================================================= -->
+
+    <rect x="650"
+          y="286"
+          width="380"
+          height="58"
+          rx="3"
+          fill="#020806"
+          fill-opacity="0.82"
+          stroke="#174438"/>
+
+
+    <text x="666"
+          y="302"
+          fill="#28564a"
+          font-size="7.5">
+      VULNERABILITY ASSESSMENT
+    </text>
+
+
+    <text x="666"
+          y="318"
+          fill="#8af0d1"
+          font-size="9">
+      GVM / OpenVAS
+    </text>
+
+
+    <text x="666"
+          y="334"
+          fill="#34d399"
+          font-size="8">
+      feed · scan · findings · verification
+    </text>
+
+
+  </g>
+
+
+  <!-- ===================================================== -->
+  <!-- ECG CHANNEL LABEL -->
+  <!-- ===================================================== -->
+
+  <text x="188"
+        y="106"
+        fill="#34d399"
+        font-size="8.5">
+    ECG / SYSTEM ACTIVITY
+  </text>
+
+
+  <text x="188"
+        y="126"
+        fill="#28564a"
+        font-size="7">
+    REAL-TIME TELEMETRY
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- RIGHT PANEL -->
+  <!-- ===================================================== -->
+
+  <rect x="1072"
+        y="66"
+        width="134"
+        height="300"
+        rx="5"
+        fill="#06100d"
+        stroke="#174438"/>
+
+
+  <g font-size="7.5"
+     fill="#28564a">
+
+    <text x="1084" y="86">
+      SYSTEM
+    </text>
+
+    <text x="1084" y="164">
+      NETWORK
+    </text>
+
+    <text x="1084" y="242">
+      SECURITY
+    </text>
+
+    <text x="1084" y="302">
+      EVIDENCE
+    </text>
+
+  </g>
+
+
+  <g font-size="9"
+     fill="#8af0d1">
+
+    <text x="1084" y="104">
+      Linux active
+    </text>
+
+    <text x="1084" y="118">
+      Bash ready
+    </text>
+
+    <text x="1084" y="132">
+      CPU monitored
+    </text>
+
+    <text x="1084" y="146">
+      memory tracked
+    </text>
+
+
+    <text x="1084" y="182">
+      Nmap
+    </text>
+
+    <text x="1084" y="196">
+      Wireshark
+    </text>
+
+    <text x="1084" y="210">
+      TCP / UDP
+    </text>
+
+    <text x="1084" y="224">
+      packet analysis
+    </text>
+
+
+    <text x="1084" y="260">
+      GVM
+    </text>
+
+    <text x="1084" y="274">
+      OpenVAS
+    </text>
+
+    <text x="1084" y="288">
+      CVE analysis
+    </text>
+
+    <text x="1084" y="316">
+      logs retained
+    </text>
+
+    <text x="1084" y="330">
+      findings tracked
+    </text>
+
+  </g>
+
+
+  <text x="1084"
+        y="350"
+        font-size="9"
+        fill="#34d399">
+    ACTIVE
+  </text>
+
+
+  <!-- ===================================================== -->
+  <!-- BOTTOM -->
+  <!-- ===================================================== -->
+
+  <g font-size="8.5"
+     fill="#28564a">
+
+    <text x="34" y="392">
+      LINUX
+    </text>
+
+    <text x="140" y="392">
+      BASH
+    </text>
+
+    <text x="220" y="392">
+      KALI LINUX
+    </text>
+
+    <text x="360" y="392">
+      NMAP
+    </text>
+
+    <text x="450" y="392">
+      WIRESHARK
+    </text>
+
+    <text x="580" y="392">
+      GVM / OPENVAS
+    </text>
+
+    <text x="760" y="392">
+      NETWORK ANALYSIS
+    </text>
+
+    <text x="970" y="392">
+      SECURITY LAB
+    </text>
+
+  </g>
+
+
+  <!-- Progress line -->
+
+  <rect x="34"
+        y="404"
+        width="1172"
+        height="2"
+        fill="#103229"/>
+
+
+  <rect x="34"
+        y="404"
+        width="180"
+        height="2"
+        fill="#34d399">
+
+    <animate attributeName="x"
+             values="34;1026;34"
+             dur="8s"
+             repeatCount="indefinite"/>
+
+  </rect>
+
+
+  <!-- Footer -->
+
+  <text x="34"
+        y="432"
+        fill="#203e35"
+        font-size="8">
+
+    bash commands · network discovery · packet inspection · vulnerability assessment
+  </text>
+
+
+  <text x="34"
+        y="448"
+        fill="#203e35"
+        font-size="8">
+
+    continuous monitoring · evidence-driven analysis · Linux security workflow
+  </text>
+
+</svg>
