@@ -1,424 +1,169 @@
 <svg
-  width="1000"
-  height="340"
-  viewBox="0 0 1000 340"
-  xmlns="http://www.w3.org/2000/svg">
-
-  <defs>
-
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#f3f6f8"/>
-    </linearGradient>
-
-    <filter
-      id="glow"
-      x="-50%"
-      y="-50%"
-      width="200%"
-      height="200%">
-
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-
-    </filter>
-
-    <filter
-      id="smallGlow"
-      x="-100%"
-      y="-100%"
-      width="300%"
-      height="300%">
-
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-
-    </filter>
-
-    <clipPath id="ecgClip">
-      <rect
-        x="60"
-        y="265"
-        width="880"
-        height="45"/>
-    </clipPath>
-
-  </defs>
-
-
-  <!-- BACKGROUND -->
-
-  <rect
-    width="1000"
-    height="340"
-    rx="16"
-    fill="url(#bg)"/>
-
-
-  <!-- MAIN PANEL -->
-
-  <rect
-    x="25"
-    y="25"
-    width="950"
-    height="290"
-    rx="12"
-    fill="#ffffff"
-    stroke="#008f4c"
-    stroke-width="2"/>
-
-
-  <!-- HEADER -->
-
-  <text
-    x="60"
-    y="70"
-    font-family="monospace"
-    font-size="24"
-    font-weight="bold"
-    fill="#008f4c">
-
-    NAOUFAL CHAKKOUR
-
-  </text>
-
-  <text
-    x="60"
-    y="98"
-    font-family="monospace"
-    font-size="13"
-    fill="#57606a">
-
-    GITHUB ACTIVITY MONITOR
-
-  </text>
-
-
-  <!-- ONLINE -->
-
-  <circle
-    cx="900"
-    cy="65"
-    r="6"
-    fill="#008f4c"
-    filter="url(#smallGlow)">
-
-    <animate
-      attributeName="r"
-      values="5;8;5"
-      dur="1.8s"
-      repeatCount="indefinite"/>
-
-    <animate
-      attributeName="opacity"
-      values="1;0.35;1"
-      dur="1.8s"
-      repeatCount="indefinite"/>
-
-  </circle>
-
-  <text
-    x="915"
-    y="69"
-    font-family="monospace"
-    font-size="9"
-    fill="#008f4c">
-
-    ONLINE
-
-  </text>
-
-
-  <!-- SEPARATOR -->
-
-  <line
-    x1="60"
-    y1="120"
-    x2="940"
-    y2="120"
-    stroke="#008f4c"
-    opacity="0.30"/>
-
-
-  <!-- REPOSITORIES -->
-
-  <text
-    x="90"
-    y="165"
-    font-family="monospace"
-    font-size="12"
-    fill="#57606a">
-
-    PUBLIC REPOSITORIES
-
-  </text>
-
-  <text
-    x="90"
-    y="205"
-    font-family="monospace"
-    font-size="30"
-    font-weight="bold"
-    fill="#008f4c"
-    filter="url(#glow)"
-    data-stat="PUBLIC_REPOS">
-
-    0
-
-  </text>
-
-
-  <!-- FOLLOWERS -->
-
-  <text
-    x="360"
-    y="165"
-    font-family="monospace"
-    font-size="12"
-    fill="#57606a">
-
-    FOLLOWERS
-
-  </text>
-
-  <text
-    x="360"
-    y="205"
-    font-family="monospace"
-    font-size="30"
-    font-weight="bold"
-    fill="#008f4c"
-    filter="url(#glow)"
-    data-stat="FOLLOWERS">
-
-    0
-
-  </text>
-
-
-  <!-- FOLLOWING -->
-
-  <text
-    x="630"
-    y="165"
-    font-family="monospace"
-    font-size="12"
-    fill="#57606a">
-
-    FOLLOWING
-
-  </text>
-
-  <text
-    x="630"
-    y="205"
-    font-family="monospace"
-    font-size="30"
-    font-weight="bold"
-    fill="#008f4c"
-    filter="url(#glow)"
-    data-stat="FOLLOWING">
-
-    0
-
-  </text>
-
-
-  <!-- ECG GRID -->
-
-  <line
-    x1="60"
-    y1="245"
-    x2="940"
-    y2="245"
-    stroke="#008f4c"
-    opacity="0.10"/>
-
-  <line
-    x1="60"
-    y1="285"
-    x2="940"
-    y2="285"
-    stroke="#008f4c"
-    opacity="0.10"/>
-
-
-  <!-- ECG LABEL -->
-
-  <text
-    x="60"
-    y="238"
-    font-family="monospace"
-    font-size="8"
-    fill="#008f4c">
-
-    LIVE SIGNAL
-
-  </text>
-
-
-  <!-- MOVING ECG -->
-
-  <g clip-path="url(#ecgClip)">
-
-    <path
-      d="
-      M -900 285
-      L -850 285
-      L -830 285
-      L -820 275
-      L -810 295
-      L -800 285
-      L -780 285
-
-      L -740 285
-      L -720 285
-      L -710 275
-      L -700 295
-      L -690 285
-      L -670 285
-
-      L -630 285
-      L -610 285
-      L -600 270
-      L -590 300
-      L -580 285
-      L -560 285
-
-      L -520 285
-      L -500 285
-      L -490 275
-      L -480 295
-      L -470 285
-      L -450 285
-
-      L -410 285
-      L -390 285
-      L -380 265
-      L -370 305
-      L -360 285
-      L -340 285
-
-      L -300 285
-      L -280 285
-      L -270 275
-      L -260 295
-      L -250 285
-      L -230 285
-
-      L -190 285
-      L -170 285
-      L -160 265
-      L -150 305
-      L -140 285
-      L -120 285
-
-      L -80 285
-      L -60 285
-      L -50 275
-      L -40 295
-      L -30 285
-      L -10 285
-
-      L 30 285
-      L 50 285
-      L 60 265
-      L 70 305
-      L 80 285
-      L 100 285
-
-      L 140 285
-      L 160 285
-      L 170 275
-      L 180 295
-      L 190 285
-      L 210 285
-
-      L 250 285
-      L 270 285
-      L 280 265
-      L 290 305
-      L 300 285
-      L 320 285
-
-      L 360 285
-      L 380 285
-      L 390 275
-      L 400 295
-      L 410 285
-      L 430 285
-
-      L 470 285
-      L 490 285
-      L 500 265
-      L 510 305
-      L 520 285
-      L 540 285
-
-      L 580 285
-      L 600 285
-      L 610 275
-      L 620 295
-      L 630 285
-      L 650 285
-
-      L 690 285
-      L 710 285
-      L 720 265
-      L 730 305
-      L 740 285
-      L 760 285
-
-      L 800 285
-      L 820 285
-      L 830 275
-      L 840 295
-      L 850 285
-      L 870 285
-
-      L 910 285
-      L 950 285
-      L 1000 285
-      "
-
-      fill="none"
-      stroke="#008f4c"
-      stroke-width="2"
-      filter="url(#glow)">
-
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        from="0"
-        to="-400"
-        dur="4s"
-        repeatCount="indefinite"/>
-
-    </path>
-
-  </g>
-
-
-  <!-- UPDATE -->
-
-  <text
-    x="60"
-    y="305"
-    font-family="monospace"
-    font-size="8"
-    fill="#57606a"
-    data-stat="UPDATE_TIME">
-
-    LAST UPDATE: waiting...
-
-  </text>
+width="1000"
+height="300"
+viewBox="0 0 1000 300"
+xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<filter
+id="glow"
+x="-50%"
+y="-50%"
+width="200%"
+height="200%">
+
+<feGaussianBlur
+stdDeviation="5"
+result="blur"/>
+
+<feMerge>
+
+<feMergeNode in="blur"/>
+
+<feMergeNode in="SourceGraphic"/>
+
+</feMerge>
+
+</filter>
+
+</defs>
+
+<rect
+width="1000"
+height="300"
+rx="16"
+fill="#ffffff"/>
+
+<rect
+x="25"
+y="25"
+width="950"
+height="250"
+rx="12"
+fill="#f6f8fa"
+stroke="#16883a"
+stroke-width="2"/>
+
+<text
+x="60"
+y="75"
+font-family="monospace"
+font-size="24"
+font-weight="bold"
+fill="#16883a">
+
+NAOUFAL CHAKKOUR
+
+</text>
+
+<text
+x="60"
+y="105"
+font-family="monospace"
+font-size="13"
+fill="#57606a">
+
+GITHUB ACTIVITY MONITOR
+
+</text>
+
+<line
+x1="60"
+y1="130"
+x2="940"
+y2="130"
+stroke="#16883a"
+opacity="0.35"/>
+
+<text
+x="90"
+y="180"
+font-family="monospace"
+font-size="13"
+fill="#57606a">
+
+PUBLIC REPOSITORIES
+
+</text>
+
+<text
+x="90"
+y="220"
+font-family="monospace"
+font-size="30"
+font-weight="bold"
+fill="#16883a"
+filter="url(#glow)">
+
+5
+
+</text>
+
+<text
+x="360"
+y="180"
+font-family="monospace"
+font-size="13"
+fill="#57606a">
+
+FOLLOWERS
+
+</text>
+
+<text
+x="360"
+y="220"
+font-family="monospace"
+font-size="30"
+font-weight="bold"
+fill="#16883a"
+filter="url(#glow)">
+
+0
+
+</text>
+
+<text
+x="630"
+y="180"
+font-family="monospace"
+font-size="13"
+fill="#57606a">
+
+FOLLOWING
+
+</text>
+
+<text
+x="630"
+y="220"
+font-family="monospace"
+font-size="30"
+font-weight="bold"
+fill="#16883a"
+filter="url(#glow)">
+
+0
+
+</text>
+
+<circle
+cx="900"
+cy="215"
+r="7"
+fill="#16883a"
+filter="url(#glow)"/>
+
+<text
+x="60"
+y="255"
+font-family="monospace"
+font-size="10"
+fill="#57606a">
+
+LAST UPDATE: 2026-09-01 04:29 UTC
+
+</text>
 
 </svg>

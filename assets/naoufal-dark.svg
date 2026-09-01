@@ -1,502 +1,169 @@
 <svg
-  width="1000"
-  height="300"
-  viewBox="0 0 1000 300"
-  xmlns="http://www.w3.org/2000/svg">
-
-  <defs>
-
-    <!-- Background -->
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#070b0f"/>
-    </linearGradient>
-
-    <!-- Glow -->
-    <filter
-      id="glow"
-      x="-50%"
-      y="-50%"
-      width="200%"
-      height="200%">
-
-      <feGaussianBlur
-        stdDeviation="3"
-        result="blur"/>
-
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-
-    </filter>
-
-    <!-- Strong glow -->
-    <filter
-      id="strongGlow"
-      x="-50%"
-      y="-50%"
-      width="200%"
-      height="200%">
-
-      <feGaussianBlur
-        stdDeviation="6"
-        result="blur"/>
-
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-
-    </filter>
-
-    <!-- ECG clip -->
-    <clipPath id="ecgClip">
-      <rect
-        x="60"
-        y="132"
-        width="880"
-        height="32"/>
-    </clipPath>
-
-  </defs>
-
-
-  <!-- ========================= -->
-  <!-- BACKGROUND -->
-  <!-- ========================= -->
-
-  <rect
-    width="1000"
-    height="300"
-    rx="16"
-    fill="url(#bg)"/>
-
-
-  <!-- ========================= -->
-  <!-- MAIN PANEL -->
-  <!-- ========================= -->
-
-  <rect
-    x="25"
-    y="25"
-    width="950"
-    height="250"
-    rx="12"
-    fill="#161b22"
-    stroke="#00ff66"
-    stroke-width="2"
-    opacity="0.98"/>
-
-
-  <!-- ========================= -->
-  <!-- HEADER -->
-  <!-- ========================= -->
-
-  <text
-    x="60"
-    y="72"
-    font-family="monospace"
-    font-size="24"
-    font-weight="bold"
-    fill="#00ff66">
-
-    NAOUFAL CHAKKOUR
-
-  </text>
-
-
-  <text
-    x="60"
-    y="101"
-    font-family="monospace"
-    font-size="13"
-    fill="#8b949e">
-
-    GITHUB ACTIVITY MONITOR
-
-  </text>
-
-
-  <!-- ========================= -->
-  <!-- ECG MONITOR LINE -->
-  <!-- ========================= -->
-
-  <line
-    x1="60"
-    y1="130"
-    x2="940"
-    y2="130"
-    stroke="#00ff66"
-    opacity="0.18"/>
-
-
-  <!-- ECG glow -->
-  <path
-    d="
-      M60 150
-      L130 150
-      L145 150
-      L155 147
-      L165 150
-      L175 150
-
-      L185 150
-      L192 138
-      L199 160
-      L206 145
-      L214 150
-
-      L230 150
-      L300 150
-
-      L370 150
-      L380 150
-      L390 147
-      L400 150
-
-      L410 150
-      L417 138
-      L424 160
-      L431 145
-      L439 150
-
-      L455 150
-      L525 150
-
-      L595 150
-      L605 150
-      L615 147
-      L625 150
-
-      L635 150
-      L642 138
-      L649 160
-      L656 145
-      L664 150
-
-      L680 150
-      L750 150
-
-      L820 150
-      L830 150
-      L840 147
-      L850 150
-
-      L860 150
-      L867 138
-      L874 160
-      L881 145
-      L889 150
-
-      L940 150
-    "
-    fill="none"
-    stroke="#00ff66"
-    stroke-width="1.5"
-    opacity="0.25"
-    filter="url(#strongGlow)"/>
-
-
-  <!-- Actual moving ECG -->
-  <g clip-path="url(#ecgClip)">
-
-    <path
-      d="
-        M-880 150
-        L-810 150
-        L-795 150
-        L-785 147
-        L-775 150
-        L-765 150
-
-        L-755 150
-        L-748 138
-        L-741 160
-        L-734 145
-        L-726 150
-
-        L-710 150
-        L-640 150
-
-        L-570 150
-        L-560 150
-        L-550 147
-        L-540 150
-
-        L-530 150
-        L-523 138
-        L-516 160
-        L-509 145
-        L-501 150
-
-        L-485 150
-        L-415 150
-
-        L-345 150
-        L-335 150
-        L-325 147
-        L-315 150
-
-        L-305 150
-        L-298 138
-        L-291 160
-        L-284 145
-        L-276 150
-
-        L-260 150
-        L-190 150
-
-        L-120 150
-        L-110 150
-        L-100 147
-        L-90 150
-
-        L-80 150
-        L-73 138
-        L-66 160
-        L-59 145
-        L-51 150
-
-        L-35 150
-        L35 150
-
-        L45 150
-        L55 150
-        L65 147
-        L75 150
-
-        L85 150
-        L92 138
-        L99 160
-        L106 145
-        L114 150
-
-        L130 150
-        L200 150
-
-        L270 150
-        L280 150
-        L290 147
-        L300 150
-
-        L310 150
-        L317 138
-        L324 160
-        L331 145
-        L339 150
-
-        L355 150
-        L425 150
-
-        L495 150
-        L505 150
-        L515 147
-        L525 150
-
-        L535 150
-        L542 138
-        L549 160
-        L556 145
-        L564 150
-
-        L580 150
-        L650 150
-
-        L720 150
-        L730 150
-        L740 147
-        L750 150
-
-        L760 150
-        L767 138
-        L774 160
-        L781 145
-        L789 150
-
-        L805 150
-        L875 150
-
-        L945 150
-        L955 150
-      "
-      fill="none"
-      stroke="#00ff66"
-      stroke-width="2"
-      filter="url(#glow)">
-
-      <animateTransform
-        attributeName="transform"
-        type="translate"
-        from="0"
-        to="880"
-        dur="4s"
-        repeatCount="indefinite"/>
-
-    </path>
-
-  </g>
-
-
-  <!-- ========================= -->
-  <!-- DATA SEPARATOR -->
-  <!-- ========================= -->
-
-  <line
-    x1="60"
-    y1="174"
-    x2="940"
-    y2="174"
-    stroke="#00ff66"
-    opacity="0.12"/>
-
-
-  <!-- ========================= -->
-  <!-- PUBLIC REPOSITORIES -->
-  <!-- ========================= -->
-
-  <text
-    x="90"
-    y="200"
-    font-family="monospace"
-    font-size="12"
-    fill="#8b949e">
-
-    PUBLIC REPOSITORIES
-
-  </text>
-
-  <text
-    x="90"
-    y="235"
-    font-family="monospace"
-    font-size="28"
-    font-weight="bold"
-    fill="#00ff66"
-    filter="url(#glow)">
-
-    5
-
-  </text>
-
-
-  <!-- ========================= -->
-  <!-- FOLLOWERS -->
-  <!-- ========================= -->
-
-  <text
-    x="360"
-    y="200"
-    font-family="monospace"
-    font-size="12"
-    fill="#8b949e">
-
-    FOLLOWERS
-
-  </text>
-
-  <text
-    x="360"
-    y="235"
-    font-family="monospace"
-    font-size="28"
-    font-weight="bold"
-    fill="#00ff66"
-    filter="url(#glow">
-
-    1
-
-  </text>
-
-
-  <!-- ========================= -->
-  <!-- FOLLOWING -->
-  <!-- ========================= -->
-
-  <text
-    x="630"
-    y="200"
-    font-family="monospace"
-    font-size="12"
-    fill="#8b949e">
-
-    FOLLOWING
-
-  </text>
-
-  <text
-    x="630"
-    y="235"
-    font-family="monospace"
-    font-size="28"
-    font-weight="bold"
-    fill="#00ff66"
-    filter="url(#glow)">
-
-    1
-
-  </text>
-
-
-  <!-- ========================= -->
-  <!-- STATUS LIGHT -->
-  <!-- ========================= -->
-
-  <circle
-    cx="900"
-    cy="218"
-    r="6"
-    fill="#00ff66"
-    filter="url(#glow)">
-
-    <animate
-      attributeName="opacity"
-      values="1;0.25;1"
-      dur="1.5s"
-      repeatCount="indefinite"/>
-
-  </circle>
-
-
-  <text
-    x="914"
-    y="222"
-    font-family="monospace"
-    font-size="9"
-    fill="#00ff66">
-
-    ONLINE
-
-  </text>
-
-
-  <!-- ========================= -->
-  <!-- FOOTER -->
-  <!-- ========================= -->
-
-  <text
-    x="60"
-    y="263"
-    font-family="monospace"
-    font-size="9"
-    fill="#59636e">
-
-    LAST UPDATE: AUTO-SYNC
-
-  </text>
-
-
-  <text
-    x="940"
-    y="263"
-    text-anchor="end"
-    font-family="monospace"
-    font-size="9"
-    fill="#59636e">
-
-    SYSTEM READY
-
-  </text>
-
+width="1000"
+height="300"
+viewBox="0 0 1000 300"
+xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<filter
+id="glow"
+x="-50%"
+y="-50%"
+width="200%"
+height="200%">
+
+<feGaussianBlur
+stdDeviation="5"
+result="blur"/>
+
+<feMerge>
+
+<feMergeNode in="blur"/>
+
+<feMergeNode in="SourceGraphic"/>
+
+</feMerge>
+
+</filter>
+
+</defs>
+
+<rect
+width="1000"
+height="300"
+rx="16"
+fill="#0d1117"/>
+
+<rect
+x="25"
+y="25"
+width="950"
+height="250"
+rx="12"
+fill="#161b22"
+stroke="#00ff66"
+stroke-width="2"/>
+
+<text
+x="60"
+y="75"
+font-family="monospace"
+font-size="24"
+font-weight="bold"
+fill="#00ff66">
+
+NAOUFAL CHAKKOUR
+
+</text>
+
+<text
+x="60"
+y="105"
+font-family="monospace"
+font-size="13"
+fill="#8b949e">
+
+GITHUB ACTIVITY MONITOR
+
+</text>
+
+<line
+x1="60"
+y1="130"
+x2="940"
+y2="130"
+stroke="#00ff66"
+opacity="0.35"/>
+
+<text
+x="90"
+y="180"
+font-family="monospace"
+font-size="13"
+fill="#8b949e">
+
+PUBLIC REPOSITORIES
+
+</text>
+
+<text
+x="90"
+y="220"
+font-family="monospace"
+font-size="30"
+font-weight="bold"
+fill="#00ff66"
+filter="url(#glow)">
+
+5
+
+</text>
+
+<text
+x="360"
+y="180"
+font-family="monospace"
+font-size="13"
+fill="#8b949e">
+
+FOLLOWERS
+
+</text>
+
+<text
+x="360"
+y="220"
+font-family="monospace"
+font-size="30"
+font-weight="bold"
+fill="#00ff66"
+filter="url(#glow)">
+
+0
+
+</text>
+
+<text
+x="630"
+y="180"
+font-family="monospace"
+font-size="13"
+fill="#8b949e">
+
+FOLLOWING
+
+</text>
+
+<text
+x="630"
+y="220"
+font-family="monospace"
+font-size="30"
+font-weight="bold"
+fill="#00ff66"
+filter="url(#glow)">
+
+0
+
+</text>
+
+<circle
+cx="900"
+cy="215"
+r="7"
+fill="#00ff66"
+filter="url(#glow)"/>
+
+<text
+x="60"
+y="255"
+font-family="monospace"
+font-size="10"
+fill="#8b949e">
+
+LAST UPDATE: 2026-09-01 04:29 UTC
+
+</text>
 
 </svg>
