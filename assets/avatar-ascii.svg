@@ -323,7 +323,7 @@ y="475"
 font-family="monospace"
 font-size="12"
 font-weight="bold"
-fill="gris"
+fill="gris_white"
 filter="url(#glow)"
 xml:space="preserve">@@@@##@@@@@@@@@@@@@@@#@@@@####@#88&amp;#@@@@@@@#&amp;o888##&amp;&amp;&amp;@@@@@@</text>
 
@@ -333,7 +333,7 @@ y="490"
 font-family="monospace"
 font-size="12"
 font-weight="bold"
-fill="gris"
+fill="gris-white"
 filter="url(#glow)"
 xml:space="preserve">@@@@#o8@@@@@@@@@#@#8oo@@@@@@#8&amp;o&amp;&amp;&amp;@@@@@@@@@#o#::&amp;o*o&amp;#@@@@@</text>
 
